@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/sales_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_market_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="26px">
+
+                <EditText
+                    android:id="@+id/et_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="185px"
+                    android:layout_marginRight="24px"
+                    android:layout_marginLeft="24px"
+                    android:hint="请输入"
+                    android:gravity="top"
+                    android:padding="25px"
+                    android:textSize="30px"
+                    android:textColor="@color/colorGray999999"
+                    android:background="@drawable/bg_f3f3f3_4px_rectangle"/>
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="185px"
+                    android:layout_marginRight="24px"
+                    android:layout_marginLeft="24px"
+                    android:hint="未填写"
+                    android:gravity="top"
+                    android:padding="25px"
+                    android:textSize="30px"
+                    android:textColor="@color/colorGray999999"
+                    android:background="@drawable/bg_stoke_dcdcdc"
+                    android:visibility="gone"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/sales_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/sales_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:gravity="center"
+                android:layout_marginTop="100px"
+                android:layout_marginLeft="24px"
+                android:layout_marginRight="24px"
+                android:padding="28px"
+                android:textSize="36px"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_257eff_round_rect"
+                android:layout_marginBottom="70px"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

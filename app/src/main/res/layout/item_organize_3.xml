@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="97px">
+
+        <ImageView
+            android:layout_width="@dimen/px28"
+            android:layout_height="@dimen/px15"
+            android:src="@mipmap/home_organize_child_icon"/>
+        <ImageView
+            android:id="@+id/item_organize_3_head"
+            android:layout_width="@dimen/px49"
+            android:layout_height="@dimen/px49"
+            android:layout_marginLeft="@dimen/px25"
+            android:src="@mipmap/head_icon_nodata"/>
+        <TextView
+            android:id="@+id/item_organize_3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black6"
+            android:layout_marginLeft="@dimen/px26"
+            android:text="研发一组"
+            android:textSize="@dimen/px30"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <include layout="@layout/layout_edit_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/bg_ec"/>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="80px">
+
+    <include layout="@layout/layout_bottom_line" android:id="@+id/top_line"/>
+
+    <ImageView
+        android:id="@+id/image_sele"
+        android:layout_width="37px"
+        android:layout_height="37px"
+        android:background="@drawable/selector_week"
+        android:layout_marginLeft="42px"
+        android:layout_marginRight="31px"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/text_week"
+        android:layout_toRightOf="@id/image_sele"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textSize="30px"
+        android:textColor="@color/colorGray9FABB2"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

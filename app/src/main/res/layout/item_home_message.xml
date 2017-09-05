@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_ec"
+    android:id="@+id/item_message_scrollview"
+    android:scrollbars="none"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_ec"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item_message_home_view"
+            android:layout_width="750px"
+            android:layout_height="131px"
+            android:layout_marginTop="@dimen/px1"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/px32"
+            android:paddingRight="@dimen/px24">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_message_home_head"
+                android:layout_width="@dimen/px90"
+                android:layout_height="@dimen/px90"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/px30"
+                android:src="@mipmap/head_icon_nodata" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px28"
+                android:layout_toRightOf="@id/item_message_home_head"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_message_chat_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/px10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="@string/purchase"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/px30"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/item_message_chat_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="2016/11/11"
+                    android:textColor="@color/black9"
+                    android:textSize="@dimen/px24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_toRightOf="@id/item_message_home_head"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_message_chat_content"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px10"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/black6"
+                    android:textSize="@dimen/px26" />
+
+                <TextView
+                    android:id="@+id/item_message_chat_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@mipmap/red"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:text="99"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px22" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/item_message_home_view"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_ec" />
+        
+        <TextView
+            android:id="@+id/item_message_del"
+            android:layout_width="148px"
+            android:layout_height="131px"
+            android:layout_toRightOf="@id/item_message_home_view"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/px32"
+            android:background="#ff5e5e"/>
+
+    </RelativeLayout>
+</HorizontalScrollView>

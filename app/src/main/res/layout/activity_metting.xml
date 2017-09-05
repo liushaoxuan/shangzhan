@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_metting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.MettingActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGrayFAFAFA">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_notice_read"
+        android:layout_height="65px"
+        android:layout_width="match_parent"
+        android:background="@mipmap/waikuang"
+        android:orientation="horizontal"
+        android:layout_marginRight="31px"
+        android:layout_marginLeft="31px"
+        android:layout_marginTop="32px"
+        android:layout_marginBottom="34px">
+
+
+        <TextView
+            android:id="@+id/activity_metting_notice"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="通知"
+            android:textSize="@dimen/px30"
+            android:textColor="@drawable/notice_text_color_selector"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_notice_select"
+
+            />
+
+        <TextView
+            android:id="@+id/activity_metting_gonggao"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="公告"
+            android:textSize="@dimen/px30"
+            android:textColor="@drawable/notice_text_color_selector"
+            android:background="@drawable/bg_notice_select"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.wyu.iwork.widget.NoScrollViewPager
+        android:id="@+id/activity_metting_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

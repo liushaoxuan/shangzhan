@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ly_myinfo_changedate"
+              android:background="#00000000"
+              android:gravity="center">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ly_myinfo_changedate_child"
+        android:layout_height="wrap_content"
+        android:layout_width="540px"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white_round_rectangle"
+        >
+
+        <TextView
+            android:id="@+id/meeting_dialog_title"
+            android:layout_height="90px"
+            android:layout_width="match_parent"
+            android:text="设置会议时间"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30px"
+            android:background="@drawable/bg_green257eff_round_rectabgle"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320px">
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="@color/colorGrayBFBFBF"
+            android:layout_marginTop="109px"/>
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="@color/colorGrayBFBFBF"
+            android:layout_marginBottom="109px"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:gravity="center_vertical">
+
+            <com.wyu.iwork.wheeldate.WheelView
+                android:id="@+id/wv_date_day"
+                android:layout_width="0dip"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                />
+            <com.wyu.iwork.wheeldate.WheelView
+                android:id="@+id/wv_date_hour"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                />
+            <com.wyu.iwork.wheeldate.WheelView
+                android:id="@+id/wv_date_min"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:background="#DCDCDC"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_height="90px"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="确定"
+                android:textSize="30px"
+                android:textColor="@color/colorGreen5397FF"
+                android:gravity="center"/>
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1px"
+                android:background="#DCDCDC"/>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textSize="30px"
+                android:textColor="#969696"
+                android:gravity="center"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

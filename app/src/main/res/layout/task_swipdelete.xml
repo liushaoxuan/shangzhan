@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.wyu.iwork.widget.swipedelete.SwipeLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- item内容的布局 -->
+
+        <include layout="@layout/item_task_list" android:id="@+id/item_task"/>
+
+        <!-- delete区域的布局 -->
+
+        <include layout="@layout/layout_delete" android:id="@+id/item_task_delete"/>
+    </com.wyu.iwork.widget.swipedelete.SwipeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

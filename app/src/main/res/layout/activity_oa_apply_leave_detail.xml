@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:id="@+id/activity_oa_apply_for_leave_detail">
+
+    <include layout="@layout/oa_apply_title_bar"
+        android:id="@+id/activity_oa_apply_for_leave_detail_title"/>
+    <LinearLayout
+        android:id="@+id/activity_oa_apply_for_leave_detail_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/oa_layout_details_bottom_bar"/>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_oa_apply_for_leave_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/activity_oa_apply_for_leave_detail_bottombar"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px125"
+                android:background="@color/white">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/activity_oa_apply_for_leave_detail_head"
+                    android:layout_width="@dimen/px88"
+                    android:layout_height="@dimen/px88"
+                    android:src="@drawable/head_icon_nodata"
+                    android:layout_marginLeft="@dimen/px32"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px32"
+                    android:layout_marginTop="@dimen/px25"
+                    android:layout_toRightOf="@id/activity_oa_apply_for_leave_detail_head"
+                    android:text=""
+                    android:textColor="@color/black43"
+                    android:textSize="@dimen/px32"
+                    android:id="@+id/activity_oa_apply_for_leave_detail_my_apply" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px32"
+                    android:layout_toRightOf="@id/activity_oa_apply_for_leave_detail_head"
+                    android:text=""
+                    android:textColor="@color/black9"
+                    android:textSize="@dimen/px28"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/px20"
+                    android:id="@+id/activity_oa_apply_for_leave_detail_post" />
+
+                <TextView
+                    android:id="@+id/activity_oa_apply_for_leave_detail_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px44"
+                    android:background="@drawable/oa_state_aprovalling"
+                    android:paddingBottom="@dimen/px8"
+                    android:paddingLeft="@dimen/px30"
+                    android:paddingRight="@dimen/px30"
+                    android:paddingTop="@dimen/px8"
+                    android:text=""
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/oa_light_blue"
+                    android:textSize="@dimen/px26"
+                    android:layout_alignEnd="@+id/linearLayout" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_oa_apply_for_leave_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px32"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/px30"
+                    android:layout_marginTop="@dimen/px1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假类型:"
+                        android:textSize="@dimen/px28"
+                        android:textColor="@color/black96"/>
+                    <TextView
+                        android:id="@+id/activity_oa_apply_for_leave_detail_pay_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/px28"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:textColor="@color/black3"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px32"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/px22">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请假时长:"
+                        android:textSize="@dimen/px28"
+                        android:textColor="@color/black96"/>
+                    <TextView
+                        android:id="@+id/activity_oa_apply_for_leave_detail_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/px28"
+                        android:layout_marginLeft="@dimen/px10"
+                        android:textColor="@color/black3"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请假明细:"
+                    android:textSize="@dimen/px28"
+                    android:layout_marginLeft="@dimen/px32"
+                    android:layout_marginTop="@dimen/px22"
+                    android:textColor="@color/black96"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px60"
+                    android:background="@color/color_E8F1F6"
+                    android:layout_marginLeft="@dimen/px35"
+                    android:layout_marginRight="@dimen/px35"
+                    android:layout_marginTop="@dimen/px32">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="请假类型"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24"
+                        android:gravity="center"/>
+                    <View
+                        android:layout_width="@dimen/px1"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_gray"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="开始时间"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24"
+                        android:gravity="center"/>
+                    <View
+                        android:layout_width="@dimen/px1"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_gray"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="结束时间"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_oa_apply_for_leave_detail_reibursent_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px35"
+                    android:layout_marginRight="@dimen/px35"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请假事由:"
+                    android:textSize="@dimen/px28"
+                    android:layout_marginLeft="@dimen/px32"
+                    android:layout_marginTop="@dimen/px22"
+                    android:textColor="@color/black96"/>
+                <TextView
+                    android:id="@+id/activity_oa_apply_for_leave_detail_reason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/px28"
+                    android:layout_marginRight="@dimen/px48"
+                    android:lineSpacingExtra="5px"
+                    android:layout_marginBottom="@dimen/px26"
+                    android:layout_marginLeft="@dimen/px32"
+                    android:layout_marginTop="@dimen/px22"
+                    android:textColor="@color/color_707E86"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px88"
+                android:layout_marginTop="@dimen/px1"
+                android:paddingLeft="@dimen/px32"
+                android:background="@color/white"
+                android:paddingRight="@dimen/px28">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px28"
+                    android:textColor="@color/black3"
+                    android:text="请假详情"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/activity_oa_apply_for_leave_detail_open_close_detail" />
+
+                <LinearLayout
+                    android:id="@+id/activity_oa_apply_for_leave_detail_open_close_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/activity_oa_apply_for_leave_detail_open_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px28"
+                        android:text="收起"
+                        android:textColor="@color/blue"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/px22"
+                        android:layout_height="@dimen/px13"
+                        android:src="@drawable/oa_up_down_arrow_selector"
+                        android:layout_marginLeft="@dimen/px8"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_oa_apply_for_leave_detail_state_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_corner_bg_20"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/px28"
+                android:layout_marginRight="@dimen/px24"
+                android:layout_marginTop="@dimen/px42"
+                android:layout_marginBottom="@dimen/px100">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/px22"
+                    android:paddingLeft="@dimen/px32"
+                    android:layout_height="@dimen/px70">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="抄送人"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px28"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="（审批通过后将通知抄送人）"
+                        android:textColor="@color/black96"
+                        android:textSize="@dimen/px28"/>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/oa_detail_copysend_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1"
+                    android:visibility="gone"
+                    android:background="@color/color_dfebf1"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_oa_apply_for_leave_detail_copysend_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

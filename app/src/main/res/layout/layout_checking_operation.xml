@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/clock_in_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60px"
+        android:textColor="@color/colorGray333333"
+        android:paddingTop="88px"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/clock_in_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="定位中。。。"
+        android:maxLength="11"
+        android:textSize="26px"
+        android:textColor="@color/color25b0ff"
+        android:layout_below="@id/clock_in_time"
+        android:paddingLeft="230px"
+        android:ellipsize="end"
+        android:drawableLeft="@mipmap/location_icon"
+        android:drawablePadding="8px"
+        android:paddingTop="40px"/>
+
+    <TextView
+        android:id="@+id/textview_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" . . . "
+        android:textSize="26px"
+        android:visibility="gone"
+        android:textColor="@color/color25b0ff"
+        android:layout_toRightOf="@id/clock_in_address"
+        android:layout_below="@id/clock_in_time"
+        android:paddingTop="40px"/>
+
+    <TextView
+        android:id="@+id/clock_in_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textview_op"
+        android:layout_below="@id/clock_in_time"
+        android:paddingTop="40px"
+        android:text="重新定位"
+        android:textColor="@color/colorFFC74F"
+        android:textSize="28px"
+        />
+
+    <TextView
+        android:id="@+id/clock_in_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_25b0ff_30px"
+        android:text="下班打卡"
+        android:textColor="@color/white"
+        android:textSize="36px"
+        android:layout_below="@id/clock_in_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92px"
+        android:paddingTop="28px"
+        android:paddingBottom="28px"
+        android:paddingRight="140px"
+        android:paddingLeft="140px"
+        android:layout_marginBottom="120px"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

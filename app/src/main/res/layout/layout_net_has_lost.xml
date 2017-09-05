@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/layout_net_has_lost"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_horizontal"
+android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+<ImageView
+    android:layout_width="141px"
+    android:layout_height="138px"
+    android:src="@mipmap/loading_fail" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30px"
+    android:text="你的网络走丢了，请刷新"
+    android:textStyle="bold"
+    android:textColor="@color/colorGray9FABB2"
+    android:paddingTop="32px"/>
+
+<TextView
+    android:id="@+id/layout_net_has_lost_reload"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="重新加载"
+    android:layout_marginTop="40px"
+    android:background="@drawable/bg_25b0ff_round_30px"
+    android:paddingLeft="51px"
+    android:paddingTop="16px"
+    android:paddingRight="51px"
+    android:paddingBottom="16px"
+    android:textSize="30px"
+    android:textColor="@color/colorCustomToolbar" />
+
+</com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

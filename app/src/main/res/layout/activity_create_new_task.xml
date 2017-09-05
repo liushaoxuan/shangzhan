@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_new_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorF4F9FC"
+    tools:context="com.wyu.iwork.view.activity.CreateNewTaskActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/activity_create_new_task_scroolview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务主题"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:paddingTop="31px"
+                    android:paddingLeft="25px"
+                    android:paddingBottom="27px"/>
+
+                <EditText
+                    android:id="@+id/task_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="15"
+                    android:hint="请输入任务主题（15字以内）"
+                    android:paddingLeft="25px"
+                    android:textSize="30px"
+                    android:paddingBottom="28px"
+                    android:textColor="@color/color4D7186"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:background="@null"
+                    />
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px"
+                android:layout_marginBottom="23px"
+                android:background="@color/white">
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务描述"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:paddingTop="31px"
+                    android:paddingLeft="25px"
+                    android:paddingBottom="27px"/>
+
+                <EditText
+                    android:id="@+id/task_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:maxLength="60"
+                    android:hint="请输入本次任务的详细描述（60字以内）"
+                    android:paddingLeft="25px"
+                    android:textSize="30px"
+                    android:paddingBottom="28px"
+                    android:gravity="top"
+                    android:lineSpacingExtra="10px"
+                    android:background="@null"
+                    android:textColor="@color/color4D7186"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    />
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.wyu.iwork.widget.TaskItem
+                android:id="@+id/emergency_degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.TaskItem
+                android:id="@+id/start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.TaskItem
+                android:id="@+id/end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/principal_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px">
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/to"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="负责人"
+                        android:textSize="32px"
+                        android:textColor="@color/colorGray333333"
+                        android:layout_marginTop="31px"
+                        android:layout_marginLeft="26px"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/to"
+                        android:text="（点击头像可以删除）"
+                        android:textColor="@color/colorGray9FABB2"
+                        android:textSize="24px"
+                        android:layout_marginTop="37px"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/to"
+                        android:scrollbars="none">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_add_person"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35px"
+                                android:layout_marginLeft="31px"/>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:id="@+id/add_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35px"
+                                android:layout_marginBottom="17px"
+                                android:layout_toRightOf="@id/rv_add_person"
+                                android:layout_marginLeft="25dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingRight="50px">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/civ_add_person"
+                                    android:layout_width="80px"
+                                    android:layout_height="80px"
+                                    android:src="@mipmap/daily_add_person"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_add_person"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="添加人员"
+                                    android:textSize="24px"
+                                    android:singleLine="true"
+                                    android:paddingTop="24px"
+                                    android:textColor="@color/colorGray9FABB2"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/participant_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px">
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/par_to"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="参与人"
+                        android:textSize="32px"
+                        android:textColor="@color/colorGray333333"
+                        android:layout_marginTop="31px"
+                        android:layout_marginLeft="26px"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/par_to"
+                        android:text="（点击头像可以删除）"
+                        android:textColor="@color/colorGray9FABB2"
+                        android:textSize="24px"
+                        android:layout_marginTop="37px"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/par_to"
+                        android:scrollbars="none">
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rv_add_pic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35px"
+                                android:layout_marginLeft="31px"/>
+
+                            <com.zhy.autolayout.AutoLinearLayout
+                                android:id="@+id/add_partic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="35px"
+                                android:layout_marginBottom="17px"
+                                android:layout_toRightOf="@id/rv_add_person"
+                                android:layout_marginLeft="25dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:paddingRight="50px">
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:id="@+id/civ_pirtic"
+                                    android:layout_width="80px"
+                                    android:layout_height="80px"
+                                    android:src="@mipmap/daily_add_person"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_partic"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="添加人员"
+                                    android:textSize="24px"
+                                    android:singleLine="true"
+                                    android:paddingTop="24px"
+                                    android:textColor="@color/colorGray9FABB2"/>
+
+                            </com.zhy.autolayout.AutoLinearLayout>
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

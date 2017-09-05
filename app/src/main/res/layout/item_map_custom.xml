@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/header"
+              android:paddingBottom="23px"
+    >
+
+    <com.wyu.iwork.widget.ExpandLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/map_custom_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="24px"
+            android:paddingLeft="24px"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/item_map_custom_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="32px"
+                android:paddingTop="34px"
+                android:textColor="@color/colorGray333333"
+                />
+
+            <TextView
+                android:id="@+id/item_map_custom_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_round_rect_blue_white_4px"
+                android:text=""
+                android:paddingLeft="15px"
+                android:paddingTop="8px"
+                android:paddingRight="15px"
+                android:paddingBottom="8px"
+                android:layout_toRightOf="@id/item_map_custom_name"
+                android:layout_marginTop="30px"
+                android:layout_marginLeft="38px"
+                android:textSize="24px"
+                android:textColor="@color/colorCustomToolbar"/>
+
+            <TextView
+                android:id="@+id/item_map_custom_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_map_custom_name"
+                android:paddingTop="31px"
+                android:text=""
+                android:drawableLeft="@mipmap/crm_location"
+                android:drawablePadding="11px"
+                android:textSize="24px"
+                android:textColor="@color/colorGray999999"
+                android:paddingBottom="20px"
+                />
+
+            <TextView
+                android:id="@+id/item_map_custom_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingTop="40px"
+                android:text=""
+                android:textColor="@color/colorGray999999"
+                android:textSize="30px"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/map_custom_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayDEDEDE"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:orientation="horizontal"
+                >
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/item_map_custom_tohere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="到这里"
+                        android:textSize="30px"
+                        android:textColor="@color/colorGray999999"
+                        android:drawableLeft="@mipmap/top_arror"
+                        android:drawablePadding="22px"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGrayDEDEDE"
+                    android:layout_margin="14px"
+                    />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/item_map_custom_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="查看详情"
+                        android:textSize="30px"
+                        android:drawableLeft="@drawable/selector_crm_map_check_detail"
+                        android:background="@color/transparent"
+                        android:drawablePadding="22px"
+                        android:textColor="@color/colorGray999999"
+
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+    </com.wyu.iwork.widget.ExpandLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

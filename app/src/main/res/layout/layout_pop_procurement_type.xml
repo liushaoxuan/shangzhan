@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black9"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/procurement_type_saild_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/white"
+        android:textColor="@color/black41"
+        android:text="销售商品"
+        android:gravity="center"
+        android:textSize="@dimen/px34"/>
+    <TextView
+        android:id="@+id/procurement_type_dayly_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/white"
+        android:textColor="@color/black41"
+        android:text="日常商品"
+        android:layout_marginTop="@dimen/px2"
+        android:gravity="center"
+        android:textSize="@dimen/px34"/>
+    <TextView
+        android:id="@+id/procurement_type_others"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/white"
+        android:textColor="@color/black41"
+        android:text="其他"
+        android:layout_marginTop="@dimen/px2"
+        android:gravity="center"
+        android:textSize="@dimen/px34"/>
+
+</LinearLayout>

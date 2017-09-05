@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_ec"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px82">
+
+    <TextView
+        android:id="@+id/item_attendance_statistics_name"
+        android:layout_width="@dimen/px168"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/px30"
+        android:text="王小晶"
+        android:layout_marginRight="@dimen/px1"
+        android:textColor="@color/black3"/>
+
+
+    <TextView
+        android:id="@+id/item_attendance_statistics_chuqin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px82"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/px28"
+        android:text="10"
+        android:layout_marginRight="@dimen/px2"
+        android:textColor="@color/black3"/>
+
+    <TextView
+        android:id="@+id/item_attendance_statistics_chuchai"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px82"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/px28"
+        android:text="10"
+        android:layout_marginRight="@dimen/px2"
+        android:textColor="@color/black3"/>
+
+        <TextView
+            android:id="@+id/item_attendance_statistics_jiaban"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px82"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/px28"
+            android:text="10"
+            android:layout_marginRight="@dimen/px2"
+            android:textColor="@color/black3"/>
+
+        <TextView
+            android:id="@+id/item_attendance_statistics_qingjia"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px82"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/px28"
+            android:text="10"
+            android:layout_marginRight="@dimen/px2"
+            android:textColor="@color/black3"/>
+
+        <TextView
+            android:id="@+id/item_attendance_statistics_queqin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px82"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/px28"
+            android:text="10"
+            android:layout_marginRight="@dimen/px2"
+            android:textColor="@color/black3"/>
+    <TextView
+        android:id="@+id/item_attendance_statistics_chidao"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px82"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/px28"
+        android:text="10"
+        android:layout_marginRight="@dimen/px2"
+        android:textColor="@color/black3"/>
+
+    <TextView
+        android:id="@+id/item_attendance_statistics_zaotui"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px82"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/px28"
+        android:text="10"
+        android:layout_marginRight="@dimen/px2"
+        android:textColor="@color/black3"/>
+
+
+
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"/>
+</LinearLayout>

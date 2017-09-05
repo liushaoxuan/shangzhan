@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        android:layout_marginTop="@dimen/px1"
+        android:paddingRight="@dimen/px24"
+        android:paddingLeft="@dimen/px24"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black41"
+            android:text="商品数量"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px36"
+            android:textColor="#FF0000"
+            android:text="*"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical">
+            <ImageView
+                android:id="@+id/activity_add_order_reduce"
+                android:layout_width="@dimen/px65"
+                android:layout_height="@dimen/px65"
+                android:padding="@dimen/px10"
+                android:layout_marginRight="@dimen/px4"
+                android:src="@drawable/order_reduce_icon"/>
+
+            <EditText
+                android:id="@+id/activity_add_order_goodsNum"
+                android:layout_width="140px"
+                android:layout_height="52px"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/shape_rect_color_da_side"
+                android:textSize="@dimen/px32"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black9"/>
+            <ImageView
+                android:id="@+id/activity_add_order_add"
+                android:layout_width="@dimen/px65"
+                android:layout_height="@dimen/px65"
+                android:padding="@dimen/px10"
+                android:layout_marginLeft="@dimen/px4"
+                android:src="@drawable/order_add_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px24"
+        android:paddingRight="@dimen/px24">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black41"
+            android:text="折扣  ("/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/text_red"
+            android:text="范围:1-100"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black41"
+            android:text=")"/>
+        <EditText
+            android:id="@+id/activity_add_order_zhekou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:maxLength="3"
+            android:inputType="number"
+            android:textColor="@color/black9"
+            android:textSize="@dimen/px32"
+            android:layout_marginLeft="@dimen/px20"
+            android:hint="请输入" />
+    </LinearLayout>
+
+</LinearLayout>

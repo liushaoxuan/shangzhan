@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_personal_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.PersonalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px440"
+    android:orientation="vertical"
+    android:background="@mipmap/background03"
+    android:paddingTop="@dimen/px50">
+    <include layout="@layout/layout_my_title_bar"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/activity_personal_info_head"
+        android:layout_width="@dimen/px145"
+        android:layout_height="@dimen/px145"
+        app:civ_border_width="@dimen/px4"
+        app:civ_border_color="@color/white"
+        android:src="@drawable/head_icon_nodata"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/activity_personal_info_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px30"
+        android:text=""
+        android:layout_marginTop="@dimen/px15"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/activity_personal_info_company_jobs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px24"
+        android:text=""
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/px10"/>
+</LinearLayout>
+        <!--name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/Name"/>
+
+            <TextView
+                android:id="@+id/activity_personal_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Name"/>
+
+        </LinearLayout>
+
+        <!--phone-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px20"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/Phone"/>
+
+
+            <TextView
+                android:id="@+id/activity_personal_info_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Phone"/>
+
+        </LinearLayout>
+        <!--email-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px1"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/Mail"/>
+
+
+            <TextView
+                android:id="@+id/activity_personal_info_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Mail"/>
+
+        </LinearLayout>
+        <!--wechat-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px1"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/Wechat"/>
+
+            <TextView
+                android:id="@+id/activity_personal_info_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Wechat"/>
+
+        </LinearLayout>
+
+        <!--position-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px20"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/Job"/>
+
+
+            <TextView
+                android:id="@+id/activity_personal_info_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Job"/>
+
+        </LinearLayout>
+        <!--company-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px1"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/company"/>
+
+
+            <TextView
+                android:id="@+id/activity_personal_info_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/company"/>
+
+        </LinearLayout>
+
+        <!--depart-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px1"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/Department"/>
+
+
+            <TextView
+                android:id="@+id/activity_personal_info_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Department"/>
+
+        </LinearLayout>
+
+        <!--location-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px89"
+            android:layout_marginTop="@dimen/px20"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:paddingRight="@dimen/px28"
+            android:paddingLeft="@dimen/px55">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:text="@string/organz_addr"/>
+
+
+            <TextView
+                android:id="@+id/activity_personal_info_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px30"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/px72"
+                android:singleLine="true"
+                android:maxLength="20"
+                android:hint="@string/Name"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

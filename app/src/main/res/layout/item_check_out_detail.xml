@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginBottom="43px"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="46px">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="72px"
+            android:layout_height="72px"
+            android:background="@mipmap/stop">
+
+            <TextView
+                android:id="@+id/check_out_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textSize="18px"
+                android:textColor="@color/white"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <ImageView
+            android:id="@+id/check_out_image"
+            android:layout_width="5px"
+            android:layout_height="90px"
+            android:src="@mipmap/shudao"
+            android:layout_marginLeft="33px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/check_out_thing"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="26px"
+            android:textColor="@color/colorGray565656"/>
+
+        <TextView
+            android:id="@+id/check_out_address"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="26px"
+            android:paddingTop="20px"
+            android:textColor="@color/colorGray565656"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_userheadimg"
+            android:layout_width="@dimen/head_60dp"
+            android:layout_height="@dimen/head_60dp"
+            android:src="@mipmap/ic_headimg"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+            <TextView
+                android:id="@+id/item_tasknname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_18"
+                android:text="整理文件"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/item_username"
+                    android:textColor="@color/gray_AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="淘宝网"/>
+                <TextView
+                    android:id="@+id/item_taskCycle"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/gray_AAAAAA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务周期3/4天"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.wyu.iwork.widget.MyProgressBar
+            android:id="@+id/item_taskProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

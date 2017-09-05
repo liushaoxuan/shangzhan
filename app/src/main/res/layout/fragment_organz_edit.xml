@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/organz_id"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColorSecondary"
+                    android:background="@drawable/bg_ripple"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/organz_name"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/organz_up"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jump"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/organz_tel"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/organz_fax"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fax"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/organz_addr"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

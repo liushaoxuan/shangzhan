@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px130">
+        <ImageView
+            android:id="@+id/item_message_dynamic_head"
+            android:layout_width="@dimen/px88"
+            android:layout_height="@dimen/px88"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/head_icon_nodata"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/px28">
+            <TextView
+                android:id="@+id/item_message_dynamic_releaser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dynamic_releaser_color"
+                android:textSize="@dimen/px30"
+                android:textStyle="bold"
+                android:text=" "
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/px30"/>
+
+            <TextView
+                android:id="@+id/item_message_dynamic_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px22"
+                android:text=" "
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/px15"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/item_message_dynamic_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px10"
+        android:textColor="@color/black6"
+        android:textSize="@dimen/px28"
+        android:ellipsize="end"
+        android:text=" "/>
+</LinearLayout>

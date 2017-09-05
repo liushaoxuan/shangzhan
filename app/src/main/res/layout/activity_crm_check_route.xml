@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_check_route"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CrmCheckRouteActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40px"
+        android:background="@color/colorCustomToolbar"/>
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="23px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="34px"
+            android:paddingTop="34px"
+            android:paddingLeft="24px"
+            android:paddingRight="24px">
+
+            <ImageView
+                android:layout_width="20px"
+                android:layout_height="27px"
+                android:src="@mipmap/my_location"/>
+
+            <View
+                android:layout_marginTop="5px"
+                android:layout_marginBottom="5px"
+                android:layout_width="5px"
+                android:layout_height="66px"
+                android:background="@mipmap/point_more"
+                android:layout_gravity="center_horizontal"/>
+            <ImageView
+                android:layout_width="21px"
+                android:layout_height="21px"
+                android:layout_marginLeft="2px"
+                android:src="@mipmap/to_location"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingRight="24px">
+
+            <TextView
+                android:id="@+id/route_mylocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:paddingBottom="30px"
+                android:textColor="@color/colorGray404040"
+                android:text="我的位置"
+                android:paddingTop="30px"/>
+
+            <ImageView
+                android:id="@+id/route_refresh"
+                android:layout_toRightOf="@id/route_mylocation"
+                android:layout_width="100px"
+                android:layout_height="90px"
+                android:paddingLeft="15px"
+                android:paddingRight="55px"
+                android:paddingTop="33px"
+                android:paddingBottom="32px"
+                android:src="@mipmap/location_refresh"/>
+
+            <View
+                android:id="@+id/route_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayCACACA"
+                android:layout_below="@id/route_mylocation"/>
+
+            <TextView
+                android:id="@+id/route_target_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/route_view"
+                android:paddingTop="33px"
+                android:paddingBottom="30px"
+                android:textSize="30px"
+                android:textColor="@color/colorGray999999"/>
+
+            <ImageView
+                android:id="@+id/route_refresh_bottom"
+                android:layout_toRightOf="@id/route_target_location"
+                android:layout_below="@id/route_view"
+                android:layout_width="100px"
+                android:layout_height="90px"
+                android:paddingLeft="15px"
+                android:paddingRight="55px"
+                android:paddingTop="40px"
+                android:paddingBottom="25px"
+                android:src="@mipmap/location_refresh"
+                android:visibility="gone"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <ImageView
+            android:id="@+id/route_exchange_location"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/location_exchange"
+            android:paddingRight="24px"
+            android:paddingLeft="24px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGrayCACACA"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingRight="75px"
+        android:paddingLeft="75px"
+        android:background="@color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/crm_check_route_driving"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="52px"
+                    android:layout_height="41px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/selector_driving"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/crm_check_route_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="43px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/selector_trans"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/crm_check_route_walking"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/selector_walking"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/crm_check_route_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/check_route_zanwu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/px130"
+                android:layout_height="@dimen/px112"
+                android:src="@mipmap/notavailable"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暂无该路线，请选择其他路线！"
+                android:textSize="28px"
+                android:textColor="@color/colorGray999999"
+                android:paddingTop="50px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

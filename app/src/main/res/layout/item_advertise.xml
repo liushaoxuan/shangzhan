@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="24px"
+              android:layout_marginLeft="24px"
+              android:layout_marginRight="24px"
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_d9e4ea_round_10px_1px">
+
+        <ImageView
+            android:id="@+id/advertise_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_white_round_rectangle_4px"
+            android:scaleType="fitXY"
+            />
+
+
+        <TextView
+            android:id="@+id/advertise_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advertise_image"
+            android:textColor="@color/colorGray202020"
+            android:textSize="32px"
+            android:layout_marginLeft="33px"
+            />
+
+        <TextView
+            android:id="@+id/advertise_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advertise_title"
+            android:textSize="24px"
+            android:textColor="@color/colorGray9FABB2"
+            android:paddingTop="20px"
+            android:paddingLeft="33px"
+
+            />
+
+        <TextView
+            android:id="@+id/once_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advertise_image"
+            android:layout_alignParentRight="true"
+            android:paddingRight="37px"
+            android:layout_marginTop="46px"
+            android:textSize="28px"
+            android:textColor="@color/color25b0ff"/>
+
+        <View
+            android:id="@+id/advertise_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="22px"
+            android:layout_marginRight="22px"
+            android:background="@color/colorGrayD9E4EA"
+            android:layout_marginTop="25px"
+            android:layout_below="@id/advertise_company"
+            />
+
+        <ImageView
+            android:id="@+id/advertise_type"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/advertise_view"
+            android:layout_marginRight="54px"
+            android:layout_marginBottom="60px"
+            android:background="@mipmap/advertise_cpc"
+            />
+
+        <TextView
+            android:id="@+id/advertise_check"
+            android:layout_width="match_parent"
+            android:layout_height="88px"
+            android:layout_below="@id/advertise_view"
+            android:text="查看详情"
+            android:gravity="center"
+            android:textColor="@color/color545F65"
+            android:textSize="28px"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

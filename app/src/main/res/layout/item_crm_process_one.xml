@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="29px"
+              android:paddingRight="24px">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:paddingTop="31px"
+            android:id="@+id/process_point_first"
+            android:layout_width="30px"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layerType="software"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/line_bfbfbf"
+            />
+
+        <TextView
+            android:id="@+id/process_number"
+            android:layout_width="41px"
+            android:layout_height="41px"
+            android:text="1"
+            android:layout_marginTop="35px"
+            android:layout_marginBottom="35px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="28px"
+            android:background="@mipmap/oval_green"/>
+
+        <View
+            android:id="@+id/process_point_sencond"
+            android:layout_width="30px"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layerType="software"
+            android:background="@drawable/line_bfbfbf"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/process_content"
+        android:layout_marginTop="31px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_42c204_round_10px"
+        android:paddingLeft="26px"
+        android:paddingTop="33px"
+        android:paddingRight="48px"
+        android:paddingBottom="23px"
+        android:layout_marginLeft="55px">
+
+        <TextView
+            android:id="@+id/process_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证客户"
+            android:textSize="30px"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/process_rate"
+            android:layout_below="@id/process_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="赢率   10%"
+            android:paddingTop="23px"
+            android:textSize="26px"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/process_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="已完成"
+            android:textSize="26px"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

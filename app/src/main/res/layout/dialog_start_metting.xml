@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="540px"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_white_round_rectangle">
+
+    <TextView
+        android:id="@+id/meeting_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray333333"
+        android:textSize="30px"
+        android:paddingTop="34px"
+        android:paddingLeft="32px"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="71px"
+        android:layout_height="71px"
+        android:layout_below="@id/meeting_dialog_title"
+        android:src="@mipmap/meeting_dialog"
+        android:layout_marginTop="74px"
+        android:layout_marginBottom="60px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_below="@id/meeting_dialog_title"
+        android:layout_toRightOf="@id/icon"
+        android:paddingTop="73px"
+        android:lineSpacingExtra="10px"
+        android:textSize="30px"
+        android:ellipsize="end"
+        android:paddingRight="37px"
+        android:textColor="@color/colorGray333333"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGrayDFEAF1"
+        android:layout_below="@id/icon"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/view">
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"
+            android:textColor="@color/colorGray999999"
+            android:textSize="30px"
+            android:paddingTop="33px"
+            android:paddingBottom="29px"
+            android:gravity="center_horizontal"
+            />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrayDFEAF1"/>
+
+        <TextView
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发送"
+            android:textColor="@color/color25b0ff"
+            android:textSize="30px"
+            android:paddingTop="33px"
+            android:paddingBottom="29px"
+            android:gravity="center_horizontal"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

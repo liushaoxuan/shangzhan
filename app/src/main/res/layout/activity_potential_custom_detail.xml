@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_potential_custom_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.PotentialCustomDetailActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/activity_potential_custom_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_follow_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_follow_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_follow_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_follow_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23px"/>
+
+            <com.wyu.iwork.widget.CustomCrmItem
+                android:id="@+id/crm_potential_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/crm_potential_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_257eff_round_rect"
+                android:layout_marginLeft="23px"
+                android:layout_marginRight="23px"
+                android:layout_marginTop="93px"
+                android:layout_marginBottom="276px"
+                android:text="提交"
+                android:textSize="36px"
+                android:textColor="@color/white"
+                android:padding="28px"
+                android:gravity="center"/>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

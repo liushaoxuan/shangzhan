@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_business_opportunity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CrmBusinessOpportunityActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="排序"
+                android:textSize="30px"
+                android:padding="30px"
+                android:gravity="center"
+                android:drawableRight="@mipmap/home_organize_parent_bottom"
+                android:drawablePadding="20px"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_margin="13px"
+            android:background="@color/colorGrayECECEC"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="筛选"
+                android:textSize="30px"
+                android:padding="30px"
+                android:gravity="center"
+                android:drawableRight="@mipmap/home_organize_parent_bottom"
+                android:drawablePadding="20px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+-->
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/crm_opportunity_refresh"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/opportunity_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+        <include layout="@layout/layout_crm_zanwu"
+                 android:id="@+id/crm_opportunity_zanwu"
+                 android:visibility="gone"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</LinearLayout>

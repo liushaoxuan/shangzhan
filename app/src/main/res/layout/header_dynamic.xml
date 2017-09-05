@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="226dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Base.Style.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="@string/purchase"
+            android:textColor="@color/txt_white"
+            android:textSize="18sp"/>
+
+        <com.wyu.iwork.widget.CircleImageView
+            android:layout_width="@dimen/head_60dp"
+            android:layout_height="@dimen/head_60dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_head"
+            android:clickable="true"
+            android:foreground="@drawable/fg_head"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_beauty"
+            android:stateListAnimator="@animator/animated_drawable_head"
+            tools:targetApi="lollipop"/>
+
+    </LinearLayout>
+
+</FrameLayout>

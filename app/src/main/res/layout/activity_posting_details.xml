@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_posting_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:layout_height="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/activity_posting_details_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px35"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px24">
+
+            <ImageView
+                android:layout_width="@dimen/px20"
+                android:layout_height="@dimen/px32"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/px15"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dp_10"
+            style="@style/AppTheme.TextAppearance.Toolbar.Title"
+            android:text="@string/title_release_comment"/>
+
+        <TextView
+            android:id="@+id/activity_posting_details_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px25"
+            android:padding="@dimen/px10"
+            android:textSize="@dimen/px30"
+            android:text="@string/release"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/eeeee">
+
+        <EditText
+            android:id="@+id/activity_posting_details_content"
+            android:layout_width="match_parent"
+            android:layout_height="620px"
+            android:paddingTop="42px"
+            android:paddingLeft="57px"
+            android:paddingRight="57px"
+            android:paddingBottom="42px"
+            android:hint="请输入您想要发表的评论"
+            android:gravity="top"
+            android:textColorHint="@color/black6"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/px30"
+            android:background="@drawable/bg_rounded_regtan_white"/>
+
+    </LinearLayout>
+</LinearLayout>

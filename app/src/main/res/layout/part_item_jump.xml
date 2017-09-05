@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jump_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_ripple"
+    android:clickable="true"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:showIn="@layout/fragment_commu_chat">
+
+    <TextView
+        android:id="@+id/icon"
+        style="@style/Base.Style.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_tab_dynamic_selected"
+        android:drawablePadding="16dp"
+        android:gravity="center"
+        android:text="@string/tab_contact"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/ic_arrow_right"/>
+
+</FrameLayout>

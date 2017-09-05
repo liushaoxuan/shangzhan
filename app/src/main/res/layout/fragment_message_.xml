@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/fragment_message_bga"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/fragment_message_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_message_zanwu"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="@dimen/px130"
+            android:layout_height="@dimen/px112"
+            android:src="@mipmap/notavailable"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="112px"/>
+
+        <TextView
+            android:id="@+id/tv_redmine"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="46px"
+            android:text="暂时没有通知消息!"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorGrayC9C9C9"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

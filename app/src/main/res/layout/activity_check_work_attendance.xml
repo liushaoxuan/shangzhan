@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_check_work_attendance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.wyu.iwork.view.activity.CheckWorkAttendanceActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll"
+        android:orientation="vertical">
+
+        <include layout="@layout/custom_back_toolbar"/>
+
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/check_work_attendance_framlayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_above="@+id/check_work_attendance_bottom_layout"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGrayE2E2E2"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/check_work_attendance_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="99px"
+            android:background="@mipmap/dilan">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/check_work_attendance_check"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_check_in"
+                    android:layout_width="48px"
+                    android:layout_height="49px"
+                    android:src="@drawable/select_image_check_in"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12px"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8px"
+                    android:textSize="22px"
+                    android:layout_below="@id/iv_check_in"
+                    android:textColor="@drawable/select_text_check_work_attendance_statistics"
+                    android:text="签到"
+                    android:layout_centerHorizontal="true"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/check_work_attendance_out"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/iv_out"
+                    android:layout_width="50px"
+                    android:layout_height="49px"
+                    android:layout_marginTop="12px"
+                    android:src="@drawable/select_image_check_work_out"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:layout_below="@id/iv_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="外出"
+                    android:layout_marginTop="8px"
+                    android:textSize="22px"
+                    android:textColor="@drawable/select_text_check_work_attendance_statistics"
+                    android:layout_centerHorizontal="true"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/check_work_attendance_statistics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/iv_static"
+                    android:layout_width="48px"
+                    android:layout_height="50px"
+                    android:layout_marginTop="12px"
+                    android:src="@drawable/select_image_check_work_attendance_statistics"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/select_text_check_work_attendance_statistics"
+                    android:text="统计"
+                    android:layout_marginTop="8px"
+                    android:layout_below="@id/iv_static"
+                    android:textSize="22px"
+                    android:layout_centerHorizontal="true"/>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+</android.support.design.widget.CoordinatorLayout>

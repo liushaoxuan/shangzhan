@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:background="@color/colorCustomToolbar">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_back"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_height="30px"
+                    android:layout_width="30px"
+                    android:src="@mipmap/arrow_left"
+                    android:layout_marginLeft="24px"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:text="返回"
+                    android:layout_toRightOf="@id/iv_back"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="30px"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15px"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="注册信息"
+                android:textSize="36px"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_add"
+                    android:layout_width="82px"
+                    android:layout_height="82px"
+                    android:src="@mipmap/plus"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:padding="24px"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_delete"
+                    android:text="删除"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:paddingLeft="50px"
+                    android:textSize="30px"
+                    android:paddingTop="15px"
+                    android:paddingBottom="15px"
+                    android:paddingRight="15px"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_edit"
+                    android:text="编辑"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:paddingRight="24px"
+                    android:paddingLeft="15px"
+                    android:paddingTop="15px"
+                    android:textSize="30px"
+                    android:paddingBottom="15px"
+                    android:visibility="gone"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <ImageView
+                android:id="@+id/er_q"
+                android:layout_width="82px"
+                android:layout_height="82px"
+                android:src="@mipmap/er_q"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:padding="20px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

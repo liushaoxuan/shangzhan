@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/activity_oa_apply_leave_detail_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/activity_oa_apply_leave_detail_cuiban"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="催办"
+            android:textColor="@color/oa_cuiban_chexiao"
+            android:textSize="@dimen/px32" />
+
+
+        <TextView
+            android:id="@+id/activity_oa_apply_leave_detail_getback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="撤销"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px32" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/activity_oa_apply_leave_detail_bottom_view_arpoval"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:visibility="gone"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/activity_oa_apply_leave_detail_to_others"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="转交"
+            android:textColor="@color/oa_cuiban_chexiao"
+            android:textSize="@dimen/px32" />
+
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/color_dfebf1" />
+
+        <TextView
+            android:id="@+id/activity_oa_apply_leave_detail_to_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="驳回"
+            android:textColor="@color/oa_cuiban_chexiao"
+            android:textSize="@dimen/px32" />
+
+        <TextView
+            android:id="@+id/activity_oa_apply_leave_detail_agree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:textSize="@dimen/px32" />
+    </LinearLayout>
+</RelativeLayout>

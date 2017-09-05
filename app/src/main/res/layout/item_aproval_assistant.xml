@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_aproval_assistant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#EAEFF3">
+
+    <TextView
+        android:id="@+id/item_aproval_assistant_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/px30"
+        android:layout_marginTop="@dimen/px30"
+        android:textSize="@dimen/px24"
+        android:textColor="@color/black96"
+        android:text="2017-6-23 21:20"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px260"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginRight="@dimen/px24"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/px32"
+        android:paddingTop="@dimen/px28">
+
+        <ImageView
+            android:id="@+id/item_aproval_assistant_type_icon"
+            android:layout_width="@dimen/px98"
+            android:layout_height="@dimen/px98"
+            android:src="@mipmap/icon_arpoval_leave"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px36"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/item_aproval_assistant_sendby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black3"
+            android:text="林先生向您发送了一个【出差】申请"/>
+
+        <TextView
+            android:id="@+id/item_aproval_assistant_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px28"
+            android:textColor="@color/black_9FABB2"
+            android:layout_marginTop="@dimen/px30"
+            android:layout_below="@id/item_aproval_assistant_sendby"
+            android:text="出差时长：2天"/>
+
+        <TextView
+            android:id="@+id/item_aproval_assistant_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px28"
+            android:textColor="@color/black_9FABB2"
+            android:layout_marginTop="@dimen/px15"
+            android:layout_below="@id/item_aproval_assistant_times"
+            android:text="出差时间：2017.6.23"/>
+
+        <LinearLayout
+            android:id="@+id/item_aproval_assistant_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px14"
+            android:gravity="center_vertical">
+            
+            <View
+                android:layout_width="@dimen/px24"
+                android:layout_height="@dimen/px24"
+                android:background="@drawable/shadown_blue_point"
+                android:layout_marginRight="@dimen/px15"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:textColor="@color/black_9FABB2"
+                android:text="点击查看详情"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

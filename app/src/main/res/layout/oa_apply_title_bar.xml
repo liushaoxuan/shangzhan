@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:id="@+id/oa_aplly_title_bar"
+    android:background="@color/blue">
+
+    <LinearLayout
+        android:id="@+id/oa_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px32"
+            android:paddingLeft="@dimen/px24"
+            android:paddingRight="@dimen/px24"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/px20"
+                android:layout_height="@dimen/px32"
+                android:src="@mipmap/arrow_left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/px15"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/oa_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px36"
+        android:text="标题"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/px15"/>
+
+    <ImageView
+        android:id="@+id/oa_history"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:src="@mipmap/oa_history"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:padding="27px"/>
+</RelativeLayout>

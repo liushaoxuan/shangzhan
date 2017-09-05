@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/rect_white_top_cornes">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Reminder"
+            android:textColor="@color/txt_blue"
+            android:layout_marginTop="10dp"
+            android:id="@+id/dialog_RemoveBinding_Title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ReminderText"
+            android:padding="20dp"
+            android:id="@+id/dialog_RemoveBinding_Content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_300"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/rect_white_bottom_cornes">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Determine"
+            android:background="@drawable/btn_click_bgchange"
+            android:textColor="@color/txt_grey"
+            android:layout_margin="3dp"
+            android:padding="10dp"
+            android:id="@+id/dialog_RemoveBinding_Determine"/>
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/md_grey_300"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:textColor="@color/txt_blue"
+            android:background="@drawable/btn_click_bgchange"
+            android:layout_margin="3dp"
+            android:padding="10dp"
+            android:id="@+id/dialog_RemoveBinding_Cancel"/>
+    </LinearLayout>
+
+</LinearLayout>

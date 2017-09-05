@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">商栈·云办公</string>
+    <string name="test">测试</string>
+    <string name="sign_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="find_pwd">忘记密码</string>
+    <string name="settings_server">服务器设置</string>
+    <string name="msg_error_input">输入有误,请重新输入</string>
+    <string name="msg_sign_in_success">登录成功</string>
+    <string name="msg_sign_in_failed">登录失败</string>
+    <string name="msg_wait">敬请期待</string>
+    <string name="hint_sign_in_account">请输入手机号或邮箱</string>
+    <string name="hint_sign_in_pwd">请输入您的帐号密码</string>
+
+    <string name="tab_app">应用</string>
+    <string name="tab_communication">交流</string>
+    <string name="tab_work">工作</string>
+    <string name="tab_dynamic">动态</string>
+    <string name="tab_my">我的</string>
+
+    <string name="tab_choice">精选</string>
+    <string name="tab_common_use">常用</string>
+    <string name="tab_navi">导航</string>
+
+    <string name="tab_chat">聊天</string>
+    <string name="tab_organization">组织架构</string>
+    <string name="tab_contact">通讯录</string>
+
+    <string name="CRM">CRM</string>
+    <string name="stock">库存</string>
+    <string name="purchase">采购</string>
+    <string name="settingApp">设置常用应用</string>
+
+    <string name="notification">平台通知</string>
+    <string name="organz">部门管理</string>
+    <string name="user_manage">用户管理</string>
+    <string name="invite">邀请同事</string>
+    <string name="helper">讨论组助手</string>
+
+    <string name="search">搜索</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="close">关闭</string>
+    <string name="save">保存</string>
+    <string name="ok">确定</string>
+    <string name="no">取消</string>
+
+    <string name="show_more">查看详情</string>
+    <string name="update">更新内容</string>
+
+    <string name="organz_id">部门序号</string>
+    <string name="organz_name">部门</string>
+    <string name="organz_up">上级部门</string>
+    <string name="organz_tel">电话</string>
+    <string name="organz_fax">传真</string>
+    <string name="organz_addr">地址</string>
+    <string name="organz_edit">部门编辑</string>
+    <string name="organz_selector">部门选择</string>
+    <string name="organz_user_edit">用户编辑</string>
+    <string name="organz_user_role">角色选择</string>
+
+    <string name="user_phone">手机</string>
+    <string name="user_name">真实姓名</string>
+    <string name="user_organz">部门</string>
+    <string name="user_role">角色</string>
+    <string name="user_order">用户排序号</string>
+    <string name="user_sex">性别</string>
+
+    <string name="hint_input">请输入</string>
+    <string name="text_large">请检查您的互联网连接是否正常
+请检查所有网线是否都已连好，然后重新启动您可能正在使用的任何路由器、调制解调器或其他网络设备。</string>
+    <string name="text_short">窝游信息技术(上海)有限公司</string>
+    <string name="net_error">网络连接错误</string>
+    <string name="update_success">更新成功</string>
+    <string name="save_success">保存成功</string>
+    <string name="msg_dialog_delete">确认删除?</string>
+    <string name="txt_error">数据加载失败，请点击任意处重试\n:)</string>
+    <string name="txt_input_error">缺少必要的信息,请输入完整信息</string>
+
+
+    <string name="hint_input_your_name">请输入您的手机号</string>
+    <string name="hint_input_your_password">请输入您的账号密码</string>
+    <string name="text_lost_password">忘记密码</string>
+    <string name="text_set_service">服务器设置</string>
+    <string name="login">登  录</string>
+    <string name="sure">确定</string>
+    <string name="confirm">确  认</string>
+    <string name="register">注  册</string>
+    <string name="title_mine">我的</string>
+    <string name="title_release_comment">评论</string>
+    <string name="title_build_dynamic">新建动态</string>
+    <string name="title_edit_info">编辑资料</string>
+    <string name="release">发 布</string>
+    <string name="title_dynamic">动  态</string>
+    <string name="title_dynamic_detail">动态详情</string>
+    <string name="title_communicat">交  流</string>
+    <string name="creat_team">创建团队或公司</string>
+    <string name="title_register">加入团队</string>
+    <string name="title_lost_password">忘记密码</string>
+    <string name="title_set_server">设置服务器</string>
+    <string name="title_user_agreement">用户协议</string>
+    <string name="register_ruanrong">窝游信息技术（上海）有限公司</string>
+    <string name="register_ruanrong_trade">移动办公平台</string>
+    <string name="register_join_in">古天乐邀请您加入</string>
+    <string name="register_hint_username">请使用手机号码注册</string>
+    <string name="register_hint_company_name">请输入团队或公司的名称</string>
+    <string name="register_hint_set_pass">请设置您的账户密码</string>
+    <string name="Owned_industry">所属行业</string>
+    <string name="Local_area">所在地区</string>
+    <string name="register_hint_set_pass_again">请再次输入您的账户密码</string>
+    <string name="register_hint_get_key_code">请输入您收到的验证码</string>
+    <string name="register_hint_key_code">获取验证码</string>
+    <string name="set_server_describe">私有部署用户，可从管理员处获取私有地址。不填写则默认为i工作服务器。</string>
+    <string name="create_company_describe">请输入企业或团队名称，如果您暂时没有企业或团队，可以输入一个您喜欢的名字，如果您的同事已创建，请不要重复创建，由您的同事邀请您加入以创建的企业或团队</string>
+    <string name="security_verification">1.安全验证</string>
+    <string name="reset_password">2.重置密码</string>
+    <string name="next_step">下一步</string>
+    <string name="create_now">立即创建</string>
+    <string name="youhasredd">您已阅读并同意</string>
+    <string name="i_work_rules">i工作用户协议</string>
+    <string name="string_enterprise_circle">企业圈</string>
+
+
+    <string name="fragment_MyTitle">我的</string>
+    <string name="My_community">企业圈</string>
+    <string name="My_community_Remarks">快来拓展你的人脉吧</string>
+    <string name="My_data">我的资料</string>
+    <string name="My_footprint">我的足迹</string>
+    <string name="My_filecenter">手机文件中心</string>
+    <string name="My_invitation">邀请同事加入本企业</string>
+    <string name="My_wx">微信推荐朋友</string>
+    <string name="My_help">帮助中心</string>
+    <string name="My_setting">更多设置</string>
+
+    <string name="Other_Footprint">他人足迹</string>
+    <string name="HelpCenter_guide">应用指南</string>
+    <string name="HelpCenter_video">培训视频</string>
+    <string name="HelpCenter_price">价格购买</string>
+    <string name="HelpCenter_about">关于我们</string>
+    <string name="HelpCenter_feedback">意见反馈</string>
+    <string name="FootPrint_search">搜索</string>
+
+    <string name="Save">保存</string>
+    <string name="MyInformation">我的资料</string>
+    <string name="NickName">昵称</string>
+    <string name="Name">姓名</string>
+    <string name="Sex">性别</string>
+    <string name="Birthday">生日</string>
+    <string name="Department">部门</string>
+    <string name="Position">角色</string>
+    <string name="Phone">手机</string>
+    <string name="Mail">邮箱</string>
+    <string name="OfficePhone">办公电话</string>
+    <string name="PersonalSignature">个性签名</string>
+
+    <string name="TakePhoto">拍照</string>
+    <string name="FromPhotoAlbum">从相册中选取</string>
+    <string name="Cancel">取消</string>
+    <string name="Man">男</string>
+    <string name="Woman">女</string>
+    <string name="AllFootPrint">全部足迹</string>
+    <string name="DepartmentFootPrint">部门足迹</string>
+    <string name="PersonalFootPrint">个人足迹</string>
+
+    <string name="NavigationSet">导航设置</string>
+    <string name="ModifyPassword">修改密码</string>
+    <string name="RemoveBinding">解除企业绑定</string>
+    <string name="ClearCache">清除缓存</string>
+    <string name="About">关于我们</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="Cancellation">注销</string>
+    <string name="YourPosition">您当前的身份：</string>
+    <string name="Reminder">温馨提示</string>
+    <string name="ReminderText">\t\t您确定要解除企业绑定吗？</string>
+    <string name="Determine">确定</string>
+    <string name="AgainReminder">再次提醒</string>
+    <string name="AgainReminderText">您真的确定要解除企业绑定吗？</string>
+    <string name="AboutTitle">互联网移动云办公时代</string>
+    <string name="IWorkDescription">\t\ti工作致力于解决企业需求，提供一站式解决方案，功能可涵盖CRM、ERP、协同办公、人力资源、财务、BI商务智能等企业运营需要的功能模块、使企业从无数套软件且数据不可互联的泥潭中解放出来。</string>
+    <string name="WeiXinFriend">微信朋友</string>
+    <string name="FriendCircle">朋友圈</string>
+    <string name="MyIdCard">我的名片</string>
+    <string name="LastLoginTime">最后登录时间</string>
+    <string name="ContactInformation">联系方式</string>
+    <string name="Edit">编辑</string>
+    <string name="PersonalInformation">个人信息</string>
+    <string name="MobilePhone">移动电话</string>
+    <string name="Job">职位</string>
+    <string name="Wechat">微信</string>
+
+    <string name="EnterOriginalPassword">请输入您设置的原始密码</string>
+    <string name="EnterPassword">请设置您的账户密码</string>
+    <string name="EnterPasswordAgain">请再次输入您的账户密码</string>
+    <string name="Submit">提交</string>
+    <string name="MailList">通讯录</string>
+    <string name="FeedbackHint">\t\t您的建议是我们前进最大的动力</string>
+    <string name="Setting">设置</string>
+    <string name="TimeInterval">时间间隔</string>
+    <string name="SeeCompletedTack">查看已完成任务</string>
+    <string name="CompletedTack">完成任务</string>
+    <string name="TaskContentHint">请输入您对本次任务的详情描述</string>
+
+    <string name="tab_selected">精选</string>
+    <string name="tab_common">常用</string>
+    <string name="tab_navigation">导航</string>
+
+    <string name="my_dynamic">我的动态</string>
+    <string name="meeting_note">会议通知</string>
+    <string name="message_note">消息通知</string>
+    <string name="message">消息</string>
+    <string name="change_head_icon">更换头像</string>
+    <string name="company">公司</string>
+
+    <string name="tip_type_not_image">选择的不是图片</string>
+    <string name="tip_no_camera">没有相机</string>
+    <string name="tip_tips">提示</string>
+    <string name="tip_compress">正在压缩照片...</string>
+    <string name="tip_compress_failed">"%1$s 图片压缩失败:%2$s picturePath:%3$s"</string>
+    <string name="msg_crop_failed">"有裁切失败的图片"</string>
+    <string name="msg_compress_failed">"有压缩失败的图片"</string>
+    <string name="msg_crop_canceled">" 取消裁切"</string>
+    <string name="msg_operation_canceled">"操作被取消"</string>
+    <string name="tip_permission_camera">没有使用相机的权限，请在权限管理中开启</string>
+    <string name="tip_permission_storage">没有使用SD卡的权限，请在权限管理中开启</string>
+    <string name="tip_permission_camera_storage">没有使用相机和SD卡的权限，请在权限管理中开启</string>
+
+    <!--custom multipleimageselect -->
+    <string name="album_view">选择图片</string>
+    <string name="image_view">单击选择</string>
+
+    <string name="add">确定</string>
+    <string name="selected">已选</string>
+    <string name="limit_exceeded">最多能选 %d 张</string>
+
+
+    <string name="send_to_me">抄送我的</string>
+    <string name="my_lauched">我发起的</string>
+    <string name="my_aproval">我审批的</string>
+    <string name="waite_me_aproval">待我审批的</string>
+    <string name="me_aprovaled">我已审批的</string>
+    <string name="add_person">添加人员</string>
+    <string name="please_input">请输入</string>
+    <string name="task_assistant">任务助手</string>
+    <string name="schedule_assistant">日程通知</string>
+    <string name="notice_assistant">公告助手</string>
+    <string name="metting_assistant">会议通知</string>
+    <string name="approval_assistant">审批助手</string>
+    <string name="long_press_to_del">长按可进行删除</string>
+    <string name="no_task_notification">暂无任务通知</string>
+    <string name="no_notice_notification">暂无公告通知</string>
+    <string name="no_metting_notification">暂无会议通知</string>
+    <string name="no_aproval_notification">暂无审批信息</string>
+
+
+</resources>

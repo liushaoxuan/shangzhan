@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray03A9F4"
+            android:textSize="32px"
+            android:paddingLeft="24px"
+            android:paddingTop="33px"/>
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:paddingTop="36px"
+            android:hint="请输入"
+            android:textColor="@color/colorGray9FABB2"
+            android:textColorHint="@color/colorGray9FABB2"
+            android:paddingBottom="36px"
+            android:layout_alignParentRight="true"
+            android:paddingRight="24px"
+            android:background="@null"
+            android:layout_marginLeft="250px"
+            android:ellipsize="end"
+            android:lineSpacingExtra="10px"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line_c2cdd3"
+        android:layout_marginRight="24px"
+        android:layout_marginLeft="24px"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

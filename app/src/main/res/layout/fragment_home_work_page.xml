@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_home_work_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:text="商栈·云办公"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px36"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px300"
+            android:background="@color/blue"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/px65">
+
+            <TextView
+                android:id="@+id/home_work_current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px12"
+                android:text="14:24"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px60"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/home_work_current_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/px80"
+                    android:layout_marginTop="@dimen/px25"
+                    android:text="星期三"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px36" />
+
+                <TextView
+                    android:id="@+id/home_work_current_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px30"
+                    android:layout_marginTop="@dimen/px25"
+                    android:text="3月28日"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px36" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--下部分-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px185">
+
+            <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+                android:id="@+id/home_work_refreshview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px24"
+                android:layout_marginTop="@dimen/px190"
+                android:layout_marginRight="@dimen/px24">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_home_work_page_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px24"
+                android:layout_marginRight="@dimen/px24"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/fragment_home_work_page_four_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px220"
+                android:background="@drawable/white_corner_bg_20"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_work_page_fast_sign"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/px88"
+                        android:layout_height="@dimen/px88"
+                        android:src="@mipmap/home_work_sign" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20"
+                        android:text="快速签到"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_work_page_release_task"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/px88"
+                        android:layout_height="@dimen/px88"
+                        android:src="@mipmap/home_work_relase_task" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20"
+                        android:text="发布任务"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_work_page_aplly_aproval"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/px88"
+                        android:layout_height="@dimen/px88"
+                        android:src="@mipmap/home_work_aplly_aproval" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20"
+                        android:text="申请审批"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_work_page_build_schedule"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/px88"
+                        android:layout_height="@dimen/px88"
+                        android:src="@mipmap/home_work_schedule" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px20"
+                        android:text="新建日程"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/bg_ec"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:layout_marginRight="@dimen/px20"/>
+            </LinearLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

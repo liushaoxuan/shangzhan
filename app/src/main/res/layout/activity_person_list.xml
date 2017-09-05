@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/f4f9fc"
+    tools:context="com.wyu.iwork.view.activity.PersonListActivity">
+
+    <include layout="@layout/custom_back_toolbar" android:id="@+id/custom_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/activity_person_list_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/custom_toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginBottom="110px">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/activity_person_list_select"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:id="@+id/activity_person_list_et_select"
+                    android:layout_height="59px"
+                    android:layout_width="700px"
+                    android:background="@mipmap/search_kuang1"
+                    android:layout_marginTop="21px"
+                    android:layout_marginBottom="21px"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/search"
+                    android:paddingLeft="20px"
+                    android:gravity="center_vertical"
+                    android:hint="请输入姓名或手机号"
+                    android:drawablePadding="20px"
+                    android:textSize="30px"
+                    android:textColor="@color/colorGrayD1D1D1"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:id="@+id/person_view"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="@color/colorGrayECECEC"
+                android:layout_below="@id/activity_person_list_select"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_select_all"
+                android:layout_height="131px"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="23px"
+                android:layout_marginRight="32px"
+                android:layout_below="@id/person_view">
+
+                <TextView
+                    android:id="@+id/tv_select_all"
+                    android:layout_height="37px"
+                    android:layout_width="37px"
+                    android:background="@drawable/selector_schedule_person"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="全部成员"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorGray777777"
+                    android:textSize="30px"
+                    android:paddingLeft="30px"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/task_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="32px"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:layout_below="@id/ll_select_all"
+                />
+
+            <LinearLayout
+                android:id="@+id/contract_zanwu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:paddingTop="100px">
+
+                <ImageView
+                    android:layout_width="130px"
+                    android:layout_height="112px"
+                    android:src="@mipmap/no_contract"/>
+
+                <TextView
+                    android:paddingTop="32px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无相关联系人"
+                    android:textSize="30px"
+                    android:textColor="@color/colorGray9FABB2"/>
+
+            </LinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/home_contacts_listview"
+        android:layout_width="@dimen/px32"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="220px"
+        android:layout_marginBottom="100px"
+        android:divider="@color/white"
+        android:background="@color/white"
+        android:scrollbars="none"
+        />
+
+    <TextView
+        android:id="@+id/person_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="完成"
+        android:gravity="center"
+        android:padding="32px"
+        android:textSize="36px"
+        android:textColor="@color/white"
+        android:background="@color/color25b0ff"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

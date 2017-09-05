@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:visibility="gone"
+    android:foreground="@drawable/fg_ripple"
+    android:background="@color/app_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/txt_error"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="12sp" />
+
+</FrameLayout>

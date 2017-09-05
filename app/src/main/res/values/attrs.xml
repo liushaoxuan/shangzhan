@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyTabLayout">
+        <attr name="color_frame" format="color|reference"/>
+        <attr name="width_frame" format="float"/>
+        <attr name="radius" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="textsise" format="dimension"/>
+        <attr name="textcolor" format="color"/>
+        <attr name="text" format="string"/>
+
+
+        <attr name="src" format="reference"/>
+        <attr name="imagewith" format="dimension"/>
+        <attr name="imageheight" format="dimension"/>
+
+        <attr name="arrowsrc" format="reference"/>
+        <attr name="arrowwith" format="dimension"/>
+        <attr name="arrowheight" format="dimension"/>
+        <attr name="showarrow" format="boolean"/>
+
+        <attr name="showline" format="boolean"/>
+        <attr name="lineheight" format="dimension"/>
+        <attr name="linecolor" format="color"/>
+    </declare-styleable>
+    <attr name="alphaDivider" format="reference"/>
+    <attr name="alphaSize" format="dimension|reference"/>
+    <attr name="alphaMargin" format="dimension|reference"/>
+    <attr name="alphaColor" format="color|reference"/>
+
+    <declare-styleable name="MyRadioButton">
+
+        <attr name="drawableSize" format="dimension"/>
+        <attr name="drawableTop" format="reference"/>
+        <attr name="drawableLeft" format="reference"/>
+        <attr name="drawableRight" format="reference"/>
+        <attr name="drawableBottom" format="reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomeViewGroup">
+        <attr name="NameText" format="string"/>
+        <attr name="RightText" format="string"/>
+        <attr name="NameSize" format="dimension"/>
+        <attr name="NameColor" format="color"/>
+        <attr name="RightTextSize" format="dimension"/>
+        <attr name="RightTextColor" format="color"/>
+        <attr name="StarSize" format="dimension"/>
+        <attr name="StarColor" format="color"/>
+        <attr name="InputSize" format="dimension"/>
+        <attr name="InputColor" format="color"/>
+        <attr name="LineColor" format="color"/>
+        <attr name="ShowLine" format="boolean"/>
+        <attr name="ShowStar" format="boolean"/>
+        <attr name="showArrow" format="boolean"/>
+        <attr name="showInput" format="boolean"/>
+        <attr name="InputType" format="integer"/>
+    </declare-styleable>
+
+
+        <declare-styleable name="SideBar">
+            <attr name="scaleTime" format="integer"></attr>
+            <attr name="scaleItemCount" format="integer"></attr>
+        </declare-styleable>
+</resources>

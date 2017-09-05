@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_contract"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CrmContractActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/crm_contracy_refresh"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/crm_contract_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13px"
+                android:layout_marginRight="13px"
+                android:scrollbars="none"/>
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+        <include layout="@layout/layout_crm_zanwu"
+            android:id="@+id/crm_contract_zanwu"
+            android:visibility="gone"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="userInfo" ></dbname>
+
+    <version value="6" ></version>
+
+    <list>
+        <mapping class ="com.wyu.iwork.model.UserInfo"/>
+        <mapping class ="com.wyu.iwork.model.JpushIdModel"/>
+        <mapping class ="com.wyu.iwork.model.AssistantModel"/>
+        <mapping class ="com.wyu.iwork.model.ShareModel"/>
+    </list>
+</litepal>

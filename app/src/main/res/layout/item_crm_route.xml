@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="24px"
+        android:paddingTop="24px"
+        android:paddingRight="24px"
+        android:paddingBottom="20px"
+        >
+
+        <TextView
+            android:id="@+id/tv_route_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="01"
+            android:textSize="28px"
+            android:textColor="@color/colorGreen3CB3F1"
+            android:textStyle="bold"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="50px">
+
+            <TextView
+                android:id="@+id/tv_route_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="40px"
+                android:text=""
+                android:textSize="30px"
+                android:textColor="@color/colorGray333333"
+                android:paddingBottom="24px"
+                />
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_route_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="26px"
+                    android:textColor="@color/colorGray999999"
+                    />
+                <View
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGray999999"
+                    android:layout_marginRight="20px"
+                    android:layout_marginLeft="17px"/>
+
+                <TextView
+                    android:id="@+id/tv_route_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="26px"
+                    android:textColor="@color/colorGray999999"
+                    />
+
+                <View
+                    android:id="@+id/route_view"
+                    android:layout_width="3px"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorGray999999"
+                    android:layout_marginRight="20px"
+                    android:layout_marginLeft="17px"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_walking_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="26px"
+                    android:textColor="@color/colorGray999999"
+                    android:visibility="gone"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ImageView
+            android:layout_width="17px"
+            android:layout_height="29px"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/right"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGrayCACACA"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

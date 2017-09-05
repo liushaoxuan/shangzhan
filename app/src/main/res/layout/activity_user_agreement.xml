@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_agreement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.UserAgreementActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+
+        <LinearLayout
+            android:id="@+id/activity_user_agreement_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="@dimen/px24">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px35"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true" >
+            <ImageView
+                android:layout_width="@dimen/px20"
+                android:layout_height="@dimen/px32"
+                android:src="@mipmap/arrow_left"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/px15"
+                android:layout_centerVertical="true"
+                android:text="返回"/>
+        </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_10"
+            style="@style/AppTheme.TextAppearance.Toolbar.Title"
+            android:text="@string/user_agreement"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <WebView
+        android:id="@+id/activity_about_us_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

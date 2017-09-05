@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="540px"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner_bg_20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px50"
+
+            android:text="软件版本更新"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px34"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/dialog_upload_progress_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:progressDrawable="@drawable/down_load_pross"
+            android:progress="0"
+            android:max="100"
+            android:layout_height="@dimen/px5"
+            android:layout_marginLeft="@dimen/px60"
+            android:layout_marginRight="@dimen/px60"
+            android:layout_marginTop="@dimen/px48"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_marginTop="@dimen/px40"
+            android:background="#e0e0e0" />
+
+
+            <TextView
+                android:id="@+id/dialog_upload_progress_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px100"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/color25b0ff"
+                android:textSize="@dimen/px34" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

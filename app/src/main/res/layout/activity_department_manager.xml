@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_department_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.DepartmentManagerActivity">
+    <RelativeLayout
+        android:id="@+id/activity_department_manager_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+        <LinearLayout
+            android:id="@+id/activity_department_manager_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px24">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px40"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true" >
+                <ImageView
+                    android:layout_width="@dimen/px20"
+                    android:layout_height="@dimen/px32"
+                    android:src="@mipmap/arrow_left"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px30"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_centerVertical="true"
+                    android:text="返回"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            style="@style/AppTheme.TextAppearance.Toolbar.Title"
+            android:text="部门管理"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/activity_department_manager_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="新建"
+            android:padding="@dimen/px24"
+            android:background="@color/blue"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px32"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_department_manager_del_and_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/white">
+
+
+        <Button
+            android:id="@+id/accountactivity_department_manager_del"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:text="删除"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/px32"/>
+        <Button
+            android:id="@+id/activity_department_manager_edit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="编辑部门"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px32"/>
+
+
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_department_manager_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_department_manager_titlebar"
+        android:layout_above="@+id/activity_department_manager_del_and_edit"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.MVPMenberActivity">
+
+    <include layout="@layout/layout_erp_edit_title" />
+
+    <ScrollView
+        android:id="@+id/activity_mvpmenber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/activity_mvpmenber_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px400"
+                android:layout_marginLeft="@dimen/px40"
+                android:layout_marginRight="@dimen/px40"
+                android:layout_marginTop="@dimen/px40"
+                android:background="@mipmap/icon_vip_no_pass">
+
+
+                <TextView
+                    android:id="@+id/activity_mvpmenber_usefull_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px16"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:layout_marginTop="@dimen/px100"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px24" />
+
+
+                <TextView
+                    android:id="@+id/activity_mvpmenber_menberId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/px50"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:text="享受商栈服务特权"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px24" />
+
+                <TextView
+                    android:id="@+id/activity_mvpmenber_companyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/activity_mvpmenber_menberId"
+                    android:layout_marginBottom="@dimen/px16"
+                    android:layout_marginLeft="@dimen/px40"
+                    android:text="即刻点亮您的VIP"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px24" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px30"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="@dimen/px112"
+                    android:layout_height="@dimen/px2"
+                    android:background="@color/color_orange_f8b511" />
+
+
+                <View
+                    android:layout_width="@dimen/px14"
+                    android:layout_height="@dimen/px14"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginRight="@dimen/px15"
+                    android:background="@drawable/point_color_orange_f8b511" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="会员特权"
+                    android:textColor="@color/color_orange_f8b511"
+                    android:textSize="@dimen/px32" />
+
+                <View
+                    android:layout_width="@dimen/px14"
+                    android:layout_height="@dimen/px14"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_marginRight="@dimen/px15"
+                    android:background="@drawable/point_color_orange_f8b511" />
+
+                <View
+                    android:layout_width="@dimen/px112"
+                    android:layout_height="@dimen/px2"
+                    android:background="@color/color_orange_f8b511" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_mvpmenber_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px5" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/net_has_lost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_net_has_lost"/>
+    </LinearLayout>
+
+</LinearLayout>

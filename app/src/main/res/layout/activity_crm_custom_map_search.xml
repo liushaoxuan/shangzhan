@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_custom_map_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CrmCustomMapSearchActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:orientation="horizontal"
+        android:background="@color/colorCustomToolbar"
+        >
+        <EditText
+            android:id="@+id/custom_map_search"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_round_rectangle_4px"
+            android:textSize="30px"
+            android:textColor="@color/colorGray666666"
+            android:paddingTop="16px"
+            android:paddingBottom="16px"
+            android:layout_marginLeft="24px"
+            android:paddingRight="24px"
+            android:paddingLeft="24px"
+            android:layout_marginBottom="15px"
+            android:drawableLeft="@mipmap/black_search"
+            android:maxLines="1"
+            android:drawablePadding="26px"
+            android:hint="请输入搜索关键字"
+            />
+
+        <TextView
+            android:id="@+id/custom_map_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="取消"
+            android:textSize="30px"
+            android:textColor="@color/white"
+            android:paddingRight="27px"
+            android:paddingLeft="23px"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/custom_map_search_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:divider="@color/transparent"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/custom_map_search_zanwu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <ImageView
+                android:layout_width="224px"
+                android:layout_height="218px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="225px"
+                android:src="@mipmap/select_no"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抱歉，暂无搜索结果..."
+                android:textSize="28px"
+                android:textColor="@color/colorGray999999"
+                android:paddingTop="86px"
+                android:layout_gravity="center_horizontal"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

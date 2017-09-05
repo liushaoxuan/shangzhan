@@ -1,0 +1,468 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_height="match_parent"
+             tools:context="com.wyu.iwork.view.fragment.ClockStatisticsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="110px"
+                    android:background="@color/color25b0ff"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="700px"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/shadow_155459"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/static_avatar"
+                        android:layout_width="121px"
+                        android:layout_height="121px"
+                        android:layout_marginLeft="44px"
+                        android:layout_marginTop="40px"
+                        android:src="@mipmap/def_img_rect"/>
+
+                    <TextView
+                        android:id="@+id/static_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="32px"
+                        android:layout_toRightOf="@id/static_avatar"
+                        android:paddingTop="63px"
+                        android:paddingLeft="45px"
+                        android:textColor="@color/colorGray333333"
+                        />
+
+                    <TextView
+                        android:id="@+id/static_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/static_avatar"
+                        android:layout_below="@id/static_name"
+                        android:paddingLeft="45px"
+                        android:paddingTop="22px"
+                        android:textColor="@color/colorGray666666"
+                        android:textSize="24px"
+                        android:hint="未设置"
+                        android:layout_above="@+id/static_view"/>
+
+                    <TextView
+                        android:id="@+id/check_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_ffc74f_30px_top_left"
+                        android:layout_marginTop="75px"
+                        android:text="查看报表"
+                        android:textColor="@color/white"
+                        android:paddingBottom="16px"
+                        android:paddingTop="16px"
+                        android:paddingRight="18px"
+                        android:paddingLeft="34px"
+                        android:textSize="28px"
+                        android:drawableRight="@mipmap/static_right"
+                        android:drawablePadding="24px"/>
+
+                    <View
+                        android:id="@+id/static_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/colorGrayDAF4FF"
+                        android:layout_below="@id/static_avatar"
+                        android:layout_marginTop="40px"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@id/static_view"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center_horizontal"
+                        >
+
+                        <View
+                            android:layout_width="13px"
+                            android:layout_height="13px"
+                            android:background="@drawable/bg_ffc74f_30px"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/static_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="32px"
+                            android:textColor="@color/colorFFC74F"
+                            android:paddingLeft="53px"
+                            android:paddingRight="53px"
+                            android:paddingTop="23px"
+                            android:paddingBottom="23px"
+                            />
+                        <View
+                            android:layout_width="13px"
+                            android:layout_height="13px"
+                            android:background="@drawable/bg_ffc74f_30px"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_height="100px"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingLeft="23px"
+                android:paddingTop="55px"
+                android:paddingRight="23px">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期日"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期一"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期二"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期三"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期四"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期五"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="星期六"
+                    android:textSize="22px"
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.wyu.iwork.widget.MyGridView
+                android:id="@+id/check_in_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="7"
+                android:background="@color/white"
+                android:paddingBottom="50px"
+                android:paddingLeft="23px"
+                android:paddingRight="23px">
+
+            </com.wyu.iwork.widget.MyGridView>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="37px"
+                android:paddingLeft="23px"
+                android:paddingBottom="37px"
+                android:background="@color/colorf7fcff">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/static_detail_view"
+                            android:layout_width="7px"
+                            android:layout_height="29px"
+                            android:background="@color/colorFF704F"/>
+
+                        <TextView
+                            android:id="@+id/static_detail_title"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="迟到"
+                            android:textColor="@color/colorGray666666"
+                            android:paddingLeft="22px"
+                            android:textSize="30px"/>
+
+                        <TextView
+                            android:id="@+id/tv_late_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="104px"
+                            android:text="次"
+                            android:textSize="30px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorGray666666"/>
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px">
+
+                        <View
+                            android:layout_width="7px"
+                            android:layout_height="29px"
+                            android:background="@color/colorFF69A5"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="早退"
+                            android:textColor="@color/colorGray666666"
+                            android:paddingLeft="22px"
+                            android:textSize="30px"/>
+
+                        <TextView
+                            android:id="@+id/tv_leave_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="104px"
+                            android:text="次"
+                            android:textSize="30px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorGray666666"
+                            />
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px">
+
+                        <View
+                            android:layout_width="7px"
+                            android:layout_height="29px"
+                            android:background="@color/colorFFD43F"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="加班"
+                            android:textColor="@color/colorGray666666"
+                            android:paddingLeft="22px"
+                            android:textSize="30px"/>
+
+                        <TextView
+                            android:id="@+id/tv_over_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="104px"
+                            android:text="次"
+                            android:textSize="30px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorGray666666"/>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <View
+                            android:layout_width="7px"
+                            android:layout_height="29px"
+                            android:background="@color/color25b0ff"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="出差"
+                            android:textColor="@color/colorGray666666"
+                            android:paddingLeft="22px"
+                            android:textSize="30px"/>
+
+                        <TextView
+                            android:id="@+id/tv_out_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="104px"
+                            android:text="次"
+                            android:textSize="30px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorGray666666"
+                            android:layout_weight="0.02"/>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px">
+
+                        <View
+                            android:layout_width="7px"
+                            android:layout_height="29px"
+                            android:background="@color/color32CF74"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="请假"
+                            android:textColor="@color/colorGray666666"
+                            android:paddingLeft="22px"
+                            android:textSize="30px"/>
+
+                        <TextView
+                            android:id="@+id/tv_vacate_times"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="104px"
+                            android:text="次"
+                            android:textSize="30px"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorGray666666"/>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_height="55px"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingLeft="23px"
+                    android:gravity="center_vertical"
+                    android:text="迟到记录"
+                    android:textSize="26px"
+                    android:textColor="@color/colorGreen329FF5"
+                    />
+
+                <ListView
+                    android:id="@+id/check_in_late_listview"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="24px"
+                    android:layout_marginLeft="24px"
+                    android:layout_marginRight="24px"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorGrayD2D2D2"
+                    android:dividerHeight="1px"></ListView>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorGrayFAFAFA">
+
+                <TextView
+                    android:layout_height="55px"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingLeft="23px"
+                    android:gravity="center_vertical"
+                    android:text="早退记录"
+                    android:textSize="26px"
+                    android:textColor="@color/colorGreen329FF5"
+                    />
+
+                <ListView
+                    android:id="@+id/check_in_early_listview"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="24px"
+                    android:layout_marginLeft="24px"
+                    android:layout_marginRight="24px"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/colorGrayD2D2D2"
+                    android:dividerHeight="1px"></ListView>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

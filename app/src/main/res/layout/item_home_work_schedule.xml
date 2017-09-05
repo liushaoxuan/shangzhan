@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70px"
+    android:orientation="vertical">
+    <!--日程安排-->
+    <RelativeLayout
+        android:id="@+id/fragment_home_work_page_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner_bg_20">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/px24">
+            <ImageView
+                android:layout_width="@dimen/px36"
+                android:layout_height="@dimen/px36"
+                android:src="@mipmap/icon_home_page_schedule"
+                android:layout_marginLeft="@dimen/px24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日安排"
+                android:layout_marginLeft="@dimen/px30"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black83"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/item_home_work_schedule_recyclerview_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px100"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/item_home_work_schedule_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/px20"/>
+
+            <LinearLayout
+                android:id="@+id/item_home_work_schedule_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="350px"
+                android:visibility="gone">
+                <include layout="@layout/layout_nodata_2_0"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_home_work_schedule_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/px30"
+            android:textColor="@color/black_9FABB2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/item_home_work_schedule_recyclerview_"
+            android:padding="@dimen/px20"
+            android:text="添加日程"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="@color/bg_ec"
+            android:layout_above="@id/item_home_work_schedule_add" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

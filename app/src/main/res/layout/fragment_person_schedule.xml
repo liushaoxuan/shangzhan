@@ -1,0 +1,23 @@
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.wyu.iwork.view.fragment.PersonScheduleFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/schedule_person_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/schedule_notavaliable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350px"
+        >
+        <include layout="@layout/layout_list_notavailable"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

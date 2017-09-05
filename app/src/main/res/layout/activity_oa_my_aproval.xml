@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_oa_my_aproval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.oaMyAprovalActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/activity_oa_my_aproval_waite_me_aproval"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="@dimen/px90"
+            android:textSize="@dimen/px30"
+            android:textColor="@drawable/oa_aproval_text_blue_black3_selector"
+            android:text="@string/waite_me_aproval"/>
+
+        <TextView
+            android:id="@+id/activity_oa_my_aproval_me_aprovaled"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="@dimen/px90"
+            android:textColor="@drawable/oa_aproval_text_blue_black3_selector"
+            android:textSize="@dimen/px30"
+            android:text="@string/me_aprovaled"/>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_oa_my_aproval_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/px20"/>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="600px"
+              android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_15px_rect">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="470px"
+        android:background="@mipmap/dialog_failed"/>
+
+    <LinearLayout
+        android:id="@+id/sign_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_90px"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="430px">
+
+        <View
+            android:layout_width="14px"
+            android:layout_height="14px"
+            android:background="@drawable/bg_ff704f_30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27px"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打卡失败"
+            android:textSize="40px"
+            android:paddingTop="18px"
+            android:paddingBottom="18px"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:textColor="@color/colorFF704F"
+            />
+
+        <View
+            android:layout_width="14px"
+            android:layout_height="14px"
+            android:background="@drawable/bg_ff704f_30px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="27px"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/sign_success"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35px">
+
+        <TextView
+            android:id="@+id/hour_tenths"
+            style="@style/sign_succeed_text"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@+id/hour_units"
+            style="@style/sign_succeed_text"
+            android:text="0"
+            android:layout_marginLeft="10px"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11px"
+            android:layout_marginRight="11px">
+
+            <View
+                android:layout_width="7px"
+                android:layout_height="7px"
+                android:background="@drawable/bg_ffc80b_30px"/>
+
+            <View
+                android:layout_marginTop="18px"
+                android:layout_width="7px"
+                android:layout_height="7px"
+                android:background="@drawable/bg_ffc80b_30px"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/minutes_tenths"
+            style="@style/sign_succeed_text"
+            android:text="0"
+            android:layout_marginLeft="10px"
+            />
+
+        <TextView
+            android:id="@+id/minutes_units"
+            style="@style/sign_succeed_text"
+            android:text="0"
+            android:layout_marginLeft="10px"
+
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/sign_line"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:background="@drawable/line_c8c8c8"
+        android:layout_below="@id/sign_time"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"/>
+
+    <TextView
+        android:id="@+id/tv_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sign_line"
+        android:textColor="@color/color25B1FF"
+        android:gravity="center"
+        android:text="重新打卡"
+        android:textSize="36px"
+        android:paddingTop="34px"
+        android:paddingBottom="36px"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

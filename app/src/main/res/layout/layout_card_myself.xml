@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/mine_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_155459"
+        android:layout_marginRight="25px"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="40px"
+        android:paddingLeft="45px"
+        >
+
+        <TextView
+            android:id="@+id/mine_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textColor="@color/colorGray333333"
+            android:textStyle="bold"
+            android:text=""
+            android:paddingTop="43px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="140px"/>
+
+        <TextView
+            android:id="@+id/mine_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="公司信息未填写"
+            android:textColorHint="@color/colorGray9FABB2"
+            android:textColor="@color/color2097DB"
+            android:textSize="28px"
+            android:layout_below="@id/mine_name"
+            android:paddingTop="32px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="140px"/>
+
+        <TextView
+            android:id="@+id/mine_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="57px"
+            android:text=""
+            android:textSize="28px"
+            android:textColor="@color/colorGray333333"
+            android:layout_below="@id/mine_company"
+            android:layout_marginRight="125px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/mine_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="@color/colorGray333333"
+            android:text="工作邮箱："
+            android:paddingTop="25px"
+            android:paddingBottom="35px"
+            android:layout_below="@id/mine_telephone"/>
+
+        <TextView
+            android:id="@+id/mine_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28px"
+            android:textColor="@color/colorGray333333"
+            android:hint="未填写"
+            android:paddingTop="25px"
+            android:paddingBottom="35px"
+            android:layout_toRightOf="@id/mine_mail"
+            android:layout_below="@id/mine_telephone"
+            android:layout_marginRight="125px"
+            android:textColorHint="@color/colorGray9FABB2"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="101px"
+            android:layout_height="101px"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="32px"
+            android:layout_marginRight="32px">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/mine_avatar"
+                android:layout_width="101px"
+                android:layout_height="101px"
+                />
+
+            <TextView
+                android:id="@+id/civ_image"
+                android:layout_width="101px"
+                android:layout_height="101px"
+                android:background="@drawable/bg_rect_4fc9ff"
+                android:textSize="36px"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:src="@mipmap/image_edit"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/frame_layout"
+            android:layout_marginTop="73px"
+            android:paddingRight="58px"
+            android:paddingBottom="53px"
+            android:paddingTop="23px"
+            android:paddingLeft="18px"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</LinearLayout>

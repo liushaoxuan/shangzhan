@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10">
+
+    <RadioGroup
+        android:id="@+id/layout_tab_toolbar_applicat_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/tab_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:button="@null"
+        android:checked="true"
+        android:background="@drawable/bg_tab_toolbar_left"
+        android:text="@string/tab_selected"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/text_tab_toolbar"/>
+
+    <RadioButton
+        android:id="@+id/tab_common"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:button="@null"
+        android:background="@drawable/bg_tab_toolbar_middle"
+        android:text="@string/tab_common"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/text_tab_toolbar"/>
+
+    <RadioButton
+        android:id="@+id/tab_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_25"
+        android:button="@null"
+        android:background="@drawable/bg_tab_toolbar_right"
+        android:text="@string/tab_navigation"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:gravity="center"
+        android:textColor="@color/text_tab_toolbar"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fragment_applicat_zxing_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@mipmap/scan_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫一扫"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/txt_blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_applicat_watting_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="@dimen/dp_10"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_25"
+            android:src="@mipmap/watiing_do_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待办"
+            android:textSize="@dimen/sp_10"
+            android:textColor="@color/txt_blue"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+    </FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_potential_follow_select_custom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CrmPotentialFollowSelectCustomActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_crm_zanwu"
+                 android:visibility="gone"
+                 android:id="@+id/select_custom_zanwu"/>
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/select_custom_refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/select_custom_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="13px"
+                android:layout_marginLeft="13px">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

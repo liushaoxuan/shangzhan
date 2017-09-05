@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_out_sign_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorF4F9FC"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.OutSignSuccessActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="161px"
+                android:layout_height="161px"
+                android:src="@mipmap/sing_success"
+                android:layout_marginTop="145px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到成功"
+                android:textColor="@color/color25b0ff"
+                android:textSize="40px"
+                android:paddingTop="60px"
+                />
+
+            <View
+                android:layout_width="521px"
+                android:layout_height="1px"
+                android:background="@color/colorCBD6DD"
+                android:layout_marginTop="40px"/>
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09:46"
+                android:textSize="60px"
+                android:textColor="@color/colorGray333333"
+                android:paddingTop="120px"/>
+
+            <TextView
+                android:id="@+id/sign_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:textColor="@color/color25b0ff"
+                android:paddingTop="48px"
+                android:text="上海市江田东路185号9号楼202室"
+                />
+
+            <TextView
+                android:id="@+id/check_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_25b0ff_round_30px"
+                android:textSize="30px"
+                android:paddingBottom="22px"
+                android:paddingRight="80px"
+                android:paddingLeft="80px"
+                android:paddingTop="22px"
+                android:text="查看记录"
+                android:textColor="@color/color25b0ff"
+                android:layout_marginTop="140px"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

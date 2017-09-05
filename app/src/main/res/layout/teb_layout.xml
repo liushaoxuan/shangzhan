@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/bg_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px110"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:background="@color/white">
+        
+        <RelativeLayout
+            android:id="@+id/teb_app_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/teb_app_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应用"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/teb_text_color_selector"
+                android:textSize="@dimen/px24"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px4"/>
+            <ImageView
+                android:id="@+id/teb_app"
+                android:layout_width="@dimen/px48"
+                android:layout_height="@dimen/px48"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/teb_app_text"
+                android:layout_marginBottom="@dimen/px10"
+                android:src="@drawable/selector_tab_app"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/teb_communicte_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/teb_communicte_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通讯录"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/teb_text_color_selector"
+                android:textSize="@dimen/px24"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px4"
+                />
+            <ImageView
+                android:id="@+id/teb_communicte"
+                android:layout_width="@dimen/px48"
+                android:layout_height="@dimen/px48"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/teb_communicte_text"
+                android:layout_marginBottom="@dimen/px10"
+                android:src="@drawable/selector_teb_contacts"/>
+        </RelativeLayout>
+
+        <!---->
+
+        <RelativeLayout
+            android:id="@+id/teb_work_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/teb_work_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/teb_text_color_selector"
+                android:textSize="@dimen/px24"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px4"/>
+            <ImageView
+                android:id="@+id/teb_work"
+                android:layout_width="@dimen/px48"
+                android:layout_height="@dimen/px48"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/teb_work_text"
+                android:layout_marginBottom="@dimen/px10"
+                android:src="@drawable/selector_tab_work"/>
+        </RelativeLayout>
+
+
+
+        <!---->
+
+        <RelativeLayout
+            android:id="@+id/teb_dynamic_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/teb_dynamic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/teb_text_color_selector"
+                android:textSize="@dimen/px24"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px4"/>
+            <ImageView
+                android:id="@+id/teb_dynamic"
+                android:layout_width="@dimen/px48"
+                android:layout_height="@dimen/px48"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/teb_dynamic_text"
+                android:layout_marginBottom="@dimen/px10"
+                android:src="@drawable/selector_tab_communication"/>
+        </RelativeLayout>
+        <!---->
+
+        <RelativeLayout
+            android:id="@+id/teb_mine_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/teb_mine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/teb_text_color_selector"
+                android:textSize="@dimen/px24"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/px4"/>
+            <ImageView
+                android:id="@+id/teb_mine"
+                android:layout_width="@dimen/px48"
+                android:layout_height="@dimen/px48"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/teb_mine_text"
+                android:layout_marginBottom="@dimen/px10"
+                android:src="@drawable/selector_tab_my"/>
+        </RelativeLayout>
+        <!---->
+
+    </LinearLayout>
+
+</LinearLayout>

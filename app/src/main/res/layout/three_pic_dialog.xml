@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/three_pic_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:gravity="center"
+        android:text="文章顶部"
+        android:textColor="@color/black40"
+        android:textSize="@dimen/px34" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#474747" />
+
+    <TextView
+        android:id="@+id/three_pic_botoom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:gravity="center"
+        android:text="文章底部"
+        android:textColor="@color/black40"
+        android:textSize="@dimen/px34" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2"
+        android:background="#474747" />
+
+    <TextView
+        android:id="@+id/three_pic_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/black40"
+        android:textSize="@dimen/px34" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

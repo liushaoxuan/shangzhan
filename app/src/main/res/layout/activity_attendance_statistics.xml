@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_attendance_statistics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px1"
+    android:paddingRight="@dimen/px1"
+    tools:context="com.wyu.iwork.view.activity.AttendanceStatisticsActivity">
+
+
+    <include layout="@layout/layout_erp_edit_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px190">
+
+            <LinearLayout
+                android:layout_width="@dimen/px168"
+                android:layout_height="@dimen/px190"
+                android:background="#E5F0FF"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/px168"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="员工"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/px30"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="@dimen/px168"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px15"
+                    android:gravity="center"
+                    android:text="列表"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/px30"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px70">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="33px"
+                            android:layout_height="7px"
+                            android:background="#FFBC18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13px"
+                            android:text="天数"
+                            android:textColor="@color/black3"
+                            android:textSize="@dimen/px24" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="33px"
+                            android:layout_height="7px"
+                            android:background="#16C294" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13px"
+                            android:text="小时"
+                            android:textColor="@color/black3"
+                            android:textSize="@dimen/px24" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="33px"
+                            android:layout_height="7px"
+                            android:background="#03A9F4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="13px"
+                            android:text="次数"
+                            android:textColor="@color/black3"
+                            android:textSize="@dimen/px24" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="13px"
+                        android:layout_marginRight="@dimen/px30"
+                        android:gravity="center_vertical"
+                        android:text="( 单位 )"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px120">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#FFBC18"
+                        android:gravity="center"
+                        android:text="出勤"
+                        android:layout_marginRight="@dimen/px1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px1"
+                        android:layout_weight="1"
+                        android:background="#16C294"
+                        android:gravity="center"
+                        android:text="出差"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px1"
+                        android:layout_weight="1"
+                        android:background="#16C294"
+                        android:gravity="center"
+                        android:text="加班"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px1"
+                        android:layout_weight="1"
+                        android:background="#16C294"
+                        android:gravity="center"
+                        android:text="请假"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px1"
+                        android:layout_weight="1"
+                        android:background="#03A9F4"
+                        android:gravity="center"
+                        android:text="缺勤"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px1"
+                        android:layout_weight="1"
+                        android:background="#03A9F4"
+                        android:gravity="center"
+                        android:text="迟到"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px1"
+                        android:layout_weight="1"
+                        android:background="#03A9F4"
+                        android:gravity="center"
+                        android:text="早退"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px28" />
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_attendance_statistics_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

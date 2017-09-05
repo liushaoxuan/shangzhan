@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/px24"
+    android:paddingLeft="@dimen/px24"
+    android:background="@color/white"
+    android:paddingTop="@dimen/px30"
+    android:paddingBottom="@dimen/px30"
+    android:id="@+id/chil_item_home_work_task"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/chil_item_home_work_task_ring"
+        android:layout_width="@dimen/px36"
+        android:layout_height="@dimen/px36"
+        android:src="@drawable/blue_ring"/>
+
+    <TextView
+        android:id="@+id/chil_item_home_work_task_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textSize="@dimen/px30"
+        android:textColor="@color/black3"
+        android:layout_marginLeft="@dimen/px28"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/chil_item_home_work_task_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="@dimen/px24"
+        android:textColor="@color/blue"
+        android:paddingTop="@dimen/px8"
+        android:paddingBottom="@dimen/px8"
+        android:paddingLeft="@dimen/px20"
+        android:paddingRight="@dimen/px20"
+        android:layout_marginLeft="@dimen/px36"
+        android:background="@drawable/round_corner_blue_rect"
+        android:text=""/>
+
+</LinearLayout>

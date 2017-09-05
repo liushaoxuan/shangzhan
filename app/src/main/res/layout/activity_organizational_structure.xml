@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_organizational_structure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.OrganizationalStructureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+        <include layout="@layout/layout_my_title_bar"/>
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/px31">
+
+        <ImageView
+            android:id="@+id/activity_organizational_structure_company_image"
+            android:layout_width="@dimen/px49"
+            android:layout_height="@dimen/px49"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/home_organize_company"/>
+
+        <TextView
+            android:id="@+id/activity_organizational_structure_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black6"
+            android:textSize="@dimen/px30"
+             android:text="软融信息科技有限公司"
+            android:layout_marginLeft="@dimen/px36"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/bg_ec"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_organizational_structure_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

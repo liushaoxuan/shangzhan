@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyu.iwork.view.activity.EditCardActivity"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorCustomToolbar"
+        >
+
+        <TextView
+            android:id="@+id/tv_retake"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="返回"
+            android:drawableLeft="@mipmap/arrow_left"
+            android:drawablePadding="16px"
+            android:textSize="30px"
+            android:textColor="@color/white"
+            android:padding="24px"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="保存"
+            android:padding="24px"
+            android:textSize="30px"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="编辑名片"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="36px"
+            android:layout_centerVertical="true"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_scrollview"
+        android:layout_below="@id/rl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="309px"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_image"
+                    android:src="@mipmap/def_card"
+                    android:layout_height="309px"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <include layout="@layout/edit_card"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoRelativeLayout>

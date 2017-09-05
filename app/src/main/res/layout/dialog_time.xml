@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ly_myinfo_changedate"
+              android:gravity="bottom"
+              android:background="#B3000000"
+              >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ly_myinfo_changedate_child"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="100px"
+            android:layout_width="match_parent"
+            android:background="@color/colorGrayECECEC">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="取消"
+                android:textSize="36px"
+                android:textColor="@color/colorGray666666"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_sure"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="确定"
+                android:textSize="36px"
+                android:paddingRight="50px"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorGreen2EB1FF"
+                android:paddingLeft="50px"
+                android:gravity="center"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380px">
+
+            <View
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="@color/colorGrayDEDEDE"
+                android:layout_marginTop="140px"/>
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_height="1px"
+                android:layout_width="match_parent"
+                android:background="@color/colorGrayDEDEDE"
+                android:layout_marginBottom="140px"/>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="100dip"
+                android:layout_marginRight="100dip"
+                android:gravity="center_vertical">
+
+                <com.wyu.iwork.wheeldate.WheelView
+                    android:id="@+id/wv_date_hour"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <com.wyu.iwork.wheeldate.WheelView
+                    android:id="@+id/wv_date_min"
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

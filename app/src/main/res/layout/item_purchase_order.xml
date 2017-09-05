@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="237px"
+        android:orientation="vertical"
+        android:layout_marginTop="24px"
+        android:background="@drawable/two_round_side_white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/two_round_side_fa">
+            <TextView
+                android:id="@+id/item_pruchase_order_orderNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="采购单号：CGH1461055606000"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/px30"
+                android:paddingLeft="@dimen/px30"
+                android:textColor="@color/black6"/>
+
+            <ImageView
+                android:id="@+id/item_pruchase_order_checked_icon"
+                android:layout_width="@dimen/px40"
+                android:layout_height="@dimen/px40"
+                android:layout_marginRight="@dimen/px30"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/home_work_plain_icon"/>
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/bg_ec"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_pruchase_order_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="采购类型：办公用品"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/px30"
+            android:singleLine="true"
+            android:textSize="@dimen/px30"
+            android:paddingLeft="@dimen/px30"
+            android:textColor="@color/black6"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px30"
+            android:layout_marginBottom="@dimen/px30"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/px32"
+            android:layout_marginRight="@dimen/px40"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/item_pruchase_order_main_person"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="负责人：小王"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black6"/>
+
+
+            <TextView
+                android:id="@+id/item_pruchase_order_main_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017/04/26"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textSize="@dimen/px26"
+                android:textColor="@color/black9"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_pruchase_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px60"
+            android:textColor="@color/blue_45B9F5"
+            android:paddingRight="@dimen/px30"
+            android:paddingLeft="@dimen/px30"
+            android:paddingTop="@dimen/px5"
+            android:paddingBottom="@dimen/px5"
+            android:textSize="@dimen/px26"
+            android:visibility="gone"
+            android:background="@drawable/light_blue_round_corner_rect"
+            android:text="已审批"/>
+    </RelativeLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/item_pruchase_order_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:visibility="gone"/>
+</LinearLayout>

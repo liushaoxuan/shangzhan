@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color25b0ff"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="佣金总额（金豆）"
+            android:textSize="24px"
+            android:textColor="@color/white"
+            android:paddingTop="58px"
+            android:paddingLeft="47px"/>
+
+        <com.chaychan.viewlib.NumberRunningTextView
+            android:id="@+id/fortunella_venosa"
+            android:textSize="100px"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="56px"
+            android:paddingLeft="47px"
+            android:paddingBottom="100px"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGray6DCAFF"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorGreen3CB8FF">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30px"
+                android:paddingBottom="30px"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日最新收益(金豆)"
+                    android:textColor="@color/white"
+                    android:textSize="24px"
+                    />
+
+                <TextView
+                    android:id="@+id/today_earning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48px"
+                    android:textColor="@color/white"
+                    android:paddingTop="18px"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30px"
+                android:paddingBottom="30px"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="累计收益(金豆)"
+                    android:textColor="@color/white"
+                    android:textSize="24px"
+                    />
+
+                <TextView
+                    android:id="@+id/all_earning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="48px"
+                    android:textColor="@color/white"
+                    android:paddingTop="18px"
+                    />
+
+            </LinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <View
+                android:layout_width="100px"
+                android:layout_height="1px"
+                android:background="@color/colorFFD535"/>
+
+            <ImageView
+                android:layout_width="37px"
+                android:layout_height="37px"
+                android:src="@mipmap/ffd535_heart"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务列表"
+                android:layout_marginLeft="17px"
+                android:layout_marginRight="31px"
+                android:textColor="@color/colorFFD535"
+                android:textSize="30px"/>
+
+            <View
+                android:layout_width="100px"
+                android:layout_height="1px"
+                android:background="@color/colorFFD535"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</LinearLayout>

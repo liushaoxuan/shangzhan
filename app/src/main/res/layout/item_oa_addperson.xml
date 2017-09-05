@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/item_oa_addperson"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_ec"
+    android:orientation="vertical">
+
+ <TextView
+     android:id="@+id/item_oa_addperson_py"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/px60"
+     android:layout_marginTop="@dimen/px1"
+     android:background="@color/white"
+     android:textSize="@dimen/px30"
+     android:textColor="@color/black3"
+     android:gravity="center_vertical"
+     android:paddingLeft="@dimen/px34"
+     android:text=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="1px"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120">
+
+    <ImageView
+        android:id="@+id/item_oa_addperson_checked"
+        android:layout_width="@dimen/px37"
+        android:layout_height="@dimen/px37"
+        android:src="@drawable/oa_add_person_select_all"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px24"/>
+
+    <TextView
+        android:id="@+id/item_oa_addperson_userface"
+        android:layout_width="@dimen/px95"
+        android:layout_height="@dimen/px95"
+        android:textSize="@dimen/px36"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@mipmap/icon_blue_round"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px22"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/px20"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/item_oa_addperson_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/px30"
+            android:text="丁少博"
+            android:textColor="@color/black6"/>
+
+        <TextView
+            android:id="@+id/item_oa_addperson_derpartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px24"
+            android:text="设计部/产品经理"
+            android:layout_marginTop="@dimen/px15"
+            android:textColor="@color/black7"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

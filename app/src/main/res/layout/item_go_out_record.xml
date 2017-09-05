@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="24px">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_avatar"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="31px"
+            android:src="@mipmap/def_img_rect"/>
+
+        <TextView
+            android:id="@+id/record_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:textColor="@color/colorGray333333"
+            android:layout_toRightOf="@id/circle_avatar"
+            android:paddingTop="35px"
+            android:paddingLeft="33px"
+            />
+
+        <TextView
+            android:id="@+id/record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/record_name"
+            android:layout_toRightOf="@id/circle_avatar"
+            android:paddingLeft="33px"
+            android:textSize="24px"
+            android:textColor="@color/colorGray9FABB2"
+            android:paddingTop="15px"/>
+
+        <TextView
+            android:id="@+id/record_content"
+            android:layout_below="@id/circle_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="33px"
+            android:paddingRight="36px"
+            android:paddingTop="20px"
+            android:textSize="30px"
+            android:lineSpacingExtra="10px"
+            android:maxLines="4"
+            android:ellipsize="end"
+            android:textColor="@color/colorGray666666"
+        />
+        <ImageView
+            android:id="@+id/record_image"
+            android:layout_width="400px"
+            android:layout_height="260px"
+            android:scaleType="center"
+            android:layout_below="@id/record_content"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="23px"
+            android:src="@mipmap/def_record"
+            />
+
+        <TextView
+            android:id="@+id/record_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31px"
+            android:layout_marginRight="318px"
+            android:layout_below="@id/record_image"
+            android:background="@color/white_f3"
+            android:hint="该记录定位失败"
+            android:textSize="24px"
+            android:textColor="@color/colorGray9FABB2"
+            android:paddingTop="14px"
+            android:paddingBottom="12px"
+            android:paddingLeft="15px"
+            android:paddingRight="28px"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:drawablePadding="10px"
+            android:drawableLeft="@mipmap/my_location"
+            android:layout_marginTop="19px"
+            android:layout_marginBottom="17px"
+            />
+
+        <View
+            android:background="@color/colorGrayE8E8E8"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            />
+
+        <View
+            android:background="@color/colorGrayE8E8E8"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/record_location"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</LinearLayout>

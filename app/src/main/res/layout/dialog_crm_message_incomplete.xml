@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="540px"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_white_round_rectangle">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您的客户信息未填充完整\n请完成填写并提交"
+        android:gravity="center"
+        android:textSize="32px"
+        android:textColor="@color/colorGray666666"
+        android:paddingTop="75px"
+        android:paddingBottom="60px"
+        android:lineSpacingExtra="24px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorGrayC8C8C8"/>
+
+    <TextView
+        android:id="@+id/dialog_crm_message_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:gravity="center"
+        android:padding="28px"
+        android:textSize="36px"
+        android:textColor="@color/colorCustomToolbar"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ad_task_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.AdTaskDetailActivity">
+
+    <include layout="@layout/layout_erp_edit_title" />
+
+    <ProgressBar
+        android:id="@+id/activity_ad_task_detail_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px10"
+        android:progressDrawable="@drawable/progress_line_color"
+        android:max="100"
+        android:progress="0" />
+
+    <WebView
+        android:id="@+id/activity_ad_task_detail_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

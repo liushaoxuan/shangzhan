@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:paddingLeft="19px"
+    android:id="@+id/item_task_image_delte">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_height="48px"
+        android:layout_width="48px"
+        android:src="@mipmap/def_img_rect"
+        android:layout_marginTop="9px"/>
+
+    <ImageView
+        android:id="@+id/iv_delet"
+        android:layout_width="18px"
+        android:layout_height="18px"
+        android:src="@mipmap/delet"
+        android:layout_marginLeft="38px"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

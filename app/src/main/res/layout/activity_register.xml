@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/f4f9fc"
+    tools:context="com.wyu.iwork.view.activity.RegisterActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px18"
+            android:textColor="#9FACB2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px16"
+            android:text="继续完善个人信息"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#E0EBF1"/>
+
+
+    <!--密码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px96"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px10"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px30"
+            android:textColor="@color/black3"
+            android:layout_marginLeft="@dimen/px40"
+            android:text="姓名"/>
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="@dimen/px48"
+            android:layout_marginLeft="@dimen/px40"
+            android:background="#E0EBF1"/>
+
+        <EditText
+            android:id="@+id/activity_register_real_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/px48"
+            android:background="@null"
+            android:hint="请输入您的真实姓名"
+            android:gravity="center_vertical"
+            android:textColor="@color/black6"
+            android:textSize="@dimen/px30" />
+
+        <ImageView
+            android:id="@+id/activity_register_del_name"
+            android:layout_width="76px"
+            android:layout_height="76px"
+            android:padding="23px"
+            android:visibility="invisible"
+            android:src="@mipmap/sign_in_del" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#E0EBF1"/>
+    <LinearLayout
+        android:id="@+id/only_for_findpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px96"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black3"
+                android:layout_marginLeft="@dimen/px40"
+                android:text="密码"/>
+
+            <View
+                android:layout_width="@dimen/px1"
+                android:layout_height="@dimen/px48"
+                android:layout_marginLeft="@dimen/px40"
+                android:background="#E0EBF1"/>
+            <EditText
+                android:id="@+id/activity_register_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/px48"
+                android:background="@null"
+                android:hint="密码必须为6-20位的数字或字母"
+                android:inputType="textPassword"
+                android:gravity="center_vertical"
+                android:textColor="@color/black6"
+                android:maxLength="20"
+                android:textSize="@dimen/px30" />
+
+            <ImageView
+                android:id="@+id/activity_register_password_del"
+                android:layout_width="76px"
+                android:layout_height="76px"
+                android:padding="23px"
+                android:visibility="invisible"
+                android:src="@mipmap/sign_in_del" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#E0EBF1"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/only_for_register"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="49px"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/activity_register_user_ruls"
+            android:layout_width="@dimen/px36"
+            android:layout_height="@dimen/px36"
+            android:layout_marginRight="@dimen/px35"
+            android:background="@drawable/user_rules_selector" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="点击“完成注册”表示您同意"
+            android:textSize="28px"
+            android:textColor="@color/colorGrayB1B1B1"/>
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="《用户协议》"
+            android:textSize="28px"
+            android:textColor="@color/blue_3eaaff"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <TextView
+        android:id="@+id/activity_register_submit"
+        android:layout_height="@dimen/px88"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100px"
+        android:background="@drawable/bg_login_selector"
+        android:text="提交" 
+        android:textColor="@color/white"
+        android:textSize="36px"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="28px"
+        android:gravity="center"/>
+</com.zhy.autolayout.AutoLinearLayout>

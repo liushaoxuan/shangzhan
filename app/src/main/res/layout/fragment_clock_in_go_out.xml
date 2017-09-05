@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="64px"
+                android:layout_height="77px"
+                android:src="@mipmap/location_goout"
+                android:layout_marginTop="110px"/>
+
+            <TextView
+                android:id="@+id/location_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:textColor="@color/color25b0ff"
+                android:paddingTop="30px"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color25b0ff"
+                android:paddingTop="24px"
+                android:textSize="30px"
+                />
+
+            <TextView
+                android:id="@+id/relocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新定位"
+                android:textColor="@color/color25b0ff"
+                android:background="@drawable/bg_25b0ff_round_30px"
+                android:paddingTop="10px"
+                android:paddingBottom="10px"
+                android:paddingLeft="24px"
+                android:paddingRight="24px"
+                android:layout_marginTop="47px"/>
+
+            <TextView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60px"
+                android:textColor="@color/colorGray333333"
+                android:text=""
+                android:paddingTop="170px"/>
+
+            <TextView
+                android:id="@+id/time_weekend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:textColor="@color/colorGreen03A9F4"
+                android:text=""
+                android:paddingTop="72px"/>
+
+            <TextView
+                android:id="@+id/go_out_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_25b0ff_30px"
+                android:text="外出签到"
+                android:textColor="@color/white"
+                android:textSize="36px"
+                android:layout_marginTop="109px"
+                android:paddingTop="28px"
+                android:paddingBottom="28px"
+                android:paddingRight="140px"
+                android:paddingLeft="140px"
+                android:layout_marginBottom="120px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

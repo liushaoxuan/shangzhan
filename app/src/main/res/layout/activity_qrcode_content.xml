@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_qrcode_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyu.iwork.view.activity.QRCodeContentActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+    <TextView
+        android:id="@+id/activity_qrcode_content_textview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:lineSpacingExtra="10px"
+        android:textSize="36px"
+        android:textColor="@color/colorGray585858"
+        android:text=""/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

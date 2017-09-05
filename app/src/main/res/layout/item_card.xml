@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="208px"
+        android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_height="150px"
+        android:layout_width="270px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/def_card"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/iv_card"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="18px"
+        android:text=""
+        android:textSize="30px"
+        android:textColor="@color/colorGray333333"/>
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/iv_card"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="20px"
+        android:text=""
+        android:textColor="@color/colorGray787878"
+        android:textSize="24px"
+        />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/iv_card"
+        android:layout_below="@id/tv_position"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="18px"
+        android:text=""
+        android:textSize="24px"
+        android:textColor="@color/colorGray787878"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:paddingTop="35px"
+              android:paddingLeft="30px"
+    >
+
+    <TextView
+        android:id="@+id/process_check"
+        android:layout_width="32px"
+        android:layout_height="23px"
+        android:background="@drawable/selector_process"
+        android:layout_marginBottom="37px"
+        android:layout_marginTop="2px"/>
+
+    <TextView
+        android:id="@+id/select_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证客户"
+        android:textSize="28px"
+        android:textColor="@color/colorGray666666"
+        android:layout_toRightOf="@id/process_check"
+        android:paddingLeft="27px"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="60px"
+        android:layout_below="@id/process_check"
+        android:background="@color/colorGrayECECEC"/>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

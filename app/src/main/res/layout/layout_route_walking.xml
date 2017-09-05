@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:paddingLeft="36px"
+              android:paddingRight="36px"
+              android:paddingTop="35px"
+              android:paddingBottom="35px">
+
+        <ImageView
+            android:layout_width="24px"
+            android:layout_height="35px"
+            android:src="@mipmap/item_walking"
+            android:layout_gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/route_textview"
+        android:paddingLeft="35px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text=""
+        android:textSize="28px"
+        android:textColor="@color/colorGray333333"
+        android:lineSpacingExtra="10px"/>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

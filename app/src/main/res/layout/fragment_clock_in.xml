@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 头部布局 -->
+            <include layout="@layout/layout_checking_header" android:id="@+id/clock_header"/>
+
+            <include layout="@layout/layout_bottom_line"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:textColor="@color/colorGray9FABB2"
+                android:text="打卡记录时间和位置"
+                android:paddingTop="30px"
+                android:paddingBottom="30px"
+                android:paddingLeft="36px"
+                />
+            <include layout="@layout/layout_bottom_line"/>
+
+            <!-- 打卡部分 -->
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!-- 打卡布局 -->
+                <include layout="@layout/layout_checking_body" android:id="@+id/clock_content_show"/>
+
+                <!-- 不打卡布局（周末） -->
+                <!--
+                <include layout="@layout/layout_checking_weekend" android:id="@+id/clock_weekend" android:visibility="gone"/>
+-->
+                <!-- 查询  无数据 -->
+                <include layout="@layout/layout_checking_nodata" android:id="@+id/clock_nodata"/>
+            </com.zhy.autolayout.AutoFrameLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:id="@+id/fl_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_rest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="工作了一天，该好好休息一下了"
+                    android:textColor="@color/colorGray666666"
+                    android:textSize="30px"
+                    android:layout_marginTop="200px"
+                    android:visibility="gone"/>
+
+                <include layout="@layout/layout_checking_operation" android:id="@+id/clock_operation"/>
+
+
+            </com.zhy.autolayout.AutoFrameLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

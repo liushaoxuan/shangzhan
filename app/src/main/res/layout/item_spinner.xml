@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/item_spinner_textView"
+        android:layout_width="match_parent"
+        android:layout_height="59px"
+        android:textSize="@dimen/px28"
+        android:paddingLeft="@dimen/px28"
+        android:paddingRight="@dimen/px50"
+        android:gravity="center_vertical"
+        android:textColor="@color/black6"
+        android:text="无"/>
+</LinearLayout>

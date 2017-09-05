@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                                     android:background="@color/white">
+
+    <include layout="@layout/layout_bottom_line" android:id="@+id/line_top"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="89px"
+        >
+
+        <ImageView
+            android:id="@+id/add_icon"
+            android:layout_width="27px"
+            android:layout_height="27px"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/card_add"
+            android:layout_marginLeft="35px"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/add_icon"
+            android:layout_centerVertical="true"
+            android:paddingLeft="37px"
+            android:text="添加联系电话"
+            android:textSize="32px"
+            android:textColor="@color/color25b0ff"
+            />
+
+        <ImageView
+            android:id="@+id/iv_dismiss"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="28px"
+            android:src="@mipmap/card_delete"
+            android:visibility="gone"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/rl_body"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_bottom_line"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/body_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信"
+                android:textSize="32px"
+                android:textColor="@color/color25b0ff"
+                android:paddingLeft="37px"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/body_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入"
+                android:textColorHint="@color/colorGray9FABB2"
+                android:textColor="@color/color4D7186"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="250px"
+                android:paddingRight="25px"
+                android:textSize="30px"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:gravity="right"
+                android:background="@null"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <include layout="@layout/layout_bottom_line" android:id="@+id/line_bottom"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_home_message_my_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px130"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/px32"
+        android:paddingRight="@dimen/px24">
+
+        <ImageView
+            android:layout_width="@dimen/px90"
+            android:layout_height="@dimen/px90"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/dongtai_420" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px120"
+            android:text="@string/my_dynamic"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/px30"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="@dimen/px17"
+            android:layout_height="@dimen/px30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right_arow" />
+
+        <RelativeLayout
+            android:layout_width="76px"
+            android:layout_height="76px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px44">
+
+            <ImageView
+                android:id="@+id/home_message_fragment_my_head"
+                android:layout_width="@dimen/px71"
+                android:layout_height="@dimen/px71"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/head_icon_nodata" />
+
+            <ImageView
+                android:id="@+id/fragment_home_message_has_dynamic"
+                android:layout_width="@dimen/px20"
+                android:layout_height="@dimen/px20"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@mipmap/red" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <!--会议通知-->
+    <RelativeLayout
+        android:id="@+id/fragment_home_message_meetting_note"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px130"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px1"
+        android:layout_marginBottom="@dimen/px20"
+        android:paddingLeft="@dimen/px32"
+        android:paddingRight="@dimen/px24">
+
+        <ImageView
+            android:layout_width="@dimen/px90"
+            android:layout_height="@dimen/px90"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/tongzhi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px120"
+            android:text="@string/message_note"
+            android:textColor="@color/black3"
+            android:textSize="@dimen/px30"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="@dimen/px17"
+            android:layout_height="@dimen/px30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/right_arow" />
+
+    </RelativeLayout>
+</LinearLayout>

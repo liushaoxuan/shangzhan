@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_oa_reimbursement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.oaReimbursementActivity">
+
+    <include layout="@layout/oa_apply_title_bar" android:id="@+id/activity_oa_reimbursement_titlebar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_oa_reimbursement_titlebar"
+        android:layout_marginBottom="@dimen/px100"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_ec">
+            <include layout="@layout/layout_oa_prompt"/>
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_oa_reimbursement_apply_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="报销类型"
+                app:RightTextSize="@dimen/px30"
+                app:ShowLine="false"
+                app:NameSize="@dimen/px32"
+                app:NameColor="@color/black41"
+                app:RightTextColor="@color/black9"
+                app:StarColor="@color/text_red"
+                app:StarSize="@dimen/px30"
+                app:RightText="请选择"/>
+ 
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/px24"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/oa_apply_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px32"
+                        android:textColor="@color/black3"
+                        android:layout_marginLeft="@dimen/px24"
+                        android:text="报销事由"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px36"
+                        android:layout_marginTop="@dimen/px2"
+                        android:textColor="@color/text_red"
+                        android:layout_marginLeft="@dimen/px2"
+                        android:text="*"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/activity_oa_reimbursement_apply_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px185"
+                    android:layout_marginLeft="@dimen/px30"
+                    android:hint="请输入报销事由(60字以内)"
+                    android:maxLength="60"
+                    android:paddingTop="@dimen/px10"
+                    android:gravity="top"
+                    android:textSize="@dimen/px30"
+                    android:textColor="@color/black6"
+                    android:layout_marginRight="@dimen/px30"
+                    android:background="@null"
+                    android:layout_marginBottom="@dimen/px26"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_oa_reimbursement_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/px24"
+                android:paddingRight="@dimen/px26"
+                android:paddingLeft="@dimen/px24">
+
+                <TextView
+                    android:id="@+id/activity_oa_reimbursement_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:text="0.00元"
+                    android:textColor="@color/oa_cuiban_chexiao"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/px32"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总金额"
+                    android:textColor="@color/black9"
+                    android:layout_marginRight="@dimen/px55"
+                    android:layout_toLeftOf="@id/activity_oa_reimbursement_total"
+                    android:textSize="@dimen/px28"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/layout_oa_chose_person"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/oa_apply_commit_activity_oa_reimbursement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/blue"
+        android:text="提交"
+        android:layout_marginTop="@dimen/px90"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/px36"
+        android:textColor="@color/white" />
+</RelativeLayout>

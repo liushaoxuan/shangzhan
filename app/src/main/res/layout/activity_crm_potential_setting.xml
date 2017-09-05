@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_potential_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CrmPotentialSettingActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间设置："
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray414141"
+                    android:paddingTop="34px"
+                    android:paddingBottom="34px"
+                    android:paddingLeft="27px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="列出超过"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray666666"
+                    />
+
+                <EditText
+                    android:id="@+id/tv_activity_crm_potential_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="32px"
+                    android:textCursorDrawable="@color/colorGray999999"
+                    android:digits="1234567890."
+                    android:textColor="@color/colorGray666666"
+                    android:gravity="center_horizontal"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天未跟进的潜在客户"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray666666"
+                    android:paddingRight="30px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注："
+                android:textSize="30px"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="25px"
+                android:paddingTop="36px"
+                android:paddingBottom="36px"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="27px"
+                android:paddingRight="41px"
+                android:lineSpacingExtra="18px"
+                android:textSize="30px"
+                android:textColor="@color/colorRedEB3131"
+                android:text="1.没有跟进的潜在客户，当创建时间超过设置的天数 以后，则会显示在潜在客户公海中"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="35px"
+                android:paddingLeft="27px"
+                android:paddingRight="41px"
+                android:lineSpacingExtra="18px"
+                android:textSize="30px"
+                android:textColor="@color/colorRedEB3131"
+                android:text="2.有跟进的潜在客户，当最后一次潜在客户跟进时间 超过设置的天数之后，则会在潜在客户公海中显示"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_oa_transfer_apply"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.oaTransferApplyActivity">
+
+    <include layout="@layout/oa_apply_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px30"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px32"
+                    android:textColor="@color/black41"
+                    android:layout_marginLeft="@dimen/px24"
+                    android:text="转交人"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px36"
+                    android:layout_marginTop="@dimen/px2"
+                    android:textColor="@color/text_red"
+                    android:layout_marginLeft="@dimen/px2"
+                    android:text="*"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(点击头像可以删除)"
+                    android:textSize="@dimen/px24"
+                    android:textColor="@color/black_9FABB2"
+                    android:layout_marginLeft="@dimen/px15"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px45"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="118px"
+            android:layout_height="118px"
+
+            android:layout_marginTop="@dimen/px30">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_oa_transfer_apply_transfer"
+                android:layout_width="118px"
+                android:layout_height="118px"
+                android:layout_margin="9px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/oa_plus"/>
+            <ImageView
+                android:id="@+id/activity_oa_transfer_apply_del"
+                android:layout_width="@dimen/px36"
+                android:layout_height="@dimen/px36"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:src="@mipmap/oa_delete"/>
+
+        </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加人员"
+        android:textSize="@dimen/px24"
+        android:layout_marginTop="@dimen/px10"
+        android:textColor="@color/black_9FABB2"
+        android:layout_marginBottom="@dimen/px10"/>
+    </LinearLayout>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/activity_oa_transfer_apply_isure"
+        android:layout_width="match_parent"
+        android:layout_height="222px"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px25"
+        android:visibility="gone"
+        android:paddingTop="@dimen/px22"
+        android:paddingBottom="@dimen/px22"
+        android:paddingRight="@dimen/px24"
+        android:paddingLeft="@dimen/px24"
+        android:maxLength="60"
+        android:textSize="@dimen/px30"
+        android:hint="请填写意见（可选项，60字以内）"
+        android:textColorHint="@color/black9"
+        android:textColor="@color/black6"
+        android:gravity="top"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/activity_oa_transfer_apply_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:text="提交"
+            android:textColor="@color/blue"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/px36"
+            android:layout_marginTop="@dimen/px100"
+            android:background="@color/white"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

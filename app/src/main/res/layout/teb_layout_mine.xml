@@ -1,0 +1,26 @@
+<com.zhy.autolayout.AutoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorCustomToolbar">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:paddingLeft="32px">
+
+        <TextView
+            android:text="我的"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            android:textSize="36px"
+            android:textColor="@color/white"
+            />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sales_order_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.SalesOrderDetailActivity">
+
+
+    <include layout="@layout/layout_erp_edit_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_ec"
+            android:paddingBottom="160px"
+            android:orientation="vertical">
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_orderNum"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px24"
+                app:showArrow="false"
+                app:NameText="订单编号"
+                app:ShowStar="false"
+                app:RightTextColor="@color/black3"
+                app:RightText="123456789SAASD"
+                app:StarColor="#FF0000" />
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_CustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px24"
+                app:NameText="客户名称"
+                app:RightText="请选择"
+                app:RightTextColor="@color/black3"
+                app:StarColor="#FF0000" />
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_goodsName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="商品名称"
+                app:RightText="请选择"
+                app:RightTextColor="@color/black3"
+                app:StarColor="#FF0000" />
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_goodsPrise"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="商品价格"
+                app:ShowStar="false"
+                app:RightTextColor="@color/black3"
+                app:showArrow="false"
+                app:StarColor="#FFFFFF"
+                app:showInput="false" />
+            <!--商品数量开始-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1">
+                <com.wyu.iwork.widget.CustomeViewGroup
+                    android:id="@+id/activity_sales_order_detail_order_salegoodsNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px97"
+                    android:layout_marginTop="@dimen/px1"
+                    app:NameText="商品数量"
+                    app:RightText="请选择"
+                    app:StarColor="#FF0000" />
+
+            <LinearLayout
+                android:id="@+id/activity_sales_order_detail_order_salegoodsNum_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px24"
+                android:paddingRight="@dimen/px24">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品数量"
+                    android:textColor="@color/black41"
+                    android:textSize="@dimen/px32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#FF0000"
+                    android:textSize="@dimen/px36" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical">
+
+                    <ImageView
+                        android:id="@+id/activity_sales_order_detail_order_reduce"
+                        android:layout_width="@dimen/px65"
+                        android:layout_height="@dimen/px65"
+                        android:layout_marginRight="@dimen/px4"
+                        android:padding="@dimen/px10"
+                        android:src="@drawable/order_reduce_icon" />
+
+                    <EditText
+                        android:id="@+id/activity_sales_order_detail_order_goodsNum"
+                        android:layout_width="140px"
+                        android:layout_height="52px"
+                        android:background="@drawable/shape_rect_color_da_side"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px32" />
+
+                    <ImageView
+                        android:id="@+id/activity_sales_order_detail_order_add"
+                        android:layout_width="@dimen/px65"
+                        android:layout_height="@dimen/px65"
+                        android:layout_marginLeft="@dimen/px4"
+                        android:padding="@dimen/px10"
+                        android:src="@drawable/order_add_icon" />
+                </LinearLayout>
+            </LinearLayout>
+            </RelativeLayout>
+            <!--商品数量结束-->
+
+            <!--折扣开始-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1">
+                <com.wyu.iwork.widget.CustomeViewGroup
+                    android:id="@+id/activity_sales_order_detail_order_salegoodszhekou"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px97"
+                    android:layout_marginTop="@dimen/px1"
+                    app:NameText="折扣"
+                    app:RightText="请选择"
+                    app:RightTextColor="@color/black3"
+                    app:StarColor="#FF0000" />
+
+            <LinearLayout
+                android:id="@+id/activity_sales_order_detail_order_salegoodszhekou_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px24"
+                android:paddingRight="@dimen/px24">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="折扣  ("
+                    android:textColor="@color/black41"
+                    android:textSize="@dimen/px32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="范围:1-100"
+                    android:textColor="@color/text_red"
+                    android:textSize="@dimen/px32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:textColor="@color/black41"
+                    android:textSize="@dimen/px32" />
+
+                <EditText
+                    android:id="@+id/activity_sales_order_detail_order_zhekou"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/px20"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入"
+                    android:inputType="number"
+                    android:textColor="@color/black3"
+                    android:maxLength="3"
+                    android:textSize="@dimen/px32" />
+            </LinearLayout>
+            </RelativeLayout>
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_total"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="总金额"
+                app:ShowStar="false"
+                app:RightTextColor="@color/black3"
+                app:StarColor="#FFFFFF"
+                app:showArrow="false" />
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_state"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px24"
+                app:NameText="订单状态"
+                app:RightTextColor="@color/black3"
+                app:RightText="请选择"
+                app:StarColor="#FF0000" />
+
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="下单日期"
+                app:RightText="请选择"
+                app:RightTextColor="@color/black3"
+                app:ShowStar="false"
+                app:StarColor="#FFFFFF"
+                app:showArrow="true" />
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_Delivery_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="发货方式"
+                app:RightText="请选择"
+                app:ShowStar="false"
+                app:RightTextColor="@color/black3"
+                app:StarColor="#FFFFFF"
+                app:showArrow="true" />
+
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_main_releaser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px24"
+                app:NameText="创建人"
+                app:ShowStar="false"
+                app:RightTextColor="@color/black3"
+                app:StarColor="#FFFFFF"
+                app:showArrow="false"
+                app:showInput="false" />
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_sales_order_detail_order_main_releaseTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="创建时间"
+                app:ShowStar="false"
+                app:RightTextColor="@color/black3"
+                app:StarColor="#FFFFFF"
+                app:showArrow="false" />
+
+
+            <TextView
+                android:id="@+id/activity_sales_order_detail_order_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px90"
+                android:layout_marginLeft="@dimen/px24"
+                android:layout_marginRight="@dimen/px24"
+                android:layout_marginTop="@dimen/px70"
+                android:background="@drawable/bg_blue_round_rectangle"
+                android:gravity="center"
+                android:text="编辑"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

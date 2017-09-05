@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/common_application_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dp_10" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/bg_round_regtangle"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@mipmap/search_icon" />
+
+                <EditText
+                    android:id="@+id/common_application_search_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@null"
+                    android:hint="搜索"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:minWidth="@dimen/dp_50"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/common_application_recyclearview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_15"  />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

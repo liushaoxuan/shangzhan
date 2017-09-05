@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="23px">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_round_rectangle">
+
+        <ImageView
+            android:id="@+id/marketing_imageview"
+            android:layout_width="24px"
+            android:layout_height="35px"
+            android:src="@mipmap/market"
+            android:layout_marginTop="18px"
+            android:layout_marginLeft="28px"/>
+
+        <TextView
+            android:id="@+id/marketing_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/marketing_imageview"
+            android:text="大促销"
+            android:textSize="30px"
+            android:textColor="@color/colorGray333333"
+            android:paddingTop="20px"
+            android:paddingLeft="24px"
+            android:textStyle="bold"
+            android:paddingBottom="20px"
+            android:maxLines="1"
+            android:paddingRight="50px"
+            />
+
+        <TextView
+            android:id="@+id/iv_item_crm_select"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:background="@drawable/crm_potential_custom_selector"
+            android:layout_marginTop="15px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:visibility="gone"
+            />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGrayDADADA"
+            android:layout_below="@id/marketing_title"/>
+
+        <TextView
+            android:id="@+id/marketing_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动周期："
+            android:layout_below="@id/view"
+            android:paddingTop="34px"
+            android:paddingLeft="31px"
+            android:paddingRight="31px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="30px"
+            android:textColor="@color/colorGray666666"
+            />
+
+        <TextView
+            android:id="@+id/marketing_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/marketing_date"
+            android:text="活动类型：促销活动"
+            android:paddingTop="33px"
+            android:paddingLeft="31px"
+            android:paddingRight="31px"
+            android:paddingBottom="40px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="30px"
+            android:textColor="@color/colorGray666666"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

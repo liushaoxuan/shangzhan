@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px30"
+    android:orientation="vertical"
+    android:layout_marginBottom="200px">
+    <!--日程安排-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:background="@drawable/white_corner_bg_20">
+        <LinearLayout
+            android:layout_width="154px"
+            android:layout_height="@dimen/px45"
+            android:paddingLeft="@dimen/px15"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_home_work_state">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px45"
+                android:text="未读"
+                android:textSize="@dimen/px26"
+                android:paddingLeft="@dimen/px10"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/px24">
+            <ImageView
+                android:layout_width="@dimen/px36"
+                android:layout_height="@dimen/px36"
+                android:src="@mipmap/icon_home_work_schedule"
+                android:layout_marginLeft="@dimen/px24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工作日报"
+                android:layout_marginLeft="@dimen/px30"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black83"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/px88"
+            android:layout_marginRight="@dimen/px48"
+            android:layout_marginTop="@dimen/px100">
+            <TextView
+                android:id="@+id/item_home_work_daily_work_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_9FABB2"
+                android:singleLine="true"
+                android:textSize="@dimen/px26"
+                android:layout_marginTop="@dimen/px10"
+                android:text="今日完成工作"/>
+
+            <TextView
+                android:id="@+id/item_home_work_daily_work_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black3"
+                android:singleLine="true"
+                android:textSize="@dimen/px36"
+                android:layout_marginTop="@dimen/px30"
+                android:text="上涨改版的具体流程操作说明"/>
+
+            <TextView
+                android:id="@+id/item_home_work_daily_work_add_releaser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_9FABB2"
+                android:singleLine="true"
+                android:textSize="@dimen/px26"
+                android:layout_marginTop="@dimen/px30"
+                android:text="发布人:李先生"/>
+
+            <TextView
+                android:id="@+id/item_home_work_daily_work_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black3"
+                android:gravity="right"
+                android:singleLine="true"
+                android:textSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px50"
+                android:text="2017.06.24"/>
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:id="@+id/item_home_work_daily_work_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="320px"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/px100">
+            <include layout="@layout/layout_nodata_2_0"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_home_work_daily_work_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/px30"
+            android:textColor="@color/black_9FABB2"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/px20"
+            android:text="查看详情"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="@color/bg_ec"
+            android:layout_above="@id/item_home_work_daily_work_add"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

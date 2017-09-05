@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@drawable/lsx_white_rect" android:color="@color/white"/>
+    <item android:state_selected="false" android:drawable="@drawable/lsx_blue_rect" android:color="@color/blue"/>
+</selector>

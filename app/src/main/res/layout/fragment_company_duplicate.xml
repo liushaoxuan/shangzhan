@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:paddingTop="30px"
+        android:paddingRight="42px"
+        android:paddingBottom="30px"
+        android:background="@color/white"
+        android:layout_marginTop="24px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司名称"
+            android:textSize="32px"
+            android:textColor="@color/colorGray414141"
+            android:paddingRight="46px"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/duplicate_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@drawable/bg_b8b8b8_rect_10px"
+            android:gravity="center_vertical"
+            android:hint="请输入"
+            android:paddingLeft="26px"
+            android:paddingRight="26px"
+            android:textSize="32px"
+            android:textColorHint="@color/colorGray999999"
+            android:textColor="@color/colorGray333333"
+            android:maxLines="1"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:id="@+id/duplicate_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:gravity="center"
+        android:layout_marginTop="184px"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginBottom="166px"
+        android:padding="28px"
+        android:textSize="36px"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_257eff_round_rect"/>
+
+
+</LinearLayout>

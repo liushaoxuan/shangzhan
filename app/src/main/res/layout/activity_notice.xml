@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 android:id="@+id/activity_check_work_attendance"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:background="@color/white"
+                                                 tools:context="com.wyu.iwork.view.activity.CheckWorkAttendanceActivity">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/custom_back_toolbar"/>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorGrayFAFAFA">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_notice_read"
+                android:layout_height="65px"
+                android:layout_width="match_parent"
+                android:background="@mipmap/waikuang"
+                android:orientation="horizontal"
+                android:layout_marginRight="31px"
+                android:layout_marginLeft="31px"
+                android:layout_marginTop="32px"
+                android:layout_marginBottom="34px">
+
+
+                <TextView
+                    android:id="@+id/tv_unread"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:text="未读"
+                    android:textColor="@color/colorGrayB8B8B8"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/bg_notice_select"
+
+                    />
+
+                <TextView
+                android:id="@+id/tv_read"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:text="已读"
+                android:textColor="@color/colorGrayB8B8B8"
+                android:background="@drawable/bg_notice_select"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayD2D2D2"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ListView
+                    android:id="@+id/lv_notice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="@color/colorGrayD2D2D2"
+                    android:dividerHeight="2px"/>
+
+                <ListView
+                    android:id="@+id/lv_notice_read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="@color/colorGrayD2D2D2"
+                    android:dividerHeight="1px"/>
+
+
+
+                <View
+                    android:layout_height="1px"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorGrayD2D2D2"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_no_notice"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="204px">
+
+                android:layout_width="@dimen/px130"
+                android:layout_height="@dimen/px112"
+                android:src="@mipmap/notavailable"
+
+                <TextView
+                    android:text="暂时没有公告!"
+                    android:layout_marginTop="78px"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorGray777777"
+                    android:textSize="30px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

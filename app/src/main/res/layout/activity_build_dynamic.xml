@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_posting_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec" >
+
+    <!--底部栏-->
+    <LinearLayout
+        android:id="@+id/activity_build_dynamic_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/activity_build_dynamic_picture"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:padding="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:visibility="gone"
+            android:src="@mipmap/picture_icon"/>
+
+        <ImageView
+            android:id="@+id/activity_build_dynamic_aite"
+            android:layout_width="@dimen/dp_40"
+            android:padding="@dimen/dp_10"
+            android:layout_height="@dimen/dp_40"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@mipmap/aite_icon"/>
+
+        <ImageView
+            android:id="@+id/activity_build_dynamic_special"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:src="@mipmap/special_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/activity_build_dynamic_bottom_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_ec">
+            <!---->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <LinearLayout
+                    android:id="@+id/activity_build_dynamic_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px35"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px24">
+                    <ImageView
+                        android:layout_width="@dimen/px20"
+                        android:layout_height="@dimen/px32"
+                        android:src="@mipmap/arrow_left"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px30"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/px15"
+                        android:layout_centerVertical="true"
+                        android:text="返回"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/px36"
+                    android:text="@string/title_build_dynamic"/>
+
+                <TextView
+                    android:id="@+id/activity_build_dynamic_release"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px30"
+                    android:textColor="@color/white"
+                    android:text="发布"
+                    android:padding="@dimen/px30"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <!---->
+
+            <EditText
+                android:id="@+id/activity_build_dynamic_content"
+                android:layout_width="match_parent"
+                android:layout_height="620px"
+                android:hint="请输入您想要发布的动态"
+                android:gravity="top"
+                android:textSize="@dimen/px30"
+                android:paddingTop="42px"
+                android:paddingBottom="42px"
+                android:paddingLeft="57px"
+                android:paddingRight="57px"
+                android:textColorHint="@color/black6"
+                android:textColor="@color/black3"
+                android:background="@drawable/bg_rounded_regtan_white"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

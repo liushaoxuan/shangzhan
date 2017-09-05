@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_oa_approval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.oaApprovalActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px220"
+        android:gravity="center_vertical"
+        android:background="@color/blue"
+        android:paddingBottom="@dimen/px26">
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_my_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px20"
+            android:paddingRight="@dimen/px20"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/px140"
+                android:layout_height="@dimen/px140"
+                android:src="@mipmap/oa_waite_me_aproval" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px28"
+                android:layout_marginTop="@dimen/px24"
+                android:text="待我审批的"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_my_lauch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/activity_oa_approval_my_approval"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center">
+
+              <ImageView
+                  android:layout_width="@dimen/px100"
+                  android:layout_height="@dimen/px100"
+                  android:layout_centerInParent="true"
+                  android:padding="@dimen/px30"
+                  android:background="@drawable/white_round"
+                  android:src="@mipmap/oa_my_lauch"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px24"
+                android:layout_marginTop="@dimen/px16"
+                android:text="我发起的"/>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_chaosong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/activity_oa_approval_my_approval"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/px30"
+                android:background="@drawable/white_round"
+                android:src="@mipmap/oa_copy_to_me"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px24"
+                android:layout_marginTop="@dimen/px16"
+                android:text="抄送我的"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/px26"
+        android:paddingTop="@dimen/px26">
+
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_reimbursement_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:src="@mipmap/oa_aplly_baoxiao"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:textColor="@color/black3"
+                android:layout_marginTop="@dimen/px36"
+                android:text="报销申请"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_go_out_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:src="@mipmap/oa_aplly_go_out" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:textColor="@color/black3"
+                android:layout_marginTop="@dimen/px36"
+                android:text="出差申请"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="@dimen/px92"
+            android:background="@color/bg_ec"/>
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_work_on_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:src="@mipmap/oa_aplly_work_on"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:textColor="@color/black3"
+                android:layout_marginTop="@dimen/px36"
+                android:text="加班申请"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/px26"
+        android:paddingTop="@dimen/px26">
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_leave_apply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:src="@mipmap/oa_apply_leave"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:layout_marginTop="@dimen/px36"
+                android:textColor="@color/black3"
+                android:text="请假申请"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="@dimen/px1"
+            android:layout_height="@dimen/px92"
+            android:background="@color/bg_ec"/>
+
+        <LinearLayout
+            android:id="@+id/activity_oa_approval_go_out_app"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/px100"
+                android:layout_height="@dimen/px100"
+                android:src="@mipmap/oa_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:textColor="@color/black9"
+                android:layout_marginTop="@dimen/px36"
+                android:text="暂未开放"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

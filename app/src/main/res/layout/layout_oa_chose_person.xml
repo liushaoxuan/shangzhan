@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px24"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px30"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px32"
+                android:textColor="@color/black3"
+                android:layout_marginLeft="@dimen/px24"
+                android:text="审批人"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px36"
+                android:layout_marginTop="@dimen/px2"
+                android:textColor="@color/text_red"
+                android:layout_marginLeft="@dimen/px2"
+                android:text="*"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px24"
+                android:layout_marginLeft="@dimen/px5"
+                android:textColor="@color/black_9FABB2"
+                android:text="(点击头像可以删除)"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/oa_apply_aproval"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px24"
+            android:textColor="@color/black_9FABB2"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginBottom="@dimen/px18"
+            android:text="添加人员"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/px24"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px30"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px32"
+                android:textColor="@color/black3"
+                android:layout_marginLeft="@dimen/px24"
+                android:text="抄送人"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px24"
+                android:layout_marginLeft="@dimen/px5"
+                android:textColor="@color/black_9FABB2"
+                android:text="(点击头像可以删除)"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/oa_apply_coppy_send"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/px10"
+            android:layout_marginRight="@dimen/px30"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px24"
+            android:textColor="@color/black_9FABB2"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginBottom="@dimen/px18"
+            android:text="添加人员"/>
+
+    </LinearLayout>
+
+</LinearLayout>

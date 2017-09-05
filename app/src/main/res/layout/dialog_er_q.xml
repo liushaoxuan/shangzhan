@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:paddingTop="240px"
+    android:paddingLeft="@dimen/px120"
+    android:paddingRight="@dimen/px120">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_corner_bg_20">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/er_q_user_face"
+                android:layout_width="@dimen/px94"
+                android:layout_height="@dimen/px94"
+                android:layout_margin="@dimen/px28"/>
+            <TextView
+                android:id="@+id/er_q_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/er_q_user_face"
+                android:layout_alignTop="@id/er_q_user_face"
+               android:textColor="@color/black3"
+                android:textSize="@dimen/px32"/>
+
+            <TextView
+                android:id="@+id/er_q_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/er_q_user_face"
+                android:layout_alignBottom="@id/er_q_user_face"
+                android:layout_marginRight="@dimen/px20"
+                android:singleLine="true"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px28"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/er_q" />
+        <View
+            android:layerType="software"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px5"
+            android:background="@drawable/dashgap_line"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_marginBottom="@dimen/px40"
+            android:layout_marginLeft="@dimen/px40"
+            android:layout_marginRight="@dimen/px40"/>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/px50">
+            <ImageView
+                android:id="@+id/er_q_icon"
+                android:layout_width="@dimen/px70"
+                android:layout_height="@dimen/px70"
+                android:layout_marginRight="@dimen/px30"
+                android:src="@mipmap/icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/er_q_icon"
+                android:layout_alignTop="@id/er_q_icon"
+                android:text="商栈·云办公"
+                android:textColor="@color/oa_light_blue"
+                android:textSize="@dimen/px30"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/er_q_icon"
+                android:layout_alignBottom="@id/er_q_icon"
+                android:textColor="@color/blue_text1"
+                android:textSize="@dimen/px24"
+                android:text="一站式办公新体验"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <LinearLayout
+        android:id="@+id/del_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/px20">
+        <ImageView
+            android:id="@+id/del_er_q"
+            android:layout_width="92px"
+            android:layout_height="92px"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:padding="@dimen/px10"
+            android:layout_marginTop="@dimen/px20"
+            android:src="@mipmap/er_q_del"/>
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

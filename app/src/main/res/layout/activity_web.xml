@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.WebActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/activity_web_toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/colorCustomToolbar"
+            android:layout_height="?attr/actionBarSize">
+            <ImageView
+                android:id="@+id/activity_web_back"
+                android:layout_width="88px"
+                android:layout_height="88px"
+                android:src="@mipmap/arrow_left"
+                android:layout_centerVertical="true"
+                android:padding="20px"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:id="@+id/activity_web_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:progressDrawable="@drawable/pg"
+        android:visibility="gone" />
+
+    <WebView
+        android:id="@+id/WebActivity_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

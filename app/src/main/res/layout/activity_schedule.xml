@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.ScheduleActivity"
+    android:background="@color/colorF4F9FC">
+
+    <include layout="@layout/custom_back_toolbar"/>
+    <include layout="@layout/layout_schedule_header"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/schedule_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- 新版修改 -->
+    <!--
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_zanwu"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_height="256px"
+                android:layout_width="256px"
+                android:src="@mipmap/zanwu"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="204px"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="46px"
+                android:text="暂时没有日程"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorGrayC9C9C9"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <ListView
+            android:id="@+id/schedule_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:divider="@color/colorGrayD2D2D2"
+            android:dividerHeight="1px"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>-->
+
+</com.zhy.autolayout.AutoLinearLayout>

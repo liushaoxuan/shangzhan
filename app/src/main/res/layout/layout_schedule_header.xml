@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorf7fcff"
+              android:paddingRight="163px"
+              android:paddingLeft="163px"
+              android:paddingTop="36px"
+              android:paddingBottom="36px">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_25b0ff_round_30px"
+        >
+
+        <TextView
+            android:id="@+id/tv_work"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="工作事务"
+            android:textSize="32px"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:paddingTop="12px"
+            android:paddingBottom="12px"
+            android:gravity="center"
+            android:textColor="@drawable/selector_schedule_text_color"
+            android:background="@drawable/bg_schedule_text__selector_25b0ff"
+            />
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="个人事务"
+            android:textSize="32px"
+            android:paddingTop="12px"
+            android:paddingBottom="12px"
+            android:textColor="@drawable/selector_schedule_text_color"
+            android:background="@drawable/bg_schedule_text__selector_25b0ff"
+            android:layout_margin="5px"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

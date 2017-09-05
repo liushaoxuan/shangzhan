@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px88"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/px24">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温馨提示：带“"
+        android:textColor="@color/black_9FABB2"
+        android:textSize="@dimen/px24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textColor="@color/text_red"
+        android:textSize="@dimen/px24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="”为必填内容，请认真填写"
+        android:textColor="@color/black_9FABB2"
+        android:textSize="@dimen/px24" />
+</LinearLayout>

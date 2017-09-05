@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crm_route_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyu.iwork.view.activity.CrmRouteMapActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/route_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/crm_route_map_back"
+        android:layout_width="81px"
+        android:layout_height="81px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="24px"
+        android:src="@mipmap/blue_left"
+        android:paddingLeft="32px"
+        android:paddingTop="26px"
+        android:paddingRight="32px"
+        android:paddingBottom="26px"
+        android:background="@drawable/bg_white_round_rectangle_4px"/>
+
+    <ImageView
+        android:id="@+id/crm_route_map_location"
+        android:layout_width="81px"
+        android:layout_height="81px"
+        android:src="@mipmap/cirle_here"
+        android:background="@drawable/bg_white_round_rectangle_4px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24px"
+        android:padding="15px"
+        android:layout_marginTop="50px"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/route_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_open_close"
+            android:layout_width="87px"
+            android:layout_height="27px"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/close"/>
+
+        <TextView
+            android:id="@+id/route_map_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40px"
+            android:paddingLeft="30px"
+            android:textSize="30px"
+            android:textColor="@color/colorGray333333"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingRight="30px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="22px"
+            android:paddingBottom="19px"
+            android:paddingLeft="30px"
+            android:paddingRight="30px">
+
+            <TextView
+                android:id="@+id/route_map_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:textColor="@color/colorGray999999"
+                />
+
+            <View
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray999999"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="20px"/>
+
+            <TextView
+                android:id="@+id/route_map_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="3px"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray999999"
+                android:layout_marginLeft="16px"
+                android:layout_marginRight="20px"/>
+
+            <TextView
+                android:id="@+id/route_map_walking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24px"
+                android:textColor="@color/colorGray999999"
+                />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/route_map_detail"
+            android:layout_width="match_parent"
+            android:layout_height="457px"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayDEDEDE"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/route_map_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="23px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

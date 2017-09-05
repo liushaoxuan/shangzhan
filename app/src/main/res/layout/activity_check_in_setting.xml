@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_in_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CheckInSettingActivity"
+    android:background="@color/colorF4F9FC">
+
+    <include layout="@layout/custom_back_toolbar" />
+    <ScrollView
+        android:id="@+id/activity_check_in_setting_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorF4F9FC"
+        android:scrollbars="none">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.wyu.iwork.widget.TaskItem
+                    android:id="@+id/task_sing_in_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.wyu.iwork.widget.TaskItem
+                    android:id="@+id/task_sing_out_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <com.wyu.iwork.widget.TaskItem
+                    android:id="@+id/task_sing_in_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="50px"
+                    android:layout_marginBottom="50px">
+
+                    <include layout="@layout/layout_bottom_line"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/building"
+                            android:layout_width="52px"
+                            android:layout_height="50px"
+                            android:src="@mipmap/set_building"
+                            android:layout_marginLeft="44px"
+                            android:layout_marginTop="42px"/>
+
+                        <TextView
+                            android:id="@+id/building_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="将公司所在位置设为考勤范围"
+                            android:textSize="28px"
+                            android:textColor="@color/colorGray333333"
+                            android:paddingLeft="43px"
+                            android:paddingTop="22px"
+                            android:layout_toRightOf="@id/building"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="通过手机定位，精确到50-300米范围"
+                            android:textSize="26px"
+                            android:textColor="@color/colorGray9FABB2"
+                            android:layout_below="@id/building_text"
+                            android:layout_toRightOf="@id/building"
+                            android:paddingLeft="44px"
+                            android:paddingTop="18px"
+                            android:paddingBottom="20px"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <include layout="@layout/layout_bottom_line"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/sing_setting_recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/add_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="124px">
+
+                        <ImageView
+                            android:id="@+id/add_icon"
+                            android:layout_width="45px"
+                            android:layout_height="45px"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="37px"
+                            android:src="@mipmap/set_add"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/add_icon"
+                            android:text="添加办公地点"
+                            android:textSize="36px"
+                            android:textColor="@color/color25b0ff"
+                            android:paddingLeft="34px"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <include layout="@layout/layout_bottom_line"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

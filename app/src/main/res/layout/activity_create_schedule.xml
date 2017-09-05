@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorF4F9FC"
+    tools:context="com.wyu.iwork.view.activity.CreateScheduleActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+    <ScrollView
+        android:id="@+id/activity_create_schedule_scroolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/schedule_type"
+                android:layout_height="90px"
+                android:layout_width="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="日程类型"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:paddingLeft="30px"/>
+
+                <ImageView
+                    android:id="@+id/iv_schedule_type"
+                    android:layout_width="40px"
+                    android:layout_height="49px"
+                    android:src="@mipmap/right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10px"
+                    android:paddingBottom="10px"
+                    android:paddingRight="24px"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="请选择"
+                    android:textSize="30px"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textColor="@color/color4D7186"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="16px"
+                    android:gravity="right"
+                    android:layout_toLeftOf="@id/iv_schedule_type"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <include layout="@layout/layout_bottom_line"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_choose_begin_time"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                android:layout_marginTop="25px">
+
+                <include layout="@layout/layout_bottom_line"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="开始时间"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="26px"/>
+
+
+
+                <ImageView
+                    android:id="@+id/iv_begin_time_right"
+                    android:layout_width="40px"
+                    android:layout_height="49px"
+                    android:src="@mipmap/right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10px"
+                    android:paddingBottom="10px"
+                    android:paddingRight="24px"/>
+
+                <TextView
+                    android:id="@+id/tv_begin_time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="请选择"
+                    android:textSize="30px"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textColor="@color/color4D7186"
+                    android:paddingRight="16px"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/iv_begin_time_right"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <include layout="@layout/layout_bottom_line"/>
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_choose_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="89px"
+                android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="结束时间"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="26px"/>
+
+
+
+                <ImageView
+                    android:id="@+id/iv_end_time_right"
+                    android:layout_width="40px"
+                    android:layout_height="49px"
+                    android:src="@mipmap/right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10px"
+                    android:paddingBottom="10px"
+                    android:paddingRight="24px"/>
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="请选择"
+                    android:textSize="30px"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textColor="@color/color4D7186"
+                    android:paddingRight="16px"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/iv_end_time_right"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <include layout="@layout/layout_bottom_line"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayDFEBF1"
+                android:layout_marginTop="25px"/>
+            <TextView
+                android:layout_height="90px"
+                android:layout_width="match_parent"
+                android:paddingLeft="30px"
+                android:background="@color/white"
+                android:text="日程标题"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorGray333333"
+                android:textSize="32px"/>
+
+            <EditText
+                android:id="@+id/schedule_detail_title"
+                android:layout_height="90px"
+                android:layout_width="match_parent"
+                android:paddingLeft="25px"
+                android:background="@color/white"
+                android:hint="请输入日程标题（15字以内）"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/color4D7186"
+                android:textColorHint="@color/colorGray9FABB2"
+                android:textSize="30px"
+                android:maxLength="15"/>
+            <include layout="@layout/layout_bottom_line"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayDFEBF1"
+                android:layout_marginTop="25px"/>
+
+            <TextView
+                android:layout_height="90px"
+                android:layout_width="match_parent"
+                android:paddingLeft="30px"
+                android:background="@color/white"
+                android:text="日程内容"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorGray333333"
+                android:textSize="32px"/>
+
+            <EditText
+                android:id="@+id/schedule_detail_content"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:hint="请输入（60字以内）"
+                android:textSize="30px"
+                android:textColor="@color/color4D7186"
+                android:textColorHint="@color/colorGray9FABB2"
+                android:paddingLeft="25px"
+                android:paddingTop="32px"
+                android:paddingRight="35px"
+                android:lineSpacingExtra="10px"
+                android:gravity="top"
+                android:paddingBottom="180px"
+                android:maxLength="60"/>
+
+            <include layout="@layout/layout_bottom_line"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_purchase_order"
+    android:layout_width="match_parent"
+    android:background="@color/bg_ec"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.PurchaseOrderActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include layout="@layout/layout_erp_add_title"/>
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/activity_purchase_order_refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginRight="@dimen/px24">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_purchase_order_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+        <include layout="@layout/layout_nodata" />
+    </LinearLayout>
+
+
+</RelativeLayout>

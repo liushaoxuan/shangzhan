@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/tanchuang01"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_take_photo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="拍照识别"
+            android:textSize="28px"
+            android:layout_marginTop="48px"
+            android:layout_marginBottom="23px"
+            android:layout_marginRight="27px"
+            android:layout_marginLeft="27px"
+            android:textColor="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginRight="26px"
+            android:layout_marginLeft="26px"
+            android:background="@color/colorGrayECECEC"/>
+
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="手动输入"
+            android:textSize="28px"
+            android:layout_marginTop="23px"
+            android:layout_marginBottom="23px"
+            android:layout_marginRight="27px"
+            android:layout_marginLeft="27px"
+            android:textColor="@color/white"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

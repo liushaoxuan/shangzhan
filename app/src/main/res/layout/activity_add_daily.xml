@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/activity_add_daily"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@color/colorF4F9FC"
+     android:orientation="vertical"
+     tools:context="com.wyu.iwork.view.activity.AddDailyActivity"
+     >
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/activity_add_daily_scroolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="今日完成工作"
+                    android:textSize="32px"
+                    android:paddingTop="33px"
+                    android:paddingLeft="24px"
+                    android:textColor="@color/colorGray333333"/>
+
+                <EditText
+                    android:id="@+id/et_finish"
+                    android:layout_height="200px"
+                    android:layout_width="match_parent"
+                    android:hint="请输入（60字以内）"
+                    android:padding="24px"
+                    android:lineSpacingExtra="10px"
+                    android:textColor="@color/color4D7186"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textSize="30px"
+                    android:maxLength="60"
+                    android:gravity="top"
+                    android:background="@null"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <include layout="@layout/layout_bottom_line"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px"
+                android:background="@color/white"
+                >
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="未完成工作"
+                    android:textSize="32px"
+                    android:paddingTop="33px"
+                    android:paddingLeft="24px"
+                    android:textColor="@color/colorGray333333"/>
+
+                <EditText
+                    android:id="@+id/et_undo"
+                    android:layout_height="200px"
+                    android:layout_width="match_parent"
+                    android:hint="请输入（60字以内）"
+                    android:padding="24px"
+                    android:background="@null"
+                    android:maxLength="60"
+                    android:lineSpacingExtra="10px"
+                    android:gravity="top"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textColor="@color/color4D7186"
+                    android:textSize="30px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <include layout="@layout/layout_bottom_line"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px"
+                android:background="@color/white"
+                >
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="需协调工作"
+                    android:textSize="32px"
+                    android:paddingTop="33px"
+                    android:paddingLeft="24px"
+                    android:textColor="@color/colorGray333333"/>
+
+                <EditText
+                    android:id="@+id/et_coordinate"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="请输入（20字以内）"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textColor="@color/color4D7186"
+                    android:textSize="30px"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:layout_marginTop="29px"
+                    android:background="@null"
+                    android:paddingLeft="24px"
+                    android:paddingBottom="40px"
+                    android:maxLength="20"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <include layout="@layout/layout_bottom_line"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px"
+                android:background="@color/white"
+                >
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="备注"
+                    android:textSize="32px"
+                    android:paddingTop="33px"
+                    android:paddingLeft="24px"
+                    android:textColor="@color/colorGray333333"/>
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="请输入（20字以内）"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:textColor="@color/color4D7186"
+                    android:textSize="30px"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:layout_marginTop="29px"
+                    android:paddingLeft="24px"
+                    android:paddingBottom="40px"
+                    android:background="@null"
+                    android:maxLength="20"/>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="24px"
+                android:background="@color/white">
+
+                <include layout="@layout/layout_bottom_line"/>
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="发送给"
+                    android:textSize="30px"
+                    android:textColor="@color/colorGray666666"
+                    android:layout_marginTop="32px"
+                    android:layout_marginLeft="24px"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_send"
+                    android:text="（点击头像可以删除）"
+                    android:textColor="@color/colorGray9FABB2"
+                    android:textSize="24px"
+                    android:layout_marginTop="37px"/>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_send"
+                    android:scrollbars="none">
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_add_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35px"
+                            android:layout_marginLeft="31px"/>
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:id="@+id/add_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="35px"
+                            android:layout_marginBottom="17px"
+                            android:layout_toRightOf="@id/rv_add_person"
+                            android:layout_marginLeft="25dp"
+                            android:layout_below="@id/tv_send"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:paddingRight="50px">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/civ_add_person"
+                                android:layout_width="80px"
+                                android:layout_height="80px"
+                                android:src="@mipmap/daily_add_person"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_add_person"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="添加人员"
+                                android:textSize="24px"
+                                android:singleLine="true"
+                                android:paddingTop="24px"
+                                android:textColor="@color/colorGray9FABB2"/>
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                </HorizontalScrollView>
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorGrayDFEBF1"
+                android:layout_marginBottom="200px"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

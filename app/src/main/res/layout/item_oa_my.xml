@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    android:paddingBottom="28px">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px34"
+        android:paddingRight="@dimen/px32"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px32">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px26"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/px20"
+            android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/item_oa_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px30"
+            android:textStyle="bold"
+            android:textColor="@color/black43"
+            android:text=""/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_oa_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black7"
+            android:textSize="@dimen/px24"
+            android:text="2017/04/23"/>
+    </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/item_oa_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black96"
+        android:textSize="@dimen/px24"
+        android:layout_marginTop="@dimen/px34"
+        android:text="开始时间： 2017年4月28日  14:00"/>
+
+    <TextView
+        android:id="@+id/item_oa_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black96"
+        android:textSize="@dimen/px24"
+        android:layout_marginTop="@dimen/px34"
+        android:text="结束时间： 2017年4月28日  18:00"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_oa_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:textSize="@dimen/px30"
+                android:text="12小时"
+                android:textColor="#3EAAFF"/>
+
+
+            <TextView
+                android:id="@+id/item_oa_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px24"
+                android:textColor="@color/oa_light_blue"
+                android:layout_marginLeft="@dimen/px35"
+                android:gravity="center"
+                android:paddingLeft="@dimen/px25"
+                android:paddingTop="@dimen/px8"
+                android:paddingBottom="@dimen/px6"
+                android:paddingRight="@dimen/px25"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/oa_textview_bg_light_blue"
+                android:text="陪产假"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

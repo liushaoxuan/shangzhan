@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_invitation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.InviteColleaguesActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_mine_invitation_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="252px"
+        android:layout_marginTop="@dimen/px72"
+        android:layout_marginLeft="@dimen/px45"
+        android:layout_marginRight="@dimen/px45"
+        android:background="@drawable/white_corner_bg_20">
+
+
+        <ImageView
+            android:layout_width="@dimen/px120"
+            android:layout_height="@dimen/px120"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px40"
+            android:src="@mipmap/weixin"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px60"
+            android:layout_marginBottom="@dimen/px48"
+            android:layout_marginLeft="202px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px36"
+                android:textColor="@color/black3"
+                android:textStyle="bold"
+                android:text="微信邀请同事"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black3"
+                android:layout_centerVertical="true"
+                android:text="邀请您的微信好友，一起加入到"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black3"
+                android:layout_alignParentBottom="true"
+                android:text="商栈·云办公"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_mine_invitation_constacts"
+        android:layout_width="match_parent"
+        android:layout_height="252px"
+        android:layout_marginTop="@dimen/px40"
+        android:layout_marginLeft="@dimen/px45"
+        android:layout_marginRight="@dimen/px45"
+        android:background="@drawable/white_corner_bg_20">
+
+
+        <ImageView
+            android:layout_width="@dimen/px120"
+            android:layout_height="@dimen/px120"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px40"
+            android:src="@mipmap/dialog_call"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/px60"
+            android:layout_marginBottom="@dimen/px48"
+            android:layout_marginLeft="202px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px36"
+                android:textColor="@color/black3"
+                android:textStyle="bold"
+                android:text="通讯录邀请同事"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black3"
+                android:layout_centerVertical="true"
+                android:text="邀请您的通讯录好友，一起加入到"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black3"
+                android:layout_alignParentBottom="true"
+                android:text="商栈·云办公"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

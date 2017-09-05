@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px36"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="动态"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/activty_dynamic_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px30"
+            android:textColor="@color/white"
+            android:text="发布"
+            android:padding="@dimen/px30"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+        
+        <LinearLayout
+            android:id="@+id/activity_dynamic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px35"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px24">
+            <ImageView
+                android:layout_width="@dimen/px20"
+                android:layout_height="@dimen/px32"
+                android:src="@mipmap/arrow_left"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/px15"
+                android:layout_centerVertical="true"
+                android:text="返回"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/activity_dynamic_refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="541px">
+
+            <View
+                android:id="@+id/activity_dynamic_big_image"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@mipmap/image"
+                android:layout_height="@dimen/px503"/>
+
+
+            <ImageView
+                android:id="@+id/activity_dynamic_head"
+                android:layout_width="@dimen/px145"
+                android:layout_height="@dimen/px145"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px39"
+                android:background="@color/white"
+                android:padding="4px"
+                android:focusable="false"
+                android:layout_alignParentBottom="true"
+                android:src="@mipmap/head_icon_nodata"/>
+
+
+            <TextView
+                android:id="@+id/activity_dynamic_nikename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px30"
+                android:textStyle="bold"
+                android:text=" "
+                android:layout_alignBottom="@id/activity_dynamic_big_image"
+                android:layout_toLeftOf="@id/activity_dynamic_head"
+                android:layout_marginRight="@dimen/px48"
+                android:layout_marginBottom="@dimen/px24"/>
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ListView
+                    android:id="@+id/activity_dynamic_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px63"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

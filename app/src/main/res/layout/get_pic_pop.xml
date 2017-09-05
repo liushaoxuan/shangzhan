@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/white_corner_bg_20"
+    android:layout_gravity="bottom"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/get_pic_pic"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2"
+        android:background="@color/bg_ec" />
+
+    <TextView
+        android:id="@+id/get_pic_loc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="本地相册"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="10pt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px2"
+        android:background="@color/bg_ec" />
+
+    <TextView
+        android:id="@+id/get_pic_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="10pt" />
+</LinearLayout>

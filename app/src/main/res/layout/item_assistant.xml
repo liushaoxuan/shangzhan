@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_ec"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_assistant_addtime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px82"
+        android:gravity="center"
+        android:text="2017-06-28 15:36"
+        android:textColor="@color/black96"
+        android:textSize="@dimen/px24"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/item_assistant"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px250"
+        android:background="@drawable/shadow_detail_info"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginRight="@dimen/px24">
+
+        <ImageView
+            android:id="@+id/item_assistant_icon"
+            android:layout_width="@dimen/px98"
+            android:layout_height="@dimen/px98"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/px36"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/px40"
+            android:src="@mipmap/icon_task"/>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px34"
+            android:layout_toLeftOf="@id/item_assistant_icon"
+            android:layout_marginRight="@dimen/px20"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/item_assistant_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px32"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/px20"
+                android:textColor="@color/black3"
+                android:layout_marginTop="@dimen/px34"
+                android:text="任务名称"/>
+
+            <TextView
+                android:id="@+id/item_assistant_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px28"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/px20"
+                android:layout_below="@id/item_assistant_title"
+                android:textColor="@color/black_9FABB2"
+                android:layout_marginTop="@dimen/px28"
+                android:text="商栈云办公的发展历史"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:id="@+id/item_assistant_icon_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:background="#e9f5fb"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_below="@id/item_assistant_icon"/>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px35"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/px34"
+            android:layout_below="@id/item_assistant_icon">
+            <View
+                android:layout_width="@dimen/px25"
+                android:layout_height="@dimen/px25"
+                android:background="@drawable/assistants_point_light_blue"/>
+
+            <TextView
+                android:id="@+id/item_assistant_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px24"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/px17"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/px20"
+                android:layout_below="@id/item_assistant_title"
+                android:textColor="@color/black_9FABB2"
+                android:text="来自任务助手"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

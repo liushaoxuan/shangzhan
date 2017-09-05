@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:drawable="@color/colorGreen3FAAFF" android:color="@color/colorGreen3FAAFF"/>
+    <item android:state_selected="false" android:drawable="@color/colorGray333333" android:color="@color/colorGray333333"/>
+</selector>

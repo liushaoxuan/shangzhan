@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="123px"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:background="@color/white">
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/check_in_avatar"
+        android:layout_width="88px"
+        android:layout_height="88px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="32px">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/checking_in_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_color="@color/white"
+            android:src="@mipmap/def_img_rect"/>
+
+        <TextView
+            android:id="@+id/checking_in_text"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:textSize="34px"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:background="@drawable/bg_rect_4fc9ff"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/check_in_avatar"
+        android:textSize="32px"
+        android:textColor="@color/colorGray333333"
+        android:paddingTop="26px"
+        android:paddingLeft="33px"
+        />
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="未设置"
+        android:textColorHint="@color/colorGray9FABB2"
+        android:textSize="24px"
+        android:textColor="@color/colorGray333333"
+        android:layout_toRightOf="@id/check_in_avatar"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="9px"
+        android:paddingLeft="33px"
+        />
+
+    <TextView
+        android:id="@+id/check_in_header_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_25b0ff_round_30px"
+
+        android:textSize="24px"
+        android:textColor="@color/colorGreen03A9F4"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24px"
+        android:paddingTop="17px"
+        android:paddingBottom="17px"
+        android:paddingRight="23px"
+        android:paddingLeft="23px"
+        android:drawableRight="@mipmap/checking_bottom_arrow"
+        android:drawablePadding="24px"
+        />
+
+</com.zhy.autolayout.AutoRelativeLayout>

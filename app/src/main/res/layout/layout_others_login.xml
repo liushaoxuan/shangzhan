@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="下线通知"
+        android:textSize="@dimen/px32"
+        android:textColor="@color/black3"
+        android:padding="@dimen/px25"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px28"
+        android:textColor="@color/black41"
+        android:text="您的账号已在其他设备登录。如非本人操作，请及时修改密码。"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/px30"
+        android:layout_marginRight="@dimen/px30"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px40"
+        android:background="@color/bg_ec"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="80px">
+        <TextView
+            android:id="@+id/exit_app"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black3"
+            android:visibility="gone"
+            android:text="退出"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@color/bg_ec"/>
+        <TextView
+            android:id="@+id/relogin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/px100"
+            android:paddingRight="@dimen/px100"
+            android:gravity="center"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black3"
+            android:layout_weight="1"
+            android:text="重新登录"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

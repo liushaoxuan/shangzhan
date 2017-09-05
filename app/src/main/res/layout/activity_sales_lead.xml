@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sales_lead"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.SalesLeadActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/crm_lead_refresh"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sales_lead_recycleview"
+                android:layout_marginLeft="14px"
+                android:layout_marginRight="14px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"/>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+        <include layout="@layout/layout_crm_zanwu"
+                 android:id="@+id/crm_lead_zanwu"
+                 android:visibility="gone"/>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</LinearLayout>

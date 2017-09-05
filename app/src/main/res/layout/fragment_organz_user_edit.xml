@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/user_phone"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:textColor="@color/textColorSecondary"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/user_name"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/user_organz"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jump_organz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/user_role"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/jump_role"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                layout="@layout/divider_gray_h" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/user_order"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/orderId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"
+                    />
+
+            </TableRow>
+
+            <!--<include-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--layout="@layout/divider_gray_h" />-->
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    android:text="@string/user_sex"
+                    android:textColor="@color/txt_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="32dp"
+                    tools:text="@string/test"
+                    android:textSize="16sp"
+                    android:background="@drawable/bg_ripple"
+                    android:clickable="true"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

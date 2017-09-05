@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_purchase_order_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.PurchaseOrderDetailsActivity">
+    <include layout="@layout/layout_erp_edit_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/px40">
+
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/activity_purchase_order_ediet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px90"
+                android:textSize="@dimen/px36"
+                android:textColor="@color/white"
+                android:text="编辑"
+                android:layout_marginLeft="@dimen/px24"
+                android:layout_marginRight="@dimen/px24"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/px97"
+                android:background="@drawable/bg_blue_round_rectangle"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px30"
+    android:orientation="vertical">
+    <!--任务安排-->
+    <RelativeLayout
+        android:id="@+id/fragment_home_work_page_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_corner_bg_20">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px24"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px36"
+                android:layout_height="@dimen/px36"
+                android:layout_marginLeft="@dimen/px24"
+                android:src="@mipmap/icon_home_work_task_plain" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px30"
+                android:text="任务安排"
+                android:textColor="@color/black83"
+                android:textSize="@dimen/px30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_home_work_task_viewholder_recyclerview_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px100"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/item_home_work_task_viewholder_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/item_home_work_task_viewholder_nodata"
+                android:layout_width="match_parent"
+                android:layout_height="350px"
+                android:visibility="gone">
+
+                <include layout="@layout/layout_nodata_2_0" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_home_work_task_viewholder_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_home_work_task_viewholder_recyclerview_"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/px20"
+            android:text="添加工作任务"
+            android:textColor="@color/black_9FABB2"
+            android:textSize="@dimen/px30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px1"
+            android:layout_above="@id/item_home_work_task_viewholder_add"
+            android:background="@color/bg_ec" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

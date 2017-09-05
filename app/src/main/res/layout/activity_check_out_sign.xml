@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_check_out_sign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CheckOutSignActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+    <ScrollView
+        android:id="@+id/activity_check_out_sign_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingTop="68px"
+                android:paddingLeft="46px"
+                android:paddingBottom="44px"
+                android:paddingRight="30px">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="外出时间"
+                        android:textColor="@color/colorGray504F4F"
+                        android:textSize="30px"
+                        />
+
+                    <TextView
+                        android:id="@+id/check_out_sign_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3px"
+                        android:textColor="@color/colorGray504F4F"
+                        android:textSize="28px"
+                        android:paddingLeft="53px"
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="52px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="打卡地址"
+                        android:textColor="@color/colorGray504F4F"
+                        android:textSize="30px"
+                        />
+
+                    <TextView
+                        android:id="@+id/check_out_sign_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正在定位中"
+                        android:paddingTop="3px"
+                        android:textColor="@color/colorGray666666"
+                        android:textSize="28px"
+                        android:paddingLeft="53px"
+                        android:lineSpacingExtra="23px"
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20px"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_content"
+                    android:layout_height="400px"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginRight="25px"
+                    android:layout_marginTop="27px"
+                    android:layout_marginBottom="150px"
+                    android:background="@drawable/bg_bfbfbf_rect_10px"
+                    >
+
+                    <EditText
+                        android:id="@+id/check_out_sign_things"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:hint="外出事由....."
+                        android:textColorHint="@color/colorGrayD1D1D1"
+                        android:textSize="30px"
+                        android:layout_marginTop="15px"
+                        android:layout_marginLeft="21px"
+                        android:layout_marginRight="21px"
+                        android:lineSpacingExtra="10px"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:textColor="@color/colorGray504F4F"
+                        />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <TextView
+                    android:id="@+id/check_out_sign_true"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_margin="23px"
+                    android:background="@drawable/bg_257eff_round_rect"
+                    android:text="确定"
+                    android:layout_marginBottom="200px"
+                    android:gravity="center"
+                    android:textSize="36px"
+                    android:textColor="@color/white"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

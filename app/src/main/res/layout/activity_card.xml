@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CardNewActivity"
+    android:background="@color/colorF4F9FC">
+
+    <include layout="@layout/custom_back_toolbar"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@color/color25b0ff"/>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shadow_155459"
+            android:layout_marginRight="25px"
+            android:layout_marginLeft="25px"
+            >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_scan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="30px"
+                android:paddingBottom="25px"
+                >
+
+                <ImageView
+                    android:layout_height="90px"
+                    android:layout_width="90px"
+                    android:src="@mipmap/shibie"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="名片识别"
+                    android:textColor="@color/color474747"
+                    android:textSize="24px"
+                    android:layout_marginTop="20px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_card_bag"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="30px"
+                android:paddingBottom="25px"
+                >
+
+                <ImageView
+                    android:layout_height="90px"
+                    android:layout_width="90px"
+                    android:src="@mipmap/ningpianjia"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="名片夹"
+                    android:textColor="@color/color474747"
+                    android:textSize="24px"
+                    android:layout_marginTop="20px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_new_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="30px"
+                android:paddingBottom="25px"
+                >
+
+                <ImageView
+                    android:layout_height="90px"
+                    android:layout_width="90px"
+                    android:src="@mipmap/new_card"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="新建名片"
+                    android:textColor="@color/color474747"
+                    android:textSize="24px"
+                    android:layout_marginTop="20px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_mine_card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="30px"
+                android:paddingBottom="25px"
+                >
+
+                <ImageView
+                    android:layout_height="90px"
+                    android:layout_width="90px"
+                    android:src="@mipmap/me"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="我的名片"
+                    android:textColor="@color/color474747"
+                    android:textSize="24px"
+                    android:layout_marginTop="20px"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+            android:id="@+id/card_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:layout_marginTop="13px"/>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275px">
+
+            <include layout="@layout/layout_list_notavailable" android:id="@+id/card_notavaliable"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_oa_add_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.oaAddPersonActivity">
+
+    <TextView
+        android:id="@+id/activity_oa_add_person_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px38"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:id="@+id/activity_oa_add_person_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+        <TextView
+            android:id="@+id/activity_oa_add_person_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px30"
+            android:padding="@dimen/px30"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_person"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px36"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_oa_add_person_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px110"
+        android:background="@color/white"
+        android:layout_below="@id/activity_oa_add_person_titlebar">
+
+        <ImageView
+            android:id="@+id/activity_oa_add_person_search_icon"
+            android:layout_width="@dimen/px32"
+            android:layout_height="@dimen/px32"
+            android:src="@mipmap/search"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px40"/>
+        <EditText
+            android:id="@+id/activity_oa_add_person_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/activity_oa_add_person_search_icon"
+            android:layout_marginLeft="@dimen/px20"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:textColorHint="#d1d1d1"
+            android:background="@null"
+            android:textColor="@color/black7"
+            android:textSize="@dimen/px30"
+            android:hint="请输入您要搜索的联系人"/>
+    </RelativeLayout>
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/activity_oa_add_person_bga"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/px100"
+        android:layout_below="@id/activity_oa_add_person_search_bar">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_oa_add_person_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_oa_add_person_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/activity_oa_add_person_search_bar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="200px"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="@dimen/px130"
+                android:layout_height="@dimen/px112"
+                android:src="@mipmap/icon_no_contract"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/px24"
+                android:textColor="@color/black_9FABB2"
+                android:layout_marginTop="@dimen/px30"
+                android:text="暂无相关联系人"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

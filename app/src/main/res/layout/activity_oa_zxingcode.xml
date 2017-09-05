@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_oa_zxingcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.oaZxingcodeActivity">
+
+    <EditText
+        android:id="@+id/activity_oa_zxingcode_input"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:padding="@dimen/px20"
+        android:layout_margin="@dimen/px50"
+        android:background="@color/white_f3"/>
+
+
+    <Button
+        android:id="@+id/activity_oa_zxingcode_btn"
+        android:layout_width="@dimen/px500"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="生成二维码"
+        android:layout_margin="@dimen/px100"/>
+
+    <ImageView
+        android:id="@+id/activity_oa_zxingcode_image"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

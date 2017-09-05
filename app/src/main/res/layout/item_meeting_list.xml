@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginTop="25px">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+
+
+        <ImageView
+            android:id="@+id/meeting_icon"
+            android:layout_width="61px"
+            android:layout_height="61px"
+            android:src="@mipmap/meet_icon"
+            android:layout_marginLeft="31px"
+            android:layout_marginTop="24px"
+            />
+
+        <TextView
+            android:id="@+id/meeting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22px"
+            android:layout_toRightOf="@id/meeting_icon"
+            android:paddingLeft="33px"
+            android:text="会议通知"
+            android:textSize="26px"
+            android:textColor="@color/colorGray666666"
+            />
+
+        <TextView
+            android:id="@+id/meeting_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/meeting_icon"
+            android:layout_below="@id/meeting_title"
+            android:layout_marginTop="10px"
+            android:paddingLeft="33px"
+            android:textSize="24px"
+            android:textColor="@color/colorGray999999"
+            />
+
+        <ImageView
+            android:id="@+id/meeting_delete"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@mipmap/schedule_delete"
+            android:padding="25px"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/meeting_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="126px"
+            android:paddingRight="96px"
+            android:maxLines="1"
+            android:layout_below="@id/meeting_time"
+            android:paddingTop="35px"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="36px"
+            android:textColor="@color/colorGray333333"/>
+
+        <TextView
+            android:id="@+id/meeting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="126px"
+            android:paddingRight="96px"
+            android:maxLines="1"
+            android:layout_below="@id/meeting_content"
+            android:paddingTop="33px"
+            android:ellipsize="end"
+            android:textSize="26px"
+            android:textColor="@color/colorGray666666"/>
+
+        <View
+            android:id="@+id/meeting_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGrayDFEBF1"
+            android:layout_marginTop="23px"
+            android:layout_below="@id/meeting_name"/>
+
+        <TextView
+            android:id="@+id/check_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meeting_view"
+            android:text="查看详情"
+            android:gravity="center"
+            android:padding="24px"
+            android:textSize="28px"
+            android:textColor="@color/colorGray9FABB2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorGrayDFEBF1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/check_detail"
+            android:background="@color/colorGrayDFEBF1"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

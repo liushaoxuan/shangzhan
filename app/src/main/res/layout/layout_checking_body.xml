@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="28px"
+              android:paddingBottom="28px"
+              android:paddingRight="35px"
+              android:paddingLeft="35px"
+              android:background="@color/colorE3F3FF">
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="41px"
+        android:layout_height="41px"
+        android:background="@drawable/bg_25b0ff_30px"
+        android:text="上"
+        android:gravity="center"
+        android:textSize="24px"
+        android:textColor="@color/colorFEFEFE"/>
+
+    <TextView
+        android:id="@+id/checking_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上班打卡"
+        android:textColor="@color/colorGray333333"
+        android:textSize="30px"
+        android:paddingTop="5px"
+        android:layout_toRightOf="@id/tv_top"
+        android:paddingLeft="20px"
+        />
+
+    <TextView
+        android:id="@+id/checking_time_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray666666"
+        android:textSize="30px"
+        android:paddingTop="5px"
+        android:layout_toRightOf="@id/checking_time"
+        android:paddingLeft="20px"
+        android:visibility="gone"
+        />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/by_bicycle"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/checking_by_bicycle"
+            android:layout_width="134px"
+            android:layout_height="134px"
+            android:src="@mipmap/checking_by_bicycle"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/checking_by_bicycle"
+            android:layout_centerHorizontal="true"
+            android:text="早上好，该上班了"
+            android:textSize="22px"
+            android:textColor="@color/color25b0ff"
+            android:paddingTop="20px"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/checking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checking_time"
+        android:paddingTop="23px"
+        >
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="2px"
+            android:layout_height="110px"
+            android:layout_marginLeft="20px"
+            android:background="@mipmap/checking_line"/>
+
+        <TextView
+            android:id="@+id/checking_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26px"
+            android:textColor="@color/color25b0ff"
+            android:paddingTop="4px"
+            android:drawableLeft="@mipmap/location_icon"
+            android:drawablePadding="8px"
+            android:layout_toRightOf="@id/iv_line"
+            android:paddingLeft="38px"
+            />
+
+        <TextView
+            android:id="@+id/checking_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_ffc74f_30px"
+            android:text="正常"
+            android:layout_below="@id/checking_address"
+            android:layout_toRightOf="@id/iv_line"
+            android:layout_marginLeft="38px"
+            android:textSize="26px"
+            android:textColor="@color/colorFEFEFE"
+            android:paddingTop="6px"
+            android:paddingBottom="6px"
+            android:paddingLeft="36px"
+            android:paddingRight="36px"
+            android:layout_marginTop="23px"
+            />
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="41px"
+            android:layout_height="41px"
+            android:background="@drawable/bg_25b0ff_30px"
+            android:text="下"
+            android:gravity="center"
+            android:layout_below="@id/iv_line"
+            android:layout_marginTop="28px"
+            android:textSize="24px"
+            android:textColor="@color/colorFEFEFE"/>
+
+        <TextView
+            android:id="@+id/checking_out_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下班打卡"
+            android:textColor="@color/colorGray333333"
+            android:textSize="30px"
+            android:paddingTop="34px"
+            android:layout_below="@id/checking_state"
+            android:layout_toRightOf="@id/tv_bottom"
+            android:paddingLeft="20px"
+            />
+
+        <TextView
+            android:id="@+id/checking_out_time_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray666666"
+            android:textSize="30px"
+            android:paddingTop="34px"
+            android:layout_below="@id/checking_state"
+            android:layout_toRightOf="@id/checking_out_time"
+            android:paddingLeft="20px"
+            android:visibility="gone"
+            />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_class_over"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_line"
+            android:layout_below="@id/checking_out_time">
+
+            <TextView
+                android:id="@+id/checking_out_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26px"
+                android:textColor="@color/color25b0ff"
+                android:paddingTop="26px"
+                android:paddingLeft="38px"
+                android:drawableLeft="@mipmap/location_icon"
+                android:drawablePadding="8px"
+                />
+
+            <TextView
+                android:id="@+id/checking_out_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ff704f_30px"
+                android:text="早退"
+                android:layout_below="@id/checking_out_address"
+                android:layout_toRightOf="@id/iv_line"
+                android:layout_marginLeft="38px"
+                android:textSize="26px"
+                android:textColor="@color/colorFEFEFE"
+                android:paddingTop="6px"
+                android:paddingBottom="6px"
+                android:paddingRight="36px"
+                android:paddingLeft="36px"
+                android:layout_marginTop="23px"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:layout_below="@id/checking_out_time"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

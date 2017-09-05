@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:gravity="bottom">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_crm_manual_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手动新建"
+            android:padding="35px"
+            android:gravity="center"
+            android:background="@color/colorGrayF2F2F2"
+            android:textSize="34px"
+            android:textColor="@color/colorGray404040"/>
+
+        <TextView
+            android:id="@+id/dialog_crm_scan_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫描名片"
+            android:padding="35px"
+            android:gravity="center"
+            android:background="@color/colorGrayF2F2F2"
+            android:textSize="34px"
+            android:textColor="@color/colorGray404040"
+            android:layout_marginTop="1px"/>
+
+        <TextView
+            android:id="@+id/dialog_crm_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:padding="34px"
+            android:gravity="center"
+            android:background="@color/colorGrayF2F2F2"
+            android:textSize="36px"
+            android:textColor="@color/colorGray404040"
+            android:layout_marginTop="7px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

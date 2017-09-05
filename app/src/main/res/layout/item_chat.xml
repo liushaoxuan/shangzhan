@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_ripple"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp">
+
+        <com.wyu.iwork.widget.CircleImageView
+            android:id="@+id/head"
+            android:layout_width="@dimen/head_40dp"
+            android:layout_height="@dimen/head_40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_beauty"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/Base.Style.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/purchase"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    style="@style/Base.Style.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="2016/11/11"
+                    android:textColor="@color/txt_grey"
+                    android:textSize="12sp"/>
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/Base.Style.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="使对方十分爽快达历桑德罗"
+                android:textColor="@color/txt_grey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/divider_gray_h"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="72dp"/>
+
+</FrameLayout>

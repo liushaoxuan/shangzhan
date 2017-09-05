@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:clickable="true"
+             android:foreground="@drawable/fg_ripple"
+             android:background="@color/app_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="48dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <com.wyu.iwork.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/head_40dp"
+            android:layout_height="@dimen/head_40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_beauty"/>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Base.Style.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="@string/tab_contact"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:foreground="@drawable/fg_ripple"
+        android:padding="16dp"
+        android:text="@string/edit"
+        android:textColor="@color/txt_blue"
+        android:clickable="true"/>
+
+</FrameLayout>

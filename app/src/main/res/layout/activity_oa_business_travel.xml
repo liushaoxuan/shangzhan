@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_oa_business_travel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.oaBusinessTravelActivity">
+
+    <include layout="@layout/oa_apply_title_bar"/>
+
+    <Button
+        android:id="@+id/oa_apply_commit_activity_oa_business_travel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/blue"
+        android:text="提交"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/px36"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_above="@id/oa_apply_commit_activity_oa_business_travel">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/bg_ec">
+
+
+            <include layout="@layout/layout_oa_prompt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/px1"
+                android:background="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="@dimen/px30"
+                android:paddingBottom="@dimen/px20"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px32"
+                    android:textColor="@color/black3"
+                    android:layout_marginLeft="@dimen/px24"
+                    android:text="出差地点"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px36"
+                    android:layout_marginTop="@dimen/px2"
+                    android:textColor="@color/text_red"
+                    android:layout_marginLeft="@dimen/px2"
+                    android:text="*"/>
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/activity_oa_business_travel_addr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px88"
+                android:minWidth="@dimen/px88"
+                android:layout_marginLeft="@dimen/px30"
+                android:hint="请输入(出差地点)"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black6"
+                android:layout_marginRight="@dimen/px30"
+                android:background="@null"
+                android:layout_marginBottom="@dimen/px26"/>
+            </LinearLayout>
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/od_apply_begin_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px24"
+                app:NameColor="@color/black41"
+                app:NameText="开始时间"
+                app:RightTextSize="@dimen/px30"
+                app:ShowLine="false"
+                app:NameSize="@dimen/px32"
+                app:RightTextColor="@color/black9"
+                app:StarColor="@color/text_red"
+                app:StarSize="@dimen/px30"
+                app:RightText="请选择"/>
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/od_apply_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameColor="@color/black41"
+                app:NameText="结束时间"
+                app:RightTextSize="@dimen/px30"
+                app:ShowLine="false"
+                app:NameSize="@dimen/px32"
+                app:RightTextColor="@color/black9"
+                app:StarColor="@color/text_red"
+                app:StarSize="@dimen/px30"
+                app:RightText="请选择"/>
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/od_apply_hours"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                android:layout_marginTop="@dimen/px1"
+                app:NameText="出差时长"
+                app:ShowLine="false"
+                app:RightTextSize="@dimen/px30"
+                app:NameColor="@color/black41"
+                app:NameSize="@dimen/px32"
+                app:RightTextColor="@color/black9"
+                app:showArrow="false"
+                app:StarColor="@color/text_red"
+                app:StarSize="@dimen/px30"
+                app:showInput="true"
+                app:InputSize="@dimen/px30"
+                app:InputColor="@color/black9"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/px24"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px30"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/activity_oa_business_travel_reason"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px32"
+                        android:textColor="@color/black3"
+                        android:layout_marginLeft="@dimen/px24"
+                        android:text="出差事由"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px36"
+                        android:layout_marginTop="@dimen/px2"
+                        android:textColor="@color/text_red"
+                        android:layout_marginLeft="@dimen/px2"
+                        android:text="*"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/activity_oa_business_travel_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px185"
+                    android:layout_marginLeft="@dimen/px30"
+                    android:hint="请输入出差事由(60字以内)"
+                    android:maxLength="60"
+                    android:paddingTop="@dimen/px10"
+                    android:gravity="top"
+                    android:textSize="@dimen/px30"
+                    android:textColor="@color/black6"
+                    android:layout_marginRight="@dimen/px30"
+                    android:background="@null"
+                    android:layout_marginBottom="@dimen/px26"/>
+            </LinearLayout>
+            <include layout="@layout/layout_oa_chose_person"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

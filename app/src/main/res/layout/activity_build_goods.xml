@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_build_goods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.BuildGoodsActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_ec">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_build_goods_goodsName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                app:StarColor="#FF0000"
+                app:StarSize="@dimen/px36"
+                app:NameColor="@color/black41"
+                app:NameText="商品名称"
+                app:NameSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px24"
+                app:showInput="true"
+                app:InputColor="@color/black9"
+                app:InputSize="@dimen/px30"
+                app:showArrow="false"/>
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_build_goods_goodsType"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                app:StarColor="#FF0000"
+                app:StarSize="@dimen/px36"
+                app:NameColor="@color/black41"
+                app:NameText="商品分类"
+                app:NameSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px1"
+                app:RightTextColor="@color/black9"
+                app:RightText="请选择"
+                app:RightTextSize="@dimen/px30"
+                app:showArrow="true"/>
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_build_goods_goodsprise"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                app:StarColor="#FF0000"
+                app:StarSize="@dimen/px36"
+                app:NameColor="@color/black41"
+                app:NameText="商品价格"
+                app:NameSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px24"
+                app:showInput="true"
+                app:InputColor="@color/black9"
+                app:InputSize="@dimen/px30"
+                app:showArrow="false"/>
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_build_goods_marketPrise"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                app:StarColor="#FF0000"
+                app:StarSize="@dimen/px36"
+                app:NameColor="@color/black41"
+                app:NameText="市场价格"
+                app:NameSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px1"
+                app:showInput="true"
+                app:InputColor="@color/black9"
+                app:InputSize="@dimen/px30"
+                app:showArrow="false"/>
+
+
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_build_goods_releaser"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                app:NameColor="@color/black41"
+                app:ShowStar="false"
+                app:NameText="创建人"
+                app:NameSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px24"
+                app:RightTextSize="@dimen/px30"
+                app:RightTextColor="@color/black9"
+                app:RightText="李先生"
+                app:showArrow="false"/>
+
+            <com.wyu.iwork.widget.CustomeViewGroup
+                android:id="@+id/activity_build_goods_releaseTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px97"
+                app:NameColor="@color/black41"
+                app:ShowStar="false"
+                app:NameText="创建时间"
+                app:NameSize="@dimen/px32"
+                android:layout_marginTop="@dimen/px1"
+                app:RightTextSize="@dimen/px30"
+                app:RightTextColor="@color/black9"
+                app:RightText="2017/5/4"
+                app:showArrow="false"/>
+
+            <TextView
+                android:id="@+id/activity_build_goods_commit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px90"
+                android:textSize="@dimen/px36"
+                android:textColor="@color/white"
+                android:text="提交"
+                android:layout_marginLeft="@dimen/px24"
+                android:layout_marginRight="@dimen/px24"
+                android:gravity="center"
+                android:layout_marginTop="274px"
+                android:layout_marginBottom="192px"
+                android:background="@drawable/bg_blue_round_rectangle"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

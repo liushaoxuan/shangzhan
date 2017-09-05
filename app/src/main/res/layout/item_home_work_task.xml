@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/item_home_work_task_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View android:layout_width="match_parent"
+            android:layout_height="@dimen/px20"
+            android:background="@color/color_f2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/px36">
+        <TextView
+            android:id="@+id/item_home_work_task_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px30"
+            android:text="任务安排"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textColor="@color/dynamic_releaser_color"/>
+
+        <TextView
+            android:id="@+id/item_home_work_task_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px26"
+            android:text="更多"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/px24"
+            android:textColor="@color/black3"/>
+    </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/bg_ec"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px185"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/item_home_work_task_head"
+            android:layout_width="@dimen/px124"
+            android:layout_height="@dimen/px124"
+            android:src="@mipmap/head_icon_nodata"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"/>
+
+        <TextView
+            android:id="@+id/item_home_work_task_taskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_home_work_task_head"
+            android:textSize="@dimen/px30"
+            android:textColor="@color/black6"
+            android:layout_marginLeft="@dimen/px32"
+            android:layout_marginTop="@dimen/px35"
+            android:text="任务名称"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px24"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px24"
+            android:layout_marginTop="@dimen/px35"
+            android:layout_marginBottom="@dimen/px25">
+            <TextView
+                android:id="@+id/item_home_work_task_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black9"
+                android:text="2017/3/24"
+                android:layout_marginLeft="@dimen/px5"
+                android:textSize="@dimen/px22"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_home_work_task_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px24"
+            android:layout_toRightOf="@id/item_home_work_task_head"
+            android:textSize="@dimen/px26"
+            android:textColor="@color/black9"
+            android:layout_marginLeft="@dimen/px32"
+            android:layout_marginTop="@dimen/px15"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="2"
+            android:layout_below="@id/item_home_work_task_taskName"
+            android:text="我决定今天下午设计软融-移动办公的应用功能和文件打包处理..."/>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/item_home_work_task_faqiren_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px24"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/item_home_work_task_head"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/px32"
+            android:layout_marginRight="@dimen/px24"
+            android:layout_marginBottom="@dimen/px25">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发起人:"
+                android:textColor="@color/black6"
+                android:textSize="@dimen/px22"/>
+            <TextView
+                android:id="@+id/item_home_work_task_faqiren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black6"
+                android:text="奥巴马"
+                android:layout_marginLeft="@dimen/px5"
+                android:textSize="@dimen/px22"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

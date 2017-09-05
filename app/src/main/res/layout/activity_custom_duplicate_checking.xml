@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_duplicate_checking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.CustomDuplicateCheckingActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/checking_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="个人"
+                android:textColor="@drawable/selector_text_333333_3faa3f"
+                android:textSize="32px"
+                android:paddingTop="31px"
+                android:paddingBottom="28px"/>
+
+            <TextView
+                android:layout_width="73px"
+                android:layout_height="7px"
+                android:background="@drawable/selector_white_3faaff"
+                android:layout_gravity="center_horizontal"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_margin="12px"
+            android:background="@color/colorGrayECECEC"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/checking_company"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="公司"
+                android:textColor="@drawable/selector_text_333333_3faa3f"
+                android:textSize="32px"
+                android:paddingTop="31px"
+                android:paddingBottom="28px"/>
+
+            <TextView
+                android:layout_width="73px"
+                android:layout_height="7px"
+                android:background="@drawable/selector_white_3faaff"
+                android:layout_gravity="center_horizontal"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/custom_duplicate_checking_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

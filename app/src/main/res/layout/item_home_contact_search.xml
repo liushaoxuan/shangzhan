@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px60"
+        android:background="@mipmap/search_kuang"
+        android:paddingLeft="@dimen/px10"
+        android:paddingRight="@dimen/px10"
+        android:layout_margin="@dimen/px15"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/item_home_contact_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入姓名、手机号"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/px18"
+            android:textSize="@dimen/px30"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:textColorHint="@color/black9"
+            android:drawableLeft="@mipmap/search_icon"
+            android:drawablePadding="@dimen/px10"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/bg_ec"/>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_oa_agree_aplly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.wyu.iwork.view.activity.oaAgreeApllyActivity">
+    <include layout="@layout/oa_apply_title_bar"/>
+    
+    <EditText
+        android:id="@+id/activity_oa_agree_aplly_isure"
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:background="@color/white"
+        android:paddingTop="@dimen/px22"
+        android:paddingBottom="@dimen/px22"
+        android:paddingRight="@dimen/px24"
+        android:paddingLeft="@dimen/px24"
+        android:maxLength="60"
+        android:textSize="@dimen/px30"
+        android:hint="请填写意见（可选项，60字以内）"
+        android:textColorHint="@color/black9"
+        android:textColor="@color/black6"
+        android:gravity="top"/>
+    
+    <Button
+        android:id="@+id/activity_oa_agree_aplly_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        android:text="同意"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px36"
+        android:layout_marginLeft="@dimen/px24"
+        android:layout_marginRight="@dimen/px24"
+        android:layout_marginTop="@dimen/px100"
+        android:background="@drawable/bg_login_selector"/>
+
+</LinearLayout>

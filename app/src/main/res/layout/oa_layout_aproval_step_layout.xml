@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/top_corner_white_bg"
+        android:layout_marginLeft="@dimen/px20"
+        android:layout_marginRight="@dimen/px20"
+        android:paddingBottom="@dimen/px40"
+        android:layout_marginTop="@dimen/px24">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审批流程"
+            android:textSize="@dimen/px30"
+            android:textColor="@color/black41"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginTop="@dimen/px32"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_oa_apply_leave_detail_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <View
+            android:id="@+id/activity_oa_apply_leave_detail_line3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px5"
+            android:layerType="software"
+            android:background="@drawable/dashgap_line"
+            android:layout_marginTop="@dimen/px25"/>
+
+        <LinearLayout
+            android:id="@+id/activity_oa_apply_leave_detail_copy_send_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抄送人："
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black41"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginTop="@dimen/px32"/>
+
+            <TextView
+                android:id="@+id/activity_oa_apply_leave_detail_copy_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/px30"
+                android:textColor="@color/black41"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginTop="@dimen/px32"/>
+        </LinearLayout>
+    </LinearLayout>

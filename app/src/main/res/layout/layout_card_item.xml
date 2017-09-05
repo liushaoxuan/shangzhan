@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="90px"
+    android:background="@color/white"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机"
+        android:textSize="32px"
+        android:textColor="@color/colorGray666666"
+        android:paddingLeft="36px"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:textColor="@color/color4D7186"
+        android:layout_alignParentRight="true"
+        android:paddingRight="36px"
+        android:textColorHint="@color/colorGray9FABB2"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/item_title"
+        android:hint="暂无"
+        android:paddingLeft="250px"/>
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="36px"
+        android:textColorHint="@color/colorGray999999"
+        android:textColor="@color/color4D7186"
+        android:background="@null"
+        android:textSize="30px"
+        android:singleLine="true"
+        android:layout_toLeftOf="@id/item_title"
+        android:paddingLeft="250px"
+        android:visibility="gone"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

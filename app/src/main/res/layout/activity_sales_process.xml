@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sales_process"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wyu.iwork.view.activity.SalesProcessActivity">
+
+    <include layout="@layout/custom_back_toolbar"
+        android:id="@+id/title"/>
+
+
+    <TextView
+        android:id="@+id/crm_process_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="阶段变更"
+        android:gravity="center"
+        android:padding="35px"
+        android:textColor="@color/colorGray666666"
+        android:textSize="32px"
+        android:background="@color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/crm_sales_process_recycleview"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/crm_process_change"
+        android:scrollbars="none"/>
+</RelativeLayout>

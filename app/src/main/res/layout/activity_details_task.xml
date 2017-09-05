@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_new_task"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorF4F9FC"
+    tools:context="com.wyu.iwork.view.activity.CreateNewTaskActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ScrollView
+        android:id="@+id/activity_create_new_task_scroolview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务主题"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:paddingTop="31px"
+                    android:paddingLeft="25px"
+                    android:paddingBottom="27px"/>
+
+                <TextView
+                    android:id="@+id/task_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="未填写"
+                    android:paddingLeft="25px"
+                    android:textSize="30px"
+                    android:paddingBottom="28px"
+                    android:textColor="@color/color4D7186"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    android:background="@null"
+                    />
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px"
+                android:layout_marginBottom="23px"
+                android:background="@color/white">
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务描述"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:paddingTop="31px"
+                    android:paddingLeft="25px"
+                    android:paddingBottom="27px"/>
+
+                <TextView
+                    android:id="@+id/task_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:hint="未填写"
+                    android:paddingLeft="25px"
+                    android:textSize="30px"
+                    android:paddingBottom="28px"
+                    android:gravity="top"
+                    android:lineSpacingExtra="10px"
+                    android:background="@null"
+                    android:textColor="@color/color4D7186"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    />
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.wyu.iwork.widget.TaskItem
+                android:id="@+id/emergency_degree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.TaskItem
+                android:id="@+id/start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.wyu.iwork.widget.TaskItem
+                android:id="@+id/end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创建人"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray333333"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="26px"/>
+
+                <TextView
+                    android:id="@+id/creater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="未设置"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="24px"
+                    android:textSize="30px"
+                    android:paddingLeft="200px"
+                    android:textColor="@color/color4D7186"
+                    android:textColorHint="@color/colorGray9FABB2"
+                    />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <include layout="@layout/layout_bottom_line"/>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/principal_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px">
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/to"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="负责人"
+                        android:textSize="32px"
+                        android:textColor="@color/colorGray333333"
+                        android:layout_marginTop="31px"
+                        android:layout_marginLeft="26px"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_add_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/to"
+                        android:layout_marginTop="35px"
+                        android:layout_marginLeft="31px"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/participant_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="23px">
+
+                <include layout="@layout/layout_bottom_line"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/par_to"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="参与人"
+                        android:textSize="32px"
+                        android:textColor="@color/colorGray333333"
+                        android:layout_marginTop="31px"
+                        android:layout_marginLeft="26px"
+                        />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_add_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/par_to"
+                        android:layout_marginTop="35px"
+                        android:layout_marginLeft="31px"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <include layout="@layout/layout_bottom_line"/>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="98px"
+                android:layout_marginTop="28px">
+
+                <TextView
+                    android:id="@+id/reedit_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="重新编辑"
+                    android:textSize="32px"
+                    android:textColor="@color/colorGray03A9F4"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:visibility="gone"/>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_operation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/cancel_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:text="取消任务"
+                        android:textColor="@color/colorGray03A9F4"
+                        android:background="@color/white"
+                        android:textSize="32px"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/finish_task"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="完成"
+                        android:textColor="@color/white"
+                        android:background="@color/colorGray03A9F4"
+                        android:textSize="32px"
+                        android:gravity="center"
+                        />
+
+                </com.zhy.autolayout.AutoLinearLayout>
+            </com.zhy.autolayout.AutoFrameLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

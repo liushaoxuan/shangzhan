@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px36"
+                android:textStyle="bold"
+                android:text="通讯录"
+                android:background="@color/blue"
+                android:gravity="center"/>
+
+
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/home_contacts_refreshview"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <ScrollView
+            android:id="@+id/home_contacts_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px100"
+                    android:background="@color/white"
+                    android:padding="@dimen/px15">
+                    <LinearLayout
+                        android:id="@+id/home_contacts_search_linearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/px60"
+                        android:background="@mipmap/search_kuang"
+                        android:paddingLeft="@dimen/px10"
+                        android:paddingRight="@dimen/px10"
+                        android:gravity="center">
+                        <EditText
+                            android:id="@+id/home_contacts_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="请输入姓名、手机号"
+                            android:singleLine="true"
+                            android:layout_marginLeft="@dimen/px18"
+                            android:textSize="@dimen/px30"
+                            android:background="@null"
+                            android:imeOptions="actionSearch"
+                            android:textColorHint="@color/black9"
+                            android:drawableLeft="@mipmap/search_icon"
+                            android:drawablePadding="@dimen/px10"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:layout_width="match_parent"
+                    android:layout_height="@dimen/px20"
+                    android:background="@color/bg_ec"/>
+
+                <RelativeLayout
+                    android:id="@+id/home_contacts_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px130"
+                    android:paddingLeft="@dimen/px24"
+                    android:paddingRight="@dimen/px30">
+                    <ImageView
+                        android:layout_width="@dimen/px90"
+                        android:layout_height="@dimen/px90"
+                        android:src="@mipmap/invite_friends_icon"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px30"
+                        android:text="邀请好友"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="130px"
+                        android:textStyle="bold"
+                        android:textColor="@color/black3"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/px20"
+                        android:layout_height="@dimen/px30"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/right_arow"/>
+                </RelativeLayout>
+
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="@dimen/px1"
+                    android:background="@color/bg_ec"/>
+
+                <RelativeLayout
+                    android:id="@+id/home_contacts_orgnize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/px130"
+                    android:paddingLeft="@dimen/px24"
+                    android:paddingRight="@dimen/px30">
+                    <ImageView
+                        android:layout_width="@dimen/px90"
+                        android:layout_height="@dimen/px90"
+                        android:src="@mipmap/icon_organization_structure"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px30"
+                        android:text="组织架构"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="130px"
+                        android:textStyle="bold"
+                        android:textColor="@color/black3"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/px20"
+                        android:layout_height="@dimen/px30"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/right_arow"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.wyu.iwork.widget.MyListView
+                        android:id="@+id/home_contacts_mylistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/px32"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/home_contacts_nodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="200px"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/px130"
+                        android:layout_height="@dimen/px112"
+                        android:src="@mipmap/icon_no_contract"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/px24"
+                        android:textColor="@color/black_9FABB2"
+                        android:layout_marginTop="@dimen/px30"
+                        android:text="暂无相关联系人"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+    <ListView
+        android:id="@+id/home_contacts_listview"
+        android:layout_width="@dimen/px30"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/px150"
+        android:divider="@color/white"/>
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_Nums"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="采购单号"
+        app:RightText="请选择"
+        app:ShowStar="false"
+        app:showArrow="false"
+        android:layout_marginTop="@dimen/px24"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="采购类型"
+        app:RightText="请选择"
+        android:layout_marginTop="@dimen/px24"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_goodsName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="商品名称"
+        app:RightText="请选择"
+        android:layout_marginTop="@dimen/px1"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_goodsPrise"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="商品价格"
+        app:ShowStar="false"
+        app:showArrow="false"
+        android:layout_marginTop="@dimen/px1"
+        app:showInput="false"/>
+    <include layout="@layout/layout_order_goods_num_and_disscount"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_total"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="总金额"
+        app:ShowStar="false"
+        app:showArrow="false"
+        android:layout_marginTop="@dimen/px1"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_Supplier_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="供应商名称"
+        app:RightText="请选择"
+        android:layout_marginTop="@dimen/px24"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_main_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="主要联系人"
+        app:showArrow="false"
+        app:ShowStar="false"
+        android:layout_marginTop="@dimen/px1"
+        app:StarColor="#FF0000"/>
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_main_contact_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="联系电话"
+        app:showArrow="false"
+        app:ShowStar="false"
+        android:layout_marginTop="@dimen/px1"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_main_sendType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="运货方式"
+        app:showArrow="false"
+        app:ShowStar="false"
+        app:showInput="true"
+        android:layout_marginTop="@dimen/px24"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_main_arriveTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="预计到货时间"
+        app:showArrow="true"
+        app:ShowStar="false"
+        android:layout_marginTop="@dimen/px1"
+        app:RightText="请选择"
+        app:StarColor="#FF0000"/>
+
+
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_main_releaser"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="创建人"
+        app:showArrow="false"
+        app:ShowStar="false"
+        app:showInput="false"
+        android:layout_marginTop="@dimen/px24"
+        app:StarColor="#FF0000"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_add_order_main_releaseTime"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px97"
+        app:NameText="创建时间"
+        app:showArrow="false"
+        app:ShowStar="false"
+        android:layout_marginTop="@dimen/px1"
+        app:StarColor="#FF0000"/>
+
+</LinearLayout>

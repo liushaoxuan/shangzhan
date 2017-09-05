@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 客户管理-客户来源 -->
+    <string-array name="crm_custom_resource">
+        <!--  0：其他 1：广告 2：推广 3：搜索引擎 4：转介绍 5：固有资源 6：线上注册 7：线上咨询 8：预约上门  -->
+        <item>其他</item>
+        <item>广告</item>
+        <item>推广</item>
+        <item>搜索引擎</item>
+        <item>转介绍</item>
+        <item>固有资源</item>
+        <item>线上注册</item>
+        <item>线上咨询</item>
+        <item>预约上门</item>
+    </string-array>
+
+    <!-- 客户管理-客户等级 -->
+    <string-array name="crm_custom_level">
+        <!-- 客户等级  1：一般客户 2：普通客户 3：重要客户 -->
+        <item>一般客户</item>
+        <item>普通客户</item>
+        <item>重要客户</item>
+    </string-array>
+
+    <!-- 客户管理-客户状态 -->
+    <string-array name="crm_custom_state">
+        <!-- 初步沟通、意向沟通、方案报价、签订成交、客户停滞 -->
+        <item>初步沟通</item>
+        <item>意向沟通</item>
+        <item>方案报价</item>
+        <item>签订成交</item>
+        <item>客户停滞</item>
+    </string-array>
+
+    <!-- 潜在客户跟进-跟进方式 -->
+    <string-array name="crm_custom_follow_way">
+        <!-- 0：其他 1：电话 2：短信 3：社交工具 4：会面  -->
+        <item>其他</item>
+        <item>电话</item>
+        <item>短信</item>
+        <item>社交工具</item>
+        <item>会面</item>
+    </string-array>
+
+    <!-- CRM - 阶段变更 -->
+    <string-array name="crm_process_change">
+        <item>验证客户</item>
+        <item>需求确定</item>
+        <item>方案/报价</item>
+        <item>谈判审核</item>
+        <item>赢单</item>
+        <item>输单</item>
+        <item>无效</item>
+    </string-array>
+
+    <!-- CRM商机输单 -->
+    <string-array name="crm_lost_opportunity">
+        <item>客户不想购买了</item>
+        <item>为满足客户需求</item>
+        <item>被竞争对手抢单</item>
+    </string-array>
+
+    <!-- CRM线索来源 -->
+    <string-array name="crm_sales_source">
+        <!-- 搜索引擎、客户介绍、会议、广告、电话、网站、其他 -->
+        <item>其他</item>
+        <item>搜索引擎</item>
+        <item>客户介绍</item>
+        <item>会议</item>
+        <item>广告</item>
+        <item>电话</item>
+        <item>网站</item>
+    </string-array>
+
+    <!-- 市场活动类型 -->
+    <string-array name="crm_marketing_type">
+        <!-- 促销活动、品牌活动、会议销售、搜索引擎、广告、营销、其他 -->
+        <item>其他</item>
+        <item>促销活动</item>
+        <item>品牌活动</item>
+        <item>会议销售</item>
+        <item>搜索引擎</item>
+        <item>广告</item>
+        <item>营销</item>
+    </string-array>
+
+    <!-- 任务紧急程度 -->
+    <string-array name="task_emergency_evel">
+        <!-- 普通、紧急、非常紧急 -->
+        <item>普通</item>
+        <item>紧急</item>
+        <item>非常紧急</item>
+    </string-array>
+</resources>

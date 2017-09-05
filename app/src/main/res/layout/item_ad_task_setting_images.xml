@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25px"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/item_ad_task_image">
+
+
+    <LinearLayout
+        android:id="@+id/item_ad_task_image_camere_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px52"
+        android:layout_marginTop="@dimen/px90"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/px78"
+            android:layout_height="@dimen/px60"
+            android:src="@mipmap/icon_ad_camera"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px28"
+            android:textColor="#bac4cb"
+            android:layout_marginTop="@dimen/px28"
+            android:text="点击可替换照片"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/item_ad_task_settings_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px20"
+        android:layout_marginLeft="@dimen/px24"
+        android:adjustViewBounds="true"
+        android:maxWidth="1080px"
+        android:layout_marginRight="@dimen/px24"
+        android:layout_marginBottom="@dimen/px20"/>
+
+
+    <LinearLayout
+        android:id="@+id/item_ad_task_progressbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="@drawable/ic_loading_bg"
+        android:padding="@dimen/px30"
+        android:layout_marginTop="@dimen/px80">
+        <ProgressBar
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/progress_drawable_white"
+            android:id="@+id/item_ad_task_settings_progressbar"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

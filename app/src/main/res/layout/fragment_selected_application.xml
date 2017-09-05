@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorF4F9FC">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textSize="@dimen/px36"
+            android:text="商栈·应用"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/zxing_icon"
+            android:layout_width="98px"
+            android:layout_height="58px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="24px"
+            android:paddingLeft="34px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:src="@mipmap/scan_icon"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:scrollbars="none"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/select_zanwu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:layout_width="141px"
+            android:layout_height="138px"
+            android:layout_marginTop="411px"
+            android:src="@mipmap/loading_fail"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text="你的网络走丢了，请刷新"
+            android:textStyle="bold"
+            android:textColor="@color/colorGray9FABB2"
+            android:paddingTop="32px"/>
+
+        <TextView
+            android:id="@+id/reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重新加载"
+            android:layout_marginTop="66px"
+            android:background="@drawable/bg_25b0ff_round_30px"
+            android:paddingLeft="51px"
+            android:paddingTop="16px"
+            android:paddingRight="51px"
+            android:paddingBottom="16px"
+            android:textSize="30px"
+            android:textColor="@color/colorCustomToolbar"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_department"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_ec"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.EditDepartmentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue">
+        <LinearLayout
+            android:id="@+id/activity_edit_department_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/px24">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px40"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true" >
+                <ImageView
+                    android:layout_width="@dimen/px20"
+                    android:layout_height="@dimen/px32"
+                    android:src="@mipmap/arrow_left"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/px30"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="@dimen/px15"
+                    android:layout_centerVertical="true"
+                    android:text="返回"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            style="@style/AppTheme.TextAppearance.Toolbar.Title"
+            android:text="编辑部门"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/activity_edit_department_enter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/px35"
+            android:textSize="@dimen/px30"
+            android:text="保存"/>
+    </RelativeLayout>
+    <!--<include layout="@layout/layout_build_edit_department"/>-->
+    
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_edit_department_departmentName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        app:NameText="部门名称"
+        app:ShowStar="false"
+        app:NameColor="@color/black3"
+        app:NameSize="@dimen/px32"
+        app:showInput="true"
+        app:showArrow="false"
+        app:InputSize="@dimen/px30"
+        app:InputColor="@color/black_9FABB2"/>
+
+    <com.wyu.iwork.widget.CustomeViewGroup
+        android:id="@+id/activity_edit_department_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        app:NameText="上级部门"
+        app:ShowStar="false"
+        app:NameColor="@color/black3"
+        app:NameSize="@dimen/px32"
+        app:showInput="false"
+        app:showArrow="true"
+        app:RightText="请选择"
+        app:RightTextSize="@dimen/px30"
+        app:RightTextColor="@color/black_9FABB2"
+        app:InputSize="@dimen/px30"
+        app:InputColor="@color/black6"/>
+
+
+</LinearLayout>

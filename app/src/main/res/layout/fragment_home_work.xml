@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f2"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/home_work_refreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px300"
+                    android:background="@mipmap/work_head">
+
+                    <TextView
+                        android:id="@+id/home_work_current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/px80"
+                        android:layout_marginTop="@dimen/px60"
+                        android:text="10:30"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px60"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/home_work_current_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/home_work_current_time"
+                        android:layout_marginRight="@dimen/px80"
+                        android:layout_marginTop="@dimen/px25"
+                        android:text="星期三"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px36" />
+
+                    <TextView
+                        android:id="@+id/home_work_current_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/home_work_current_time"
+                        android:layout_marginRight="@dimen/px30"
+                        android:layout_marginTop="@dimen/px25"
+                        android:layout_toLeftOf="@+id/home_work_current_week"
+                        android:text="3月28日"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px36" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px90"
+                    android:layout_marginTop="@dimen/px20"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/px24">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="今日安排"
+                        android:textColor="@color/dynamic_releaser_color"
+                        android:textSize="@dimen/px30"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/home_work_more_plain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/px24"
+                        android:text="更多"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/px26" />
+
+                    <TextView
+                        android:id="@+id/home_work_add_plain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/px20"
+                        android:layout_toLeftOf="@id/home_work_more_plain"
+                        android:padding="@dimen/px24"
+                        android:text="+新建"
+                        android:textColor="@color/dynamic_releaser_color"
+                        android:textSize="@dimen/px26" />
+                </RelativeLayout>
+
+                <!--日程安排-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/home_work_plain_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px1"
+                        android:background="@color/white" />
+                    <LinearLayout
+                        android:id="@+id/home_work_plain_nodata"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="@dimen/px130"
+                            android:layout_height="@dimen/px112"
+                            android:src="@mipmap/notavailable"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/px30"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="暂无日程安排!"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorGrayC9C9C9"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <!--任务安排-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/home_work_task_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+                    <LinearLayout
+                        android:id="@+id/home_work_task_nodata"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px90"
+                            android:background="@color/white">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="@dimen/px90"
+                                android:layout_centerVertical="true"
+                                android:text="任务安排"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/px24"
+                                android:textColor="@color/dynamic_releaser_color"
+                                android:textSize="@dimen/px30"
+                                android:background="@color/white"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/home_work_more_task"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/px24"
+                                android:text="更多"
+                                android:textColor="@color/black3"
+                                android:textSize="@dimen/px26" />
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_height="256px"
+                            android:layout_width="256px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/px30"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="暂无任务!"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorGrayC9C9C9"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!--公告-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px20">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/home_work_notice_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+                    <LinearLayout
+                        android:id="@+id/home_work_notice_nodata"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/px90"
+                            android:background="@color/white">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="@dimen/px90"
+                                android:layout_centerVertical="true"
+                                android:text="公告"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/px24"
+                                android:textColor="@color/dynamic_releaser_color"
+                                android:textSize="@dimen/px30"
+                                android:background="@color/white"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/home_work_more_notice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="@dimen/px24"
+                                android:text="更多"
+                                android:textColor="@color/black3"
+                                android:textSize="@dimen/px26" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_height="256px"
+                            android:layout_width="256px"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/px30"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="暂无公告!"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorGrayC9C9C9"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px100" />
+            </LinearLayout>
+        </ScrollView>
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+</LinearLayout>

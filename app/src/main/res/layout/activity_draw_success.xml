@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_draw_success"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.wyu.iwork.view.activity.DrawSuccessActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <ImageView
+        android:layout_width="149px"
+        android:layout_height="149px"
+        android:layout_marginTop="179px"
+        android:src="@mipmap/draw_success"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜你任务领取成功"
+        android:textSize="36px"
+        android:textColor="@color/colorGray202020"
+        android:paddingTop="59px"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享赚取佣金"
+        android:textSize="30px"
+        android:paddingTop="29px"
+        android:textColor="@color/colorGray202020"/>
+
+    <View
+        android:layout_width="360px"
+        android:layout_height="1px"
+        android:background="@color/colorGrayD9E4EA"
+        android:layout_marginTop="60px"/>
+
+    <TextView
+        android:id="@+id/share_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即分享"
+        android:textSize="32px"
+        android:textColor="@color/colorFEFEFE"
+        android:background="@drawable/bg_25b0ff_30px"
+        android:paddingBottom="24px"
+        android:paddingTop="24px"
+        android:paddingRight="136px"
+        android:paddingLeft="136px"
+        android:layout_marginTop="120px"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

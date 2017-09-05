@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/frag_dynamic_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:scaleType="fitXY"
+            android:src="@mipmap/image" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_dynamic_person_icon"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            android:layout_alignBottom="@id/frag_dynamic_image"
+            android:layout_alignRight="@id/frag_dynamic_image"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@mipmap/head_icon_nodata" />
+
+        <TextView
+            android:id="@+id/fragment_dynamic_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/frag_dynamic_image"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_toLeftOf="@id/fragment_dynamic_person_icon"
+            android:text="古天乐"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+</LinearLayout>

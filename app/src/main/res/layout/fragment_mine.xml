@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/app_foreground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/img_UserHeadImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_headimg" />
+
+        <TextView
+            android:id="@+id/tv_UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="————"
+            android:textColor="@color/txt_grey"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_check" />
+
+        <ImageView
+            android:id="@+id/img_Check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/app_foreground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/ic_community" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/My_community"
+                android:textColor="@color/txt_grey"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/My_community_Remarks"
+                android:textColor="#AAAAAA"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Community"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/ic_right" />
+
+    </LinearLayout>
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_Data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:linecolor="@color/gray"
+        app:src="@mipmap/ic_data"
+        app:text="@string/My_data"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14" />
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_FootPrint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:linecolor="@color/gray"
+        app:src="@mipmap/ic_footprint"
+        app:text="@string/My_footprint"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14" />
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_FileCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:showline="false"
+        app:src="@mipmap/ic_file"
+        app:text="@string/My_filecenter"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14" />
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_Invitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:linecolor="@color/gray"
+        app:src="@mipmap/ic_invitation"
+        app:text="@string/My_invitation"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14" />
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_wx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:src="@mipmap/ic_wx"
+        app:showline="false"
+        app:text="@string/My_wx"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14" />
+
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:linecolor="@color/gray"
+        app:src="@mipmap/ic_help"
+        app:text="@string/My_help"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14" />
+
+    <com.wyu.iwork.widget.ImageTextView
+        android:id="@+id/tv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp_10"
+        app:imageheight="@dimen/dp_20"
+        app:imagewith="@dimen/dp_20"
+        app:showline="false"
+        app:src="@mipmap/ic_set"
+        app:text="@string/My_setting"
+        app:textcolor="@color/txt_grey"
+        app:textsise="@dimen/sp_14"
+        android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

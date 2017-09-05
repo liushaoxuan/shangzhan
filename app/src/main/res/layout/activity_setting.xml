@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_ec"
+    tools:context="com.wyu.iwork.view.activity.SettingActivity">
+
+    <include layout="@layout/layout_erp_edit_title"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px24"
+        android:background="#ececec"/>
+    <RelativeLayout
+        android:id="@+id/activity_setting_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px25"
+            android:text="关于我们"/>
+
+        <ImageView
+            android:layout_width="@dimen/px17"
+            android:layout_height="@dimen/px_29"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px35"
+            android:src="@mipmap/right_arow" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/activity_setting_changePass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_marginTop="@dimen/px25"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/px32"
+            android:textColor="@color/black3"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px25"
+            android:text="修改密码"/>
+
+        <ImageView
+            android:layout_width="@dimen/px17"
+            android:layout_height="@dimen/px_29"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px35"
+            android:src="@mipmap/right_arow" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#ececec"/>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:layout_marginTop="@dimen/px100"
+        android:background="#ececec"/>
+    <TextView
+        android:id="@+id/activity_setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/white"
+        android:textSize="@dimen/px32"
+        android:gravity="center"
+        android:textColor="@color/black3"
+        android:text="退出"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="#ececec"/>
+</LinearLayout>

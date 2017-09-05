@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finder_customer_list"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.wyu.iwork.view.activity.FinderCustomerListActivity">
+
+    <include layout="@layout/custom_back_toolbar"/>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginLeft="14px"
+            android:layout_marginRight="14px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/crm_custom_zanwu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/px130"
+                android:layout_height="@dimen/px112"
+                android:src="@mipmap/notavailable"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/px20"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="没有搜索到相应客户!"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorGrayC9C9C9"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

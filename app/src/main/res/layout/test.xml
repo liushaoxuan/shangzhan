@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    android:id="@+id/gl_gridlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:columnCount="4"
+    app:rowCount="7"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_columnSpan="4"
+        android:background="#eee"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="50sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_columnSpan="4"
+        android:text="Clear"
+        />
+
+    <Button
+        android:id="@+id/one"
+        android:text="1"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"
+        />
+    　　
+
+    <Button
+        android:id="@+id/two"
+        android:text="2"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　　
+
+    <Button
+        android:id="@+id/three"
+        android:text="3"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/devide"
+        android:text="/"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/four"
+        android:text="4"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/five"
+        android:text="5"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/six"
+        android:text="6"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/multiply"
+        android:text="×"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/seven"
+        android:text="7"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/eight"
+        android:text="8"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/nine"
+        android:text="9"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/minus"
+        android:text="-"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/zero"
+        app:layout_columnSpan="2"
+        app:layout_gravity="fill"
+        android:text="0"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+    　　
+
+    <Button
+        android:id="@+id/point"
+        android:text="."
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/plus"
+        app:layout_rowSpan="2"
+        android:text="+"
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+
+    <Button
+        android:id="@+id/equal"
+        app:layout_columnSpan="3"
+        android:text="="
+        app:layout_columnWeight="1"
+        app:layout_rowWeight="1"/>
+</android.support.v7.widget.GridLayout>

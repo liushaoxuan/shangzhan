@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+            >
+
+    <include layout="@layout/layout_bottom_line"/>
+
+    <TextView
+        android:id="@+id/location_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30px"
+        android:textColor="@color/colorGray333333"
+        android:paddingTop="26px"
+        android:paddingLeft="26px"
+        android:paddingRight="100px"
+        android:paddingBottom="20px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/location_detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24px"
+        android:textColor="@color/colorGray9FABB2"
+        android:layout_below="@id/location_name"
+        android:paddingLeft="26px"
+        android:paddingBottom="26px"
+        android:paddingRight="100px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="36px"
+        android:layout_height="36px"
+        android:src="@drawable/selector_location"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44px"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

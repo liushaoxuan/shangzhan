@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wyu.iwork.camera.MaskSurfaceView
+            android:id="@+id/msv_surface"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            >
+        </com.wyu.iwork.camera.MaskSurfaceView>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/ll_flash"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="#000000">
+
+        <ImageView
+            android:id="@+id/iv_flash"
+            android:layout_width="88px"
+            android:layout_height="88px"
+            android:src="@mipmap/shanguang"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="24px"
+            />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_backgroud"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"/>
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请将名片放入扫描区域中......"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30px"
+                android:textSize="30px"
+                android:textColor="@color/white"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/fl_option"
+        android:layout_width="match_parent"
+        android:layout_height="265px"
+        android:background="#000000"
+        android:layout_gravity="bottom">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_option"
+            android:layout_height="265px"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_picture"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textSize="30px"
+                android:gravity="center"
+                android:text="相册"/>
+
+            <ImageView
+                android:id="@+id/iv_takephoto"
+                android:layout_width="133px"
+                android:layout_height="133px"
+                android:src="@mipmap/blue_photo"/>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="取消"
+                android:textColor="#FFFFFF"
+                android:textSize="30px"
+                android:gravity="center"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_again_option"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="20px">
+                    <ImageView
+                        android:layout_height="42px"
+                        android:layout_width="42px"
+                        android:src="@mipmap/again"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重拍"
+                        android:layout_marginTop="37px"
+                        android:textColor="@color/white"/>
+                </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_sure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="20px">
+                    <ImageView
+                        android:layout_height="42px"
+                        android:layout_width="42px"
+                        android:src="@mipmap/duigou"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="确定"
+                        android:layout_marginTop="37px"
+                        android:textColor="@color/white"/>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/colorGray66000000"
+        >
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="144px"
+            android:layout_height="144px"
+            android:indeterminateDrawable="@drawable/cuntom_loading"
+            android:indeterminateDuration="1150"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>
